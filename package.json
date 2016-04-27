@@ -1,5 +1,13 @@
 {
+  "name": "Folk style - A Style guide for Analog Folk",
+  "version": "0.0.1",
+  "license": "UNLICENSED",
   "private": true,
+  "author": {
+    "name": "Sam Carrington",
+    "email": "sam.carrington@analogfolk.com"
+  },
+  "contributors": [],
   "engines": {
     "node": ">=0.10.0"
   },

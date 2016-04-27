@@ -1,0 +1,15 @@
+##### Main project files ########
+node_modules
+bower_components
+
+## OS Cruft
+*.DS_Store
+
+## Build artefacts
+.tmp
+.sass-cache
+.log
+*.log
+
+## IDE Stuff
+.idea
