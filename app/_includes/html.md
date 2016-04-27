@@ -28,6 +28,10 @@ Attributes in Jade should be comma separated
 
 Chain classes directly after an element
 
+````
+input.field.field__large(placeholder = 'Enter your name')
+````
+
 ### Accessibility
 
 ### Boilerplate
