@@ -9,4 +9,5 @@ Use NPM to grab dependencies `npm install`
 
 ## Run
 
-Use Gulp to run a development server `gulp serve`
+Use Gulp to run a development server `gulp serve` fires off a server with
+live-reload on http://localhost:9000
