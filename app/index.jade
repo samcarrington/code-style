@@ -1,0 +1,21 @@
+extends layouts/default
+
+block content
+
+  section#header
+    h1 Folk Style
+
+  section#intro
+    include:markdown-it _includes/intro.md
+
+  section#toc
+    include:markdown-it _includes/toc.md
+
+  section#html
+    include:markdown-it _includes/html.md
+
+  section#css
+    include:markdown-it _includes/css.md
+
+  section#javascript
+    include:markdown-it _includes/javascript.md
