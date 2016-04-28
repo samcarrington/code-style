@@ -18,8 +18,6 @@ for static files.
 - Omit values in boolean attributes
 - Comply to the following attribute order ...
 
-Attributes in Jade should be comma separated
-
 ### Nesting
 
 

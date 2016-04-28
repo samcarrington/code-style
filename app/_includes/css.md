@@ -13,12 +13,25 @@
 - Include a space after each comma in comma-separated property or function values
 - Separate each rule set with a blank line
 
+
+#### Declaration ordering
+
+If declarations are to be consistently ordered, it should be in
+accordance with a single, simple principle.
+
+Define either clustered ordering or alphabetical ordering, depending on
+the requirements and preferences of the team.
+
+
 ### Preprocessing
 
-We use SASS (with SCSS syntax) as a preprocessor of choice. 
+We use SASS (with SCSS syntax) as a preprocessor of choice.
 
 - Limit nesting to one level to avoid overly specific selectors
 - Always place `@extend` statements on the first line of a declaration
+- Where possible, group `@include` statements at the top of a
+declaration block, after any `@extend` statements
+
 
 ### Units and Colours
 
@@ -33,17 +46,39 @@ We use SASS (with SCSS syntax) as a preprocessor of choice.
 - Avoid adding element selectors to class definitions
 - Avoid using Ids in style definitions
 
-### Class naming 
+
+### Class naming
 
 - Use Kebab case, i.e. hyphens not underscores or camelCase for class names
 
+
 ### Media Queries
 
+- Add media query blocks at the end of the declaration block
 
 
 ### Modularisation
 
-Use SMACSS principles for modular CSS
+Use [SMACSS](smacss) principles for modular CSS. Establish top level
+folders with the following categories :
+
+- **Base**
+  Project-wide variables; colours, breakpoints, font imports, file locations
+- **Layout**
+  Overall layout rules; outer grid dimensions, grid etc.
+- **Module**
+  Functional modules within site, separated into individual files
+- **State**
+  Modifications based on interaction - hidden and visible state
+- **Theme**
+  Customisations based on overall site context
+
+Ideally include a main.scss file at the top of the folder structure.
+Import an index files from each of the subsidiary folders, and import
+files in each directory by using `@import` rules in that index.scss
+
+(smacss): https://smacss.com/book/categorizing
+
 
 ### Further reading, and acknowledgements
 

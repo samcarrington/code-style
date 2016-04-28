@@ -88,7 +88,7 @@ gulp.task('images', function () {
  * Copy fonts across
  */
 gulp.task('fonts', function () {
-  return gulp.src(require('main-bower-files')().concat('app/fonts/**/*'))
+  return gulp.src('app/fonts/**/*')
     .pipe($.filter('**/*.{eot,svg,ttf,woff}'))
     .pipe($.flatten())
     .pipe(gulp.dest('dist/fonts'));
@@ -139,17 +139,17 @@ gulp.task('serve', ['views', 'connect', 'watch'], function () {
 });
 
 // inject bower components
-gulp.task('wiredep', function () {
-  var wiredep = require('wiredep').stream;
-
-  gulp.src('app/styles/*.scss')
-    .pipe(wiredep())
-    .pipe(gulp.dest('app/styles'));
-
-  gulp.src('app/layouts/*.jade')
-    .pipe(wiredep())
-    .pipe(gulp.dest('app'));
-});
+// gulp.task('wiredep', function () {
+//   var wiredep = require('wiredep').stream;
+//
+//   gulp.src('app/styles/*.scss')
+//     .pipe(wiredep())
+//     .pipe(gulp.dest('app/styles'));
+//
+//   gulp.src('app/layouts/*.jade')
+//     .pipe(wiredep())
+//     .pipe(gulp.dest('app'));
+// });
 
 gulp.task('watch', ['connect'], function () {
   $.livereload.listen();

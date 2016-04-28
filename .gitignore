@@ -10,6 +10,7 @@ bower_components
 .sass-cache
 .log
 *.log
+dist
 
 ## IDE Stuff
 .idea
