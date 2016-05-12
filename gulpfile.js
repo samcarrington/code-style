@@ -14,8 +14,8 @@ var normalize = require('node-normalize-scss').includePaths;
  * Compile Jade files into HTML
  */
 gulp.task('views', function () {
-  return gulp.src(['app/**/*.jade', '!app/**/_*.jade', '!app/layouts/*.jade', '!app/_*/*.jade'])
-    .pipe($.jade({pretty: true}))
+  return gulp.src(['app/**/*.pug', '!app/**/_*.pug', '!app/layouts/*.pug', '!app/_*/*.pug'])
+    .pipe($.pug({pretty: true}))
     .pipe(gulp.dest('.tmp'));
 });
 
@@ -56,14 +56,14 @@ gulp.task('html', ['views', 'styles'], function () {
     .pipe(gulp.dest, 'dist');
 
 
-  var assets = $.useref.assets({searchPath: '{.tmp,app}'});
+  var assets = $.useref.assets({searchPath: 'app'});
 
   return gulp.src(['app/*.html', '.tmp/*.html'])
     .pipe(assets)
     .pipe($.if('*.js', jsChannel()))
     .pipe($.if('*.css', cssChannel()))
     .pipe(assets.restore())
-    .pipe($.useref())
+    .pipe($.useref({searchPath: 'app'}))
     .pipe($.if('*.html', $.htmlmin({
       removeComments: true,
       removeAttributeQuotes: true,
@@ -101,7 +101,7 @@ gulp.task('extras', function () {
   return gulp.src([
     'app/*.*',
     '!app/*.html',
-    '!app/*.jade'
+    '!app/*.pug'
   ], {
     dot: true
   }).pipe(gulp.dest('dist'));
@@ -138,19 +138,6 @@ gulp.task('serve', ['views', 'connect', 'watch'], function () {
   require('opn')('http://localhost:9000');
 });
 
-// inject bower components
-// gulp.task('wiredep', function () {
-//   var wiredep = require('wiredep').stream;
-//
-//   gulp.src('app/styles/*.scss')
-//     .pipe(wiredep())
-//     .pipe(gulp.dest('app/styles'));
-//
-//   gulp.src('app/layouts/*.jade')
-//     .pipe(wiredep())
-//     .pipe(gulp.dest('app'));
-// });
-
 gulp.task('watch', ['connect'], function () {
   $.livereload.listen();
 
@@ -163,7 +150,7 @@ gulp.task('watch', ['connect'], function () {
     'app/images/**/*'
   ]).on('change', $.livereload.changed);
 
-  gulp.watch(['app/**/*.jade', 'app/_includes/*.md'], ['views']);
+  gulp.watch(['app/**/*.pug', 'app/_includes/*.md'], ['views']);
 
   gulp.watch('app/styles/**/*.scss', ['styles']);
 });

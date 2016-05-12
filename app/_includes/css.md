@@ -59,7 +59,7 @@ declaration block, after any `@extend` statements
 
 ### Modularisation
 
-Use [SMACSS](smacss) principles for modular CSS. Establish top level
+Use [SMACSS][smacss] principles for modular CSS. Establish top level
 folders with the following categories :
 
 - **Base**
@@ -77,11 +77,11 @@ Ideally include a main.scss file at the top of the folder structure.
 Import an index files from each of the subsidiary folders, and import
 files in each directory by using `@import` rules in that index.scss
 
-(smacss): https://smacss.com/book/categorizing
+[smacss]: https://smacss.com/book/categorizing
 
 
 ### Further reading, and acknowledgements
 
-- [Idiomatic CSS](idiomatic) by Nicolas Gallagher
+- [Idiomatic CSS][idiomatic] by Nicolas Gallagher
 
-(idiomatic): https://github.com/necolas/idiomatic-css
+[idiomatic]: https://github.com/necolas/idiomatic-css

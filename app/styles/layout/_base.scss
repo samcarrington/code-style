@@ -8,6 +8,11 @@ html {
 .wrapper {
   max-width: rem(960);
   margin: 0 auto;
+  padding: 0 em(20);
+
+  @include media($large) {
+    padding: 0;
+  }
 }
 
 section {

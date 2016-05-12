@@ -20,16 +20,6 @@ for static files.
 
 ### Nesting
 
-
-
-### Class Chaining
-
-Chain classes directly after an element
-
-````
-input.field.field__large(placeholder = 'Enter your name')
-````
-
 ### Accessibility
 
 ### Boilerplate
