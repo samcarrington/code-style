@@ -13,6 +13,10 @@ where it is strictly necessary. Examples of unnecessary JavaScript:
 - Using JavaScript to replace images on mouse rollover/rollout, where
 CSS can achieve the same effect.
 
+A lot can be learned from the [AirBnB ES5 Style Guide](airbnb-es5). It's
+recommended that you implement automatic inclusion of the [AirBnB preset](airbnb-preset)
+checker when you lint your code.
+
 ### Syntax
 
 In common with the file formats and encodings conventions, indent with
@@ -74,4 +78,20 @@ function Book(title, author) {
 }
 ````
 
+#### Frameworks and Libraries
+
+_\[Include standards and expectations for developing within each framework od idiom\]_
+
+##### React
+
+##### Angular
+
+##### jQuery
+
+##### Vue
+
+##### Underscore
+
 [jsdoc]: http://usejsdoc.org/
+[airbnb-es5]: https://github.com/airbnb/javascript/tree/master/es5
+[airbnb-preset]: https://www.npmjs.com/package/eslint-config-airbnb

@@ -6,22 +6,22 @@ block content
     h1 Folk Style
 
   section#intro
-    include:markdown-it _includes/intro.md
+    include:markdown-it(plugins=['markdown-it-container']) _includes/intro.md
 
   section#toc
-    include:markdown-it _includes/toc.md
+    include:markdown-it(plugins=['markdown-it-container']) _includes/toc.md
 
   section#html
-    include:markdown-it _includes/html.md
+    include:markdown-it(html plugins=['markdown-it-container']) _includes/html.md
 
-  section#jade
-    include:markdown-it _includes/jade.md
+  section#pug
+    include:markdown-it(html plugins=['markdown-it-container']) _includes/pug.md
 
   section#css
-    include:markdown-it _includes/css.md
+    include:markdown-it(html plugins=['markdown-it-container']) _includes/css.md
 
   section#javascript
-    include:markdown-it _includes/javascript.md
+    include:markdown-it(html plugins=['markdown-it-container']) _includes/javascript.md
 
   section#php
-    include:markdown-it _includes/php.md
+    include:markdown-it(html plugins=['markdown-it-container']) _includes/php.md

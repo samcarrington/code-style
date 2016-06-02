@@ -2,16 +2,40 @@
 
 ### Syntax
 
-- Use two spaces for indentation
+- Use **two spaces** for indentation
 - Use a space to separate the colon after the property from its value
 - Always end a `property: value` pair with a semicolon and new line
 - Use one discreet selector per line in multi-selector rule sets.
+  ```
+  .box--selected,
+  .item--selected,
+  .title--selected {}
+  ```
 - Include a single space before the opening brace of a rule set.
 - Use one level of indentation for each declaration
+
+  ```
+
+  .block {
+
+    &__element {
+      property: value;
+    }
+
+    &--modifier {
+      property: value;
+    }
+
+  }
+
+  ```
+
 - Use lowercase and shorthand hex values.
 - Use single quotes consistently
 - Include a space after each comma in comma-separated property or function values
 - Separate each rule set with a blank line
+
+See [this codepen][codepen1] for examples of correct usage.
 
 
 #### Declaration ordering
@@ -51,13 +75,24 @@ declaration block, after any `@extend` statements
 
 - Use Kebab case, i.e. hyphens not underscores or camelCase for class names
 
+  ```
+  .valid-class-name {}
+
+  .invalidClassName,
+  .invalid_classname {}
+
+  ```
+
 
 ### Media Queries
 
-- Add media query blocks at the end of the declaration block
+- Add media query blocks for an element at the end of the declaration
+block for that element
 
 
 ### Modularisation
+
+
 
 Use [SMACSS][smacss] principles for modular CSS. Establish top level
 folders with the following categories :
@@ -69,7 +104,7 @@ folders with the following categories :
 - **Module**
   Functional modules within site, separated into individual files
 - **State**
-  Modifications based on interaction - hidden and visible state
+  Modifications based on interaction - i.e. hidden and visible states
 - **Theme**
   Customisations based on overall site context
 
@@ -77,11 +112,19 @@ Ideally include a main.scss file at the top of the folder structure.
 Import an index files from each of the subsidiary folders, and import
 files in each directory by using `@import` rules in that index.scss
 
-[smacss]: https://smacss.com/book/categorizing
-
+```
+./app
+  ˪/styles
+    ˫/base
+    | ˫index.scss
+    | ˪_colours.scss
+    ˪main.scss
+```
 
 ### Further reading, and acknowledgements
 
 - [Idiomatic CSS][idiomatic] by Nicolas Gallagher
 
+[codepen1]: http://codepen.io/gwawr/pen/VaROdB
+[smacss]: https://smacss.com/book/categorizing
 [idiomatic]: https://github.com/necolas/idiomatic-css
