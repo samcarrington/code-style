@@ -1,6 +1,6 @@
 ## HTML
 
-HTML should be prepared using a template language. Jade is recommended
+HTML should be prepared using a template language. [Pug][pug] is recommended
 for static files.
 
 ### Syntax
@@ -23,3 +23,5 @@ for static files.
 ### Accessibility
 
 ### Boilerplate
+
+[pug]: https://pugjs.org/api/getting-started.html
