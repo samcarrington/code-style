@@ -27,10 +27,12 @@ for static files.
 
 ### Nesting
 
-HTML Tags should be properly nesting per the document specification.
+HTML Tags should be properly nested per the document specification.
 Incorrectly nested tags are usually not a problem if a templating language 
 is used to generate HTML but can emerge if fragmented HTML is delivered from
 multiple partials.
+
+Ideally run pages through the [W3C markup validation service][w3c-validation] as part of build. This will reveal issues immediately.
 
 ### Accessibility
 
@@ -39,4 +41,5 @@ Projects published by AnalogFolk must meet AA checkpoints from
 of AAA checkpoints.
 
 [pug]: https://pugjs.org/api/getting-started.html
+[w3c-validation]: https://validator.w3.org/
 [wcag]: https://www.w3.org/TR/WCAG20/
