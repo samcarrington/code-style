@@ -40,9 +40,35 @@ referring to a jQuery wrapped object (for example, a collection returned
 from a query selector), it is a common and very useful practice to
 prefix the variable name with the jQuery `$` sigil.
 
+- You SHOULD use self-documenting names, except for enumeration variables, which SHOULD be named i, j, k, and so on.
+- You MUST use camelCase, including names that contain acronyms like "getCss"
+and "htmlLength".
+- You MUST name constructor functions with an initial uppercase letter.
+- When a symbol is publicly accessible but is not intended for public use, you 
+  MUST prepend an underscore to the name.
+- When a symbol is intended to be constant you MUST use all-caps and optionally
+  underscores to separate words.
+
 - Use `camelCase` for variables & functions
 - Use `UpperCamelCase` for constructors and prototype objects
 - Use `CAPITALS_WITH_UNDERSCORES` for constants.
+
+#### Scope
+
+Keeping scope small decreases the possibility of namespace collisions.
+
+- You SHOULD limit the scope of a variable to a single function.
+- You MAY use an anonymous function (IIFE) which is executed inline if necessary to keep a variable out of the global scope.
+- Anonymous functions that are executed inline MUST be wrapped in parentheses.
+
+```javascript
+// this is the global scope
+(function() {
+    function foo() {
+        var x = 1;
+    }
+})();
+```
 
 #### Braces and brackets
 
@@ -50,7 +76,7 @@ The following style of indentation MUST be used for functions (this
 is referred to as the One True Brace Style and is a variant of that
 used by Kernighan and Ritchie):
 
-````
+````javascript
 function func(arg1, arg2) {
   // body
 }
