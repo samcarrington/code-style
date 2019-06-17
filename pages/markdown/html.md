@@ -27,13 +27,16 @@ for static files.
 
 ### Nesting
 
+HTML Tags should be properly nesting per the document specification.
+Incorrectly nested tags are usually not a problem if a templating language 
+is used to generate HTML but can emerge if fragmented HTML is delivered from
+multiple partials.
+
 ### Accessibility
 
 Projects published by AnalogFolk must meet AA checkpoints from 
 [WCAG 2.0 standards][wcag], and where possible, we should aim for support 
 of AAA checkpoints.
-
-### Boilerplate
 
 [pug]: https://pugjs.org/api/getting-started.html
 [wcag]: https://www.w3.org/TR/WCAG20/

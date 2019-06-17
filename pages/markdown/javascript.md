@@ -108,7 +108,10 @@ function Book(title, author) {
 
 #### Frameworks and Libraries
 
-_\[Include standards and expectations for developing within each framework or idiom\]_
+At project inception an agreement should be in place as to the frameworks 
+and/or libraries of use. Even if no library is to be used, the specification
+should identify [a consistent pattern][osmani-patterns] (beyond just linting rules) to be used 
+for the organisation of JavaScript within a project. 
 
 ##### React
 
@@ -144,6 +147,7 @@ fully reviewed.
 [prettier-js]: https://prettier.io/
 [standard-js]: https://standardjs.com/
 [airbnb-preset]: https://www.npmjs.com/package/eslint-config-airbnb
+[osmani-patterns]: https://addyosmani.com/resources/essentialjsdesignpatterns/book
 [airbnb-react]: https://github.com/airbnb/javascript/tree/master/react
 [angular-official]: https://angular.io/guide/styleguide
 [jq-widget]: https://jqueryui.com/widget/
