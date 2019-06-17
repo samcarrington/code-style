@@ -146,6 +146,6 @@ fully reviewed.
 [airbnb-preset]: https://www.npmjs.com/package/eslint-config-airbnb
 [airbnb-react]: https://github.com/airbnb/javascript/tree/master/react
 [angular-official]: https://angular.io/guide/styleguide
-[jq-ui]: https://jqueryui.com/widget/
+[jq-widget]: https://jqueryui.com/widget/
 [vue-single-file]: https://vuejs.org/v2/guide/single-file-components.html
 [underscore-native]: https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore
