@@ -1,19 +1,23 @@
-# Folk Style
+# folk-style
 
 An opinionated but simple style guide for technical projects authored at
 AnalogFolk London.
 
-## Install
+## Build Setup
 
-Use NPM to grab dependencies `npm install`
+``` bash
+# install dependencies
+$ yarn install
 
-## Run
+# serve with hot reload at localhost:3000
+$ yarn run dev
 
-Use Gulp to run a development server `gulp serve` fires off a server with
-live-reload on http://localhost:9000
+# build for production and launch server
+$ yarn run build
+$ yarn start
 
-## To Do
+# generate static project
+$ yarn run generate
+```
 
-- Add configuration guides with specifics for each IDE in use at AnalogFolk
-- Add sections on standards for each of the common JS Frameworks
-- Add more detail on PHP standards
+For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
