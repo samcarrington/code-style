@@ -58,8 +58,7 @@ function func(arg1, arg2) {
 
 #### ES2015 & ES6
 
-_\[Include reference for presets, where and when to use new syntax, and
-which language features to avoid\]_
+Feel free to use modern extensions to JavaScript but do not use stage-0 extensions to the ECMAScript standard.
 
 #### Commenting code
 

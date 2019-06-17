@@ -18,6 +18,12 @@ for static files.
 - Omit `type` attributes in CSS and JavaScript
 - Omit values in boolean attributes
 - Comply to the following attribute order ...
+  - class
+  - id, name
+  - data-*
+  - src, for, type, href, value
+  - title, alt
+  - role, aria-*
 
 ### Nesting
 

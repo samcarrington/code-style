@@ -14,7 +14,18 @@ module.exports = {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/favicon.ico'
+      },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap'
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -23,7 +34,7 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: [],
+  css: [{ src: '@/assets/sass/app.scss', lang: 'scss' }],
   /*
    ** Plugins to load before mounting the App
    */
@@ -33,7 +44,7 @@ module.exports = {
    */
   modules: [
     // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
-    '@nuxtjs/bulma',
+    // '@nuxtjs/bulma',
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
@@ -48,8 +59,8 @@ module.exports = {
   markdownit: {
     preset: 'default',
     linkify: true,
-    breaks: false//,
-    //use: [['markdown-it-container', 'name'], 'markdown-it-attrs']
+    breaks: false // ,
+    // use: [['markdown-it-container', 'name'], 'markdown-it-attrs']
   },
   /*
    ** Build configuration
