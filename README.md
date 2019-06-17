@@ -1,6 +1,7 @@
 # folk-style
 
-> A house style guide for AnalogFolk London
+An opinionated but simple style guide for technical projects authored at
+AnalogFolk London.
 
 ## Build Setup
 
