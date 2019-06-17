@@ -5,10 +5,9 @@
     - Encoding
     - Attributes
     - Nesting
-    - Class Chaining
     - Accessibility
-    - Boilerplate
 2. [PUG](#pug)
+    - Syntax
 3. [CSS](#css)
     - Syntax
     - Preprocessing
@@ -18,3 +17,4 @@
 4. [JavaScript](#javascript)
     - Syntax
 5. [PHP](#php)
+    - Syntax

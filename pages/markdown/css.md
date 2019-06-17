@@ -9,11 +9,11 @@ set of rules and should be followed in projects for AnalogFolk.
 - Use a space to separate the colon after the property from its value
 - Always end a `property: value` pair with a semicolon and new line
 - Use one discreet selector per line in multi-selector rule sets.
-  ```
-  .box--selected,
-  .item--selected,
-  .title--selected {}
-  ```
+```
+.box--selected,
+.item--selected,
+.title--selected {}
+```
 - Include a single space before the opening brace of a rule set.
 - Use one level of indentation for each declaration
 - Use lowercase and shorthand hex values.
@@ -45,19 +45,19 @@ We use SASS (with SCSS syntax) as a preprocessor of choice.
 - Where possible, group `@include` statements at the top of a
 declaration block, after any `@extend` statements
 
-  ```
-  .block {
+```
+.block {
 
-    &__element {
-      property: value;
-    }
-
-    &--modifier {
-      property: value;
-    }
-
+  &__element {
+    property: value;
   }
-  ```
+
+  &--modifier {
+    property: value;
+  }
+
+}
+```
 
 ### Units and Colours
 
@@ -77,12 +77,13 @@ declaration block, after any `@extend` statements
 
 - Use Kebab case, i.e. hyphens not underscores or camelCase for class names
 
-  ```
-  .valid-class-name {}
+```
+.valid-class-name {}
 
-  .invalidClassName,
-  .invalid_classname {}
-  ```
+.invalidClassName,
+.invalid_classname {}
+```
+
 - If an element is to have functionality bound to it in Javascript, use a 
   className prepended with 'js-' to identify it. Avoid binding to the same
   class in both CSS and Javascript.
