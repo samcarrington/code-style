@@ -12,6 +12,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  font-size: 18px;
 }
 
 *,
@@ -21,24 +22,9 @@ html {
   margin: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-weight: 700;
-  padding-top: 0.4em;
-  padding-bottom: 0.3em;
-}
-
-h1 {
-  font-size: 36px;
-}
-h2 {
-  font-size: 24px;
-}
-h3 {
-  font-size: 18px;
+body {
+  background-color: #f3f3f3;
+  color: #000000;
 }
 
 p {
