@@ -68,7 +68,7 @@ declaration block, after any `@extend` statements
 ### Specificity
 
 - Use the least number of selectors required to style an element. **Don't nest SCSS more than three levels deep**
-- Ideally use BEM and don't stack selectors in your CSS
+- Ideally use [BEM][bem-101] and don't stack selectors in your CSS
 - Avoid adding element selectors to class definitions
 - Avoid using Ids in style definitions
 
@@ -131,6 +131,7 @@ files in each directory by using `@import` rules in that index.scss
 
 [airbnb-css]: https://github.com/airbnb/css
 [codepen1]: http://codepen.io/gwawr/pen/VaROdB
+[bem-101]: https://css-tricks.com/bem-101/
 [airbnb-oocss]: https://github.com/airbnb/css#oocss-and-bem
 [smacss]: https://smacss.com/book/categorizing
 [idiomatic]: https://github.com/necolas/idiomatic-css
