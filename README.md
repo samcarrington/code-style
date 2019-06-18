@@ -30,7 +30,7 @@ For detailed explanation on how things work, checkout [Nuxt.js docs](https://nux
 
 ## TODO
 
-- Add section on .NET
+- Improve .NET section
 - Add section on Infrastructure as code
 - Add API Design principles (REST, versioning etc.)
 
