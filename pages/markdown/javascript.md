@@ -13,9 +13,8 @@ where it is strictly necessary. Examples of unnecessary JavaScript:
 - Using JavaScript to replace images on mouse rollover/rollout, where
 CSS can achieve the same effect.
 
-A lot can be learned from the [AirBnB ES5 Style Guide](airbnb-es5). It's
-recommended that you implement automatic inclusion of the [AirBnB preset](airbnb-preset)
-checker when you lint your code.
+It's recommended that you implement Prettier to automatically lint and format
+your code during editing. 
 
 ### Syntax
 
@@ -29,6 +28,14 @@ Use of [Standard JS][standard-js] or [Prettier][prettier-js] is recommended
 for code. This allows consistent and predictable layout and formatting. 
 Formatting rules should be defined in a project's prettier.rc or eslint.rc 
 file to ensure that each developer uses the same set of rules & settings.
+
+#### .prettierrc
+```json
+{
+  "semi": false,
+  "singleQuote": true
+}
+```
 
 Generally - two spaces for indentation, no semi-colons, single quotes are the
 preferred set of simple sub-rules for formatting.
@@ -64,9 +71,9 @@ Keeping scope small decreases the possibility of namespace collisions.
 ```javascript
 // this is the global scope
 (function() {
-    function foo() {
-        var x = 1;
-    }
+  function foo() {
+    var x = 1;
+  }
 })();
 ```
 
@@ -79,8 +86,16 @@ used by Kernighan and Ritchie):
 ````javascript
 function func(arg1, arg2) {
   // body
+  if (condition) {
+    // action
+  } else {
+    // reaction
+  }
 }
 ````
+
+Indentation and bracketing style should be enforced on save or pre-commit
+through an automated linting rule, such as in use for this documentation.
 
 #### ES2015 & ES6
 
@@ -93,9 +108,7 @@ Feel free to use modern extensions to JavaScript but do not use stage-0 extensio
 by a header multi-line comment using [JSDoc syntax](jsdoc) to describe
 parameters and return values
 
-````
-var $el = $(options.parentElement) // The parent of the widget
-
+````javascript
 /**
  * Represents a book.
  * @constructor
@@ -103,6 +116,7 @@ var $el = $(options.parentElement) // The parent of the widget
  * @param {string} author - The author of the book.
  */
 function Book(title, author) {
+  const $el = $(options.parentElement) // The parent of the widget
 }
 ````
 
@@ -125,7 +139,7 @@ a project requires it, follow
 
 ##### jQuery
 
-If you're using jQuery for a project in 2019 the implementation of the framework should be cleared with senior technologists.
+If you're using jQuery for a project in 2019 the implementation of the framework should be cleared with senior technologists. Use version 3.1 or higher.
 
 Use of the [jQuery UI Widget factory][jq-widget] is recommended for robust organisation of your code. Each UI element should be initialised as a widget
 

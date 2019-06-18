@@ -13,4 +13,6 @@ monitored and enforced by Technical Leads.
 - All code in any project should look like one person typed it
 - Enforce the agreed upon styles through code review and pull request
 - Never mix spaces and tabs for indentation.
-- An EditorConfig should be added to any project to maintain conventions
+- An [EditorConfig][editorconfig] should be added to any project to maintain conventions
+
+[editorconfig]: https://editorconfig.org/

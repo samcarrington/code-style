@@ -45,7 +45,7 @@ We use SASS (with SCSS syntax) as a preprocessor of choice.
 - Where possible, group `@include` statements at the top of a
 declaration block, after any `@extend` statements
 
-```
+```scss
 .block {
 
   &__element {
@@ -77,7 +77,7 @@ declaration block, after any `@extend` statements
 
 - Use Kebab case, i.e. hyphens not underscores or camelCase for class names
 
-```
+```scss
 .valid-class-name {}
 
 .invalidClassName,
