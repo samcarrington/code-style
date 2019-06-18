@@ -16,6 +16,12 @@
     - Modularisation
 4. [JavaScript](#javascript)
     - Syntax
+    - Naming
+    - Scope
+    - Braces and Brackets
+    - ES2015 & ES6
+    - Commenting code
+    - Frameworks and Libraries
 5. [PHP](#php)
     - Syntax
 6. [.NET](#dotnet)
