@@ -67,6 +67,8 @@ export default {
   margin: 0 auto;
   min-height: 100vh;
   max-width: 660px;
+  background-color: white;
+  padding: 0 1em;
 
   @media (max-width: 659px) {
     width: 100%;
