@@ -1,7 +1,7 @@
 ## CSS
 
 The ruleset [defined by Airbnb][airbnb-css] for their CSS is the best one-stop
-set of rules and should be followed in projects for AnalogFolk.
+set of rules and should be followed in projects for Analogfolk.
 
 ### Formatting & Syntax
 
@@ -45,7 +45,7 @@ We use SASS (with SCSS syntax) as a preprocessor of choice.
 - Where possible, group `@include` statements at the top of a
 declaration block, after any `@extend` statements
 
-```
+```scss
 .block {
 
   &__element {
@@ -67,17 +67,19 @@ declaration block, after any `@extend` statements
 
 ### Specificity
 
-- Use the least number of selectors required to style an element
-- Ideally use BEM and don't stack selectors in your CSS
+- Use the least number of selectors required to style an element. **Don't nest SCSS more than three levels deep**
+- Ideally use [BEM][bem-101] and don't stack selectors in your CSS
 - Avoid adding element selectors to class definitions
 - Avoid using Ids in style definitions
 
 
 ### Class naming
 
-- Use Kebab case, i.e. hyphens not underscores or camelCase for class names
+- You SHOULD use kebab case, i.e. hyphens not underscores or camelCase for class names
+- Underscores are acceptable if you're using BEM syntax
+- `camelCase` is acceptable if a classname is tied to a reactive component name (see [the Airbnb OOCSS/BEM advice][airbnb-oocss] for reference)
 
-```
+```scss
 .valid-class-name {}
 
 .invalidClassName,
@@ -129,5 +131,7 @@ files in each directory by using `@import` rules in that index.scss
 
 [airbnb-css]: https://github.com/airbnb/css
 [codepen1]: http://codepen.io/gwawr/pen/VaROdB
+[bem-101]: https://css-tricks.com/bem-101/
+[airbnb-oocss]: https://github.com/airbnb/css#oocss-and-bem
 [smacss]: https://smacss.com/book/categorizing
 [idiomatic]: https://github.com/necolas/idiomatic-css

@@ -1,7 +1,7 @@
 ## PHP
 
 PHP is a server side scripting language used to generate dynamic pages.
-AnalogFolk prefer the use of [Laravel][laravel] as an MVC framework for PHP projects.
+Analogfolk prefer the use of [Laravel][laravel] as an MVC framework for PHP projects.
 
 ### Syntax
 

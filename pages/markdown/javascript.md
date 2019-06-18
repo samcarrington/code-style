@@ -13,9 +13,8 @@ where it is strictly necessary. Examples of unnecessary JavaScript:
 - Using JavaScript to replace images on mouse rollover/rollout, where
 CSS can achieve the same effect.
 
-A lot can be learned from the [AirBnB ES5 Style Guide](airbnb-es5). It's
-recommended that you implement automatic inclusion of the [AirBnB preset](airbnb-preset)
-checker when you lint your code.
+It's recommended that you implement Prettier to automatically lint and format
+your code during editing. 
 
 ### Syntax
 
@@ -29,6 +28,14 @@ Use of [Standard JS][standard-js] or [Prettier][prettier-js] is recommended
 for code. This allows consistent and predictable layout and formatting. 
 Formatting rules should be defined in a project's prettier.rc or eslint.rc 
 file to ensure that each developer uses the same set of rules & settings.
+
+#### .prettierrc
+```json
+{
+  "semi": false,
+  "singleQuote": true
+}
+```
 
 Generally - two spaces for indentation, no semi-colons, single quotes are the
 preferred set of simple sub-rules for formatting.
@@ -64,9 +71,9 @@ Keeping scope small decreases the possibility of namespace collisions.
 ```javascript
 // this is the global scope
 (function() {
-    function foo() {
-        var x = 1;
-    }
+  function foo() {
+    var x = 1;
+  }
 })();
 ```
 
@@ -79,12 +86,59 @@ used by Kernighan and Ritchie):
 ````javascript
 function func(arg1, arg2) {
   // body
+  if (condition) {
+    // action
+  } else {
+    // reaction
+  }
 }
 ````
 
+Indentation and bracketing style should be enforced on save or pre-commit
+through an automated linting rule, such as in use for this documentation.
+
 #### ES2015 & ES6
 
-Feel free to use modern extensions to JavaScript but do not use stage-0 extensions to the ECMAScript standard.
+As of v7, [Babel have deprecated the official Stage presets][babel-7]. This makes it a bit 
+tougher to set a mandatory and consistent level of support for language 
+features which developers want to use, and rely on Babel to transpile them into 
+your required platform support level. This means that you should explicitly 
+state the language features you require babel to handle, and include them in 
+your project individually. Generally though, for legibility, support and 
+adoption of your code, lean toward stage-2 to stage-3 standards and avoid 
+stage-1 and stage-0.
+
+[Babel upgrage][babel-upgrade] can be used in existing projects to project them into the right state for Babel 7 support. The table of language features as they stood at the point of being deprecated is as follows:
+
+```json
+{
+  "plugins": [
+    // Stage 0
+    "@babel/plugin-proposal-function-bind",
+
+    // Stage 1
+    "@babel/plugin-proposal-export-default-from",
+    "@babel/plugin-proposal-logical-assignment-operators",
+    ["@babel/plugin-proposal-optional-chaining", { "loose": false }],
+    ["@babel/plugin-proposal-pipeline-operator", { "proposal": "minimal" }],
+    ["@babel/plugin-proposal-nullish-coalescing-operator", { "loose": false }],
+    "@babel/plugin-proposal-do-expressions",
+
+    // Stage 2
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    "@babel/plugin-proposal-function-sent",
+    "@babel/plugin-proposal-export-namespace-from",
+    "@babel/plugin-proposal-numeric-separator",
+    "@babel/plugin-proposal-throw-expressions",
+
+    // Stage 3
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-syntax-import-meta",
+    ["@babel/plugin-proposal-class-properties", { "loose": false }],
+    "@babel/plugin-proposal-json-strings"
+  ]
+}
+```
 
 #### Commenting code
 
@@ -93,9 +147,7 @@ Feel free to use modern extensions to JavaScript but do not use stage-0 extensio
 by a header multi-line comment using [JSDoc syntax](jsdoc) to describe
 parameters and return values
 
-````
-var $el = $(options.parentElement) // The parent of the widget
-
+````javascript
 /**
  * Represents a book.
  * @constructor
@@ -103,6 +155,7 @@ var $el = $(options.parentElement) // The parent of the widget
  * @param {string} author - The author of the book.
  */
 function Book(title, author) {
+  const $el = $(options.parentElement) // The parent of the widget
 }
 ````
 
@@ -125,7 +178,7 @@ a project requires it, follow
 
 ##### jQuery
 
-If you're using jQuery for a project in 2019 the implementation of the framework should be cleared with senior technologists.
+If you're using jQuery for a project in 2019 the implementation of the framework should be cleared with senior technologists. Use version 3.1 or higher.
 
 Use of the [jQuery UI Widget factory][jq-widget] is recommended for robust organisation of your code. Each UI element should be initialised as a widget
 
@@ -139,7 +192,7 @@ You may not need underscore/lodash. If you're targeting modern browsers there ar
 
 ##### Svelte
 
-Analogfolk London have not fully evaluated Svelte for use in production
+Analogfolk London have not fully evaluated [Svelte][svelte-js] for use in production
 projects. It's recommended to use Vue or React until the framework is 
 fully reviewed.
 
@@ -147,9 +200,12 @@ fully reviewed.
 [prettier-js]: https://prettier.io/
 [standard-js]: https://standardjs.com/
 [airbnb-preset]: https://www.npmjs.com/package/eslint-config-airbnb
+[babel-7]: https://babeljs.io/blog/2018/07/27/removing-babels-stage-presets
+[babel-upgrade]: https://github.com/babel/babel-upgrade
 [osmani-patterns]: https://addyosmani.com/resources/essentialjsdesignpatterns/book
 [airbnb-react]: https://github.com/airbnb/javascript/tree/master/react
 [angular-official]: https://angular.io/guide/styleguide
 [jq-widget]: https://jqueryui.com/widget/
 [vue-single-file]: https://vuejs.org/v2/guide/single-file-components.html
 [underscore-native]: https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore
+[svelte-js]: https://svelte.dev/
