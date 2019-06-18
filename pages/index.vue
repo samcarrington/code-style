@@ -9,6 +9,7 @@
     section#css(v-html="mdcss")
     section#javascript(v-html="mdjs")
     section#php(v-html="php")
+    section#dotnet(v-html="dotnet")
 </template>
 
 <script>
@@ -19,6 +20,7 @@ import html from './markdown/html.md'
 import pug from './markdown/pug.md'
 import js from './markdown/javascript.md'
 import php from './markdown/php.md'
+import dotnet from './markdown/dotnet.md'
 
 export default {
   data() {
@@ -47,6 +49,9 @@ export default {
     },
     php() {
       return php
+    },
+    dotnet() {
+      return dotnet
     }
   },
   head() {
