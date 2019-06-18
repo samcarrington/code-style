@@ -32,6 +32,16 @@ p {
   padding-bottom: 1em;
 }
 
+a {
+  color: #ff004c;
+  text-decoration: underline;
+
+  &:hover {
+    color: scale-color(#ff004c, $lightness: -20%);
+    text-decoration: underline;
+  }
+}
+
 ol {
   padding-left: 1.2em;
 }

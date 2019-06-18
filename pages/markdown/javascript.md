@@ -99,7 +99,46 @@ through an automated linting rule, such as in use for this documentation.
 
 #### ES2015 & ES6
 
-Feel free to use modern extensions to JavaScript but do not use stage-0 extensions to the ECMAScript standard.
+As of v7, [Babel have deprecated the official Stage presets][babel-7]. This makes it a bit 
+tougher to set a mandatory and consistent level of support for language 
+features which developers want to use, and rely on Babel to transpile them into 
+your required platform support level. This means that you should explicitly 
+state the language features you require babel to handle, and include them in 
+your project individually. Generally though, for legibility, support and 
+adoption of your code, lean toward stage-2 to stage-3 standards and avoid 
+stage-1 and stage-0.
+
+[Babel upgrage][babel-upgrade] can be used in existing projects to project them into the right state for Babel 7 support. The table of language features as they stood at the point of being deprecated is as follows:
+
+```json
+{
+  "plugins": [
+    // Stage 0
+    "@babel/plugin-proposal-function-bind",
+
+    // Stage 1
+    "@babel/plugin-proposal-export-default-from",
+    "@babel/plugin-proposal-logical-assignment-operators",
+    ["@babel/plugin-proposal-optional-chaining", { "loose": false }],
+    ["@babel/plugin-proposal-pipeline-operator", { "proposal": "minimal" }],
+    ["@babel/plugin-proposal-nullish-coalescing-operator", { "loose": false }],
+    "@babel/plugin-proposal-do-expressions",
+
+    // Stage 2
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    "@babel/plugin-proposal-function-sent",
+    "@babel/plugin-proposal-export-namespace-from",
+    "@babel/plugin-proposal-numeric-separator",
+    "@babel/plugin-proposal-throw-expressions",
+
+    // Stage 3
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-syntax-import-meta",
+    ["@babel/plugin-proposal-class-properties", { "loose": false }],
+    "@babel/plugin-proposal-json-strings"
+  ]
+}
+```
 
 #### Commenting code
 
@@ -153,7 +192,7 @@ You may not need underscore/lodash. If you're targeting modern browsers there ar
 
 ##### Svelte
 
-Analogfolk London have not fully evaluated Svelte for use in production
+Analogfolk London have not fully evaluated [Svelte][svelte-js] for use in production
 projects. It's recommended to use Vue or React until the framework is 
 fully reviewed.
 
@@ -161,9 +200,12 @@ fully reviewed.
 [prettier-js]: https://prettier.io/
 [standard-js]: https://standardjs.com/
 [airbnb-preset]: https://www.npmjs.com/package/eslint-config-airbnb
+[babel-7]: https://babeljs.io/blog/2018/07/27/removing-babels-stage-presets
+[babel-upgrade]: https://github.com/babel/babel-upgrade
 [osmani-patterns]: https://addyosmani.com/resources/essentialjsdesignpatterns/book
 [airbnb-react]: https://github.com/airbnb/javascript/tree/master/react
 [angular-official]: https://angular.io/guide/styleguide
 [jq-widget]: https://jqueryui.com/widget/
 [vue-single-file]: https://vuejs.org/v2/guide/single-file-components.html
 [underscore-native]: https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore
+[svelte-js]: https://svelte.dev/

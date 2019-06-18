@@ -1,7 +1,7 @@
 ## CSS
 
 The ruleset [defined by Airbnb][airbnb-css] for their CSS is the best one-stop
-set of rules and should be followed in projects for AnalogFolk.
+set of rules and should be followed in projects for Analogfolk.
 
 ### Formatting & Syntax
 
