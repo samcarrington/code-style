@@ -21,6 +21,11 @@ import js from './markdown/javascript.md'
 import php from './markdown/php.md'
 
 export default {
+  data() {
+    return {
+      title: 'Stylish AF - An Analogfolk coding style guide'
+    }
+  },
   computed: {
     intro() {
       return intro
@@ -42,6 +47,11 @@ export default {
     },
     php() {
       return php
+    }
+  },
+  head() {
+    return {
+      title: this.title
     }
   }
 }

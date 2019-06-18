@@ -67,7 +67,7 @@ declaration block, after any `@extend` statements
 
 ### Specificity
 
-- Use the least number of selectors required to style an element
+- Use the least number of selectors required to style an element. **Don't nest SCSS more than three levels deep**
 - Ideally use BEM and don't stack selectors in your CSS
 - Avoid adding element selectors to class definitions
 - Avoid using Ids in style definitions
@@ -75,7 +75,9 @@ declaration block, after any `@extend` statements
 
 ### Class naming
 
-- Use Kebab case, i.e. hyphens not underscores or camelCase for class names
+- You SHOULD use kebab case, i.e. hyphens not underscores or camelCase for class names
+- Underscores are acceptable if you're using BEM syntax
+- `camelCase` is acceptable if a classname is tied to a reactive component name (see [the Airbnb OOCSS/BEM advice][airbnb-oocss] for reference)
 
 ```scss
 .valid-class-name {}
@@ -129,5 +131,6 @@ files in each directory by using `@import` rules in that index.scss
 
 [airbnb-css]: https://github.com/airbnb/css
 [codepen1]: http://codepen.io/gwawr/pen/VaROdB
+[airbnb-oocss]: https://github.com/airbnb/css#oocss-and-bem
 [smacss]: https://smacss.com/book/categorizing
 [idiomatic]: https://github.com/necolas/idiomatic-css

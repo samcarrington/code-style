@@ -32,4 +32,5 @@ For detailed explanation on how things work, checkout [Nuxt.js docs](https://nux
 
 - Add section on .NET
 - Add section on Infrastructure as code
+- Add API Design principles (REST, versioning etc.)
 
