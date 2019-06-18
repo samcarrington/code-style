@@ -33,11 +33,11 @@ p {
 }
 
 a {
-  color: #ff004c;
+  color: scale-color(#ff004c, $lightness: -50%);
   text-decoration: underline;
 
   &:hover {
-    color: scale-color(#ff004c, $lightness: -20%);
+    color: #ff004c;
     text-decoration: underline;
   }
 }
