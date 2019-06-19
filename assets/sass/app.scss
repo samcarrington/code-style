@@ -1,6 +1,8 @@
 @import '~bulma/sass/utilities/_all';
-$body-family: 'TT Commons Regular', 'Helvetica Neue', Arial, sans-serif;
-$title-family: 'TT Commons DemiBold', 'Helvetica Neue', Arial, sans-serif;
+
+@import '_base';
+@import '_layout';
+
 @import '~bulma';
 
 h1,
@@ -32,20 +34,6 @@ h5 {
 
 pre,
 code {
-  background-color: #ffffff;
+  background-color: $body-background;
   color: scale-color(#ff004c, $lightness: -50%);
-}
-
-@font-face {
-  font-family: 'TT Commons Regular';
-  src: url('~assets/fonts/tt_commons_regular.woff2') format('woff2'),
-    url('~assets/fonts/tt_commons_regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'TT Commons DemiBold';
-  src: url('~assets/fonts/tt_commons_demibold.woff2') format('woff2'),
-    url('~assets/fonts/tt_commons_demibold.woff') format('woff');
 }

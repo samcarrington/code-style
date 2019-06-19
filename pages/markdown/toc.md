@@ -10,7 +10,7 @@
     - Syntax
 3. [CSS](#css)
     - Syntax
-    - Preprocessing
+    - Pre-processing
     - Specificity
     - Media Queries
     - Modularisation

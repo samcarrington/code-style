@@ -1,0 +1,18 @@
+$body-family: 'TT Commons Regular', 'Helvetica Neue', Arial, sans-serif;
+$title-family: 'TT Commons DemiBold', 'Helvetica Neue', Arial, sans-serif;
+
+$body-background: #ffffff;
+
+@font-face {
+  font-family: 'TT Commons Regular';
+  src: url('~assets/fonts/tt_commons_regular.woff2') format('woff2'),
+  url('~assets/fonts/tt_commons_regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Commons DemiBold';
+  src: url('~assets/fonts/tt_commons_demibold.woff2') format('woff2'),
+  url('~assets/fonts/tt_commons_demibold.woff') format('woff');
+}

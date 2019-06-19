@@ -25,7 +25,6 @@ set of rules and should be followed in projects for Analogfolk.
 
 See [this codepen][codepen1] for examples of correct usage.
 
-
 #### Declaration ordering
 
 If declarations are to be consistently ordered, it SHOULD be in
@@ -38,7 +37,7 @@ depending on the requirements and preferences of the team. The standard
 a lot of css has been written can be a cause of style regression bugs.
 
 
-### Preprocessing
+### Pre-processing
 
 We use SASS (with SCSS syntax) as a preprocessor of choice.
 
@@ -71,11 +70,33 @@ declaration block, after any `@extend` statements
 
 ### Specificity
 
-- Use the least number of selectors required to style an element. **Don't nest SCSS more than three levels deep**
+Generally use of BEM and OO principles should avoid falling into any of the bad practice below.
+
+- Use the least number of selectors required to style an element. **Don't nest SCSS or CSS selectors more than three levels deep**
 - Ideally use [BEM][bem-101] and don't stack selectors in your CSS
 - Avoid adding element selectors to class definitions
 - Avoid using Ids in style definitions
 
+```scss
+// BAD
+section.intro {
+  font-family: "Open Sans", sans-serif;
+}
+
+.header {
+  .title {
+    .primary {
+      em {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+#nav {
+  display: inline;
+}
+```
 
 ### Class naming
 
@@ -84,10 +105,22 @@ declaration block, after any `@extend` statements
 - `camelCase` is acceptable if a classname is tied to a reactive component name (see [the Airbnb OOCSS/BEM advice][airbnb-oocss] for reference)
 
 ```scss
+// BAD
 .valid-class-name {}
 
 .invalidClassName,
 .invalid_classname {}
+
+// acceptable
+.infoBlock {
+  &__element {
+    background: yellow;
+  }
+  
+  &--modifier {
+     color: red;
+  }
+}
 ```
 
 - If an element is to have functionality bound to it in Javascript, use a 
