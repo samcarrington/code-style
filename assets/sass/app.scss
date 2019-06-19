@@ -1,34 +1,7 @@
-@import "~bulma/sass/utilities/_all";
+@import '~bulma/sass/utilities/_all';
 $body-family: 'TT Commons Regular', 'Helvetica Neue', Arial, sans-serif;
 $title-family: 'TT Commons DemiBold', 'Helvetica Neue', Arial, sans-serif;
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-weight: 700;
-  padding-top: 0.4em;
-  padding-bottom: 0.3em;
-}
-
-h1 {
-  font-size: 64px;
-}
-h2 {
-  font-size: 40px;
-}
-h3 {
-  font-size: 32px;
-}
-h4 {
-  font-size: 24px;
-}
-h5 {
-  font-size: 20px;
-}
-
-@import "~bulma";
+@import '~bulma';
 
 h1,
 h2,
@@ -65,12 +38,14 @@ code {
 
 @font-face {
   font-family: 'TT Commons Regular';
-  src: url("~assets/fonts/tt_commons_regular.woff2") format("woff2"),url("~assets/fonts/tt_commons_regular.woff") format("woff");
+  src: url('~assets/fonts/tt_commons_regular.woff2') format('woff2'),
+    url('~assets/fonts/tt_commons_regular.woff') format('woff');
   font-weight: normal;
-  font-style: normal
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'TT Commons DemiBold';
-  src: url("~assets/fonts/tt_commons_demibold.woff2") format("woff2"),url("~assets/fonts/tt_commons_demibold.woff") format("woff")
+  src: url('~assets/fonts/tt_commons_demibold.woff2') format('woff2'),
+    url('~assets/fonts/tt_commons_demibold.woff') format('woff');
 }

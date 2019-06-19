@@ -20,7 +20,10 @@ module.exports = {
         type: 'image/x-icon',
         href: '/favicon.ico'
       }
-    ]
+    ],
+    bodyAttrs: {
+      'data-version': process.env.npm_package_version || ''
+    }
   },
   /*
    ** Customize the progress-bar color
@@ -56,6 +59,9 @@ module.exports = {
     linkify: true,
     breaks: false // ,
     // use: [['markdown-it-container', 'name'], 'markdown-it-attrs']
+  },
+  env: {
+    app_version: process.env.npm_package_version
   },
   /*
    ** Build configuration

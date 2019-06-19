@@ -37,7 +37,7 @@ Ideally run pages through the [W3C markup validation service][w3c-validation] as
 ### Accessibility
 
 Projects published by AnalogFolk must meet AA checkpoints from 
-[WCAG 2.0 standards][wcag], and where possible, we should aim for support 
+[WCAG 2.1 standards][wcag], and where possible, we should aim for support 
 of AAA checkpoints.
 
 [pug]: https://pugjs.org/api/getting-started.html
