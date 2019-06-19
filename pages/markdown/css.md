@@ -3,6 +3,7 @@
 The ruleset [defined by Airbnb][airbnb-css] for their CSS is the best one-stop
 set of rules and should be followed in projects for Analogfolk.
 
+
 ### Formatting & Syntax
 
 - Use **two spaces** for indentation
@@ -27,11 +28,14 @@ See [this codepen][codepen1] for examples of correct usage.
 
 #### Declaration ordering
 
-If declarations are to be consistently ordered, it should be in
-accordance with a single, simple principle.
+If declarations are to be consistently ordered, it SHOULD be in
+accordance with a single, simple principle. Define either 
+[clustered ordering][css-clustered] or [alphabetical ordering][css-alpha],
+depending on the requirements and preferences of the team. The standard 
+ approach MUST be and enforce it in code reviews.
 
-Define either clustered ordering or alphabetical ordering, depending on
-the requirements and preferences of the team.
+**Use caution** - retrospectively ordering properties alphabetically after
+a lot of css has been written can be a cause of style regression bugs.
 
 
 ### Preprocessing
@@ -90,6 +94,7 @@ declaration block, after any `@extend` statements
   className prepended with 'js-' to identify it. Avoid binding to the same
   class in both CSS and Javascript.
 
+
 ### Media Queries
 
 - Add media query blocks for an element at the end of the declaration
@@ -130,6 +135,7 @@ files in each directory by using `@import` rules in that index.scss
 - [Idiomatic CSS][idiomatic] by Nicolas Gallagher
 
 [airbnb-css]: https://github.com/airbnb/css
+[css-clustered]: https://webdesign.tutsplus.com/articles/outside-in-ordering-css-properties-by-importance--cms-21685
 [codepen1]: http://codepen.io/gwawr/pen/VaROdB
 [bem-101]: https://css-tricks.com/bem-101/
 [airbnb-oocss]: https://github.com/airbnb/css#oocss-and-bem

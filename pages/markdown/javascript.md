@@ -178,23 +178,30 @@ a project requires it, follow
 
 #### jQuery
 
-If you're using jQuery for a project in 2019 the implementation of the framework should be cleared with senior technologists. Use version 3.1 or higher if you're using jQuery.
+If you're using jQuery for a project in 2019 the implementation of the
+framework should be cleared with senior technologists. You MUST yse version
+3.1 or higher.
 
-Use of the [jQuery UI Widget factory][jq-widget] is recommended for robust organisation of your code. Each UI element should be initialised as a widget
+Use of the [jQuery UI Widget factory][jq-widget] is recommended for robust
+organisation of your code. Each UI element should be initialised as a widget
 
 #### Vue
 
-Use [single file components][vue-single-file] to organise the components in your project. The [official Vue style guide][vue-style] should be followed.
+Use [single file components][vue-single-file] to organise the components in
+your project. The [official Vue style guide][vue-style] should be followed.
 
 #### Underscore
 
-You may not need underscore/lodash. If you're targeting modern browsers there are [a number of native methods][underscore-native] you can use instead of the utility methods it supplies. However it does provide a uniform interface and API and therefore is supported for use in projects.
+You may not need underscore/lodash. If you're targeting modern browsers there
+are [a number of native methods][underscore-native] you can use instead of the
+utility methods it supplies. However it does provide a uniform interface and
+API and therefore is supported for use in projects.
 
 #### Svelte
 
-Analogfolk London have not fully evaluated [Svelte][svelte-js] for use in production
-projects. It's recommended to use Vue or React until the framework is 
-fully reviewed.
+Analogfolk London have not fully evaluated [Svelte][svelte-js] for use in
+production projects. It's recommended to use Vue or React until the 
+framework is fully reviewed.
 
 [jsdoc]: http://usejsdoc.org/
 [prettier-js]: https://prettier.io/

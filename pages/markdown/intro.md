@@ -1,10 +1,10 @@
 ## Introduction
 
-This guide is written in order to assist members of the team at Analogfolk 
+This guide should be used to assist members of the team at Analogfolk 
 London in writing good quality applications. This is intended as a 
 brief checklist and set of baseline standards for the team to follow. It 
-should be shared with development partners as the set of standards for them 
-to follow with all work on behalf of Analogfolk, and standards should be 
+should be shared with development partners as the set of standards to 
+follow in all work on behalf of Analogfolk. Adherence to standards should be 
 monitored and enforced by Technical Leads.
 
 ### General Principles
