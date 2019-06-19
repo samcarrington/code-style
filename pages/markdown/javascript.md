@@ -178,13 +178,13 @@ a project requires it, follow
 
 #### jQuery
 
-If you're using jQuery for a project in 2019 the implementation of the framework should be cleared with senior technologists. Use version 3.1 or higher.
+If you're using jQuery for a project in 2019 the implementation of the framework should be cleared with senior technologists. Use version 3.1 or higher if you're using jQuery.
 
 Use of the [jQuery UI Widget factory][jq-widget] is recommended for robust organisation of your code. Each UI element should be initialised as a widget
 
 #### Vue
 
-Use [single file components][vue-single-file] to organise the components in your project. 
+Use [single file components][vue-single-file] to organise the components in your project. The [official Vue style guide][vue-style] should be followed.
 
 #### Underscore
 
@@ -207,5 +207,6 @@ fully reviewed.
 [angular-official]: https://angular.io/guide/styleguide
 [jq-widget]: https://jqueryui.com/widget/
 [vue-single-file]: https://vuejs.org/v2/guide/single-file-components.html
+[vue-style]: https://vuejs.org/v2/style-guide/
 [underscore-native]: https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore
 [svelte-js]: https://svelte.dev/
