@@ -31,7 +31,7 @@ If declarations are to be consistently ordered, it SHOULD be in
 accordance with a single, simple principle. Define either 
 [clustered ordering][css-clustered] or [alphabetical ordering][css-alpha],
 depending on the requirements and preferences of the team. The standard 
- approach MUST be and enforce it in code reviews.
+ approach MUST be documented. Code reviews should enforce the standard.
 
 **Use caution** - retrospectively ordering properties alphabetically after
 a lot of css has been written can be a cause of style regression bugs.
@@ -44,7 +44,7 @@ We use SASS (with SCSS syntax) as a preprocessor of choice.
 - Use `.scss` syntax not `.sass`
 - Do not nest selectors more than three levels deep
 - Avoid using `@extend` if possible, but if you do use it...
-- Always place `@extend` statements on the first line of a declaration
+   - Always place `@extend` statements on the first line of a declaration
 - Where possible, group `@include` statements at the top of a
 declaration block, after any `@extend` statements
 
@@ -169,6 +169,7 @@ files in each directory by using `@import` rules in that index.scss
 
 [airbnb-css]: https://github.com/airbnb/css
 [css-clustered]: https://webdesign.tutsplus.com/articles/outside-in-ordering-css-properties-by-importance--cms-21685
+[css-alpha]: https://meiert.com/en/blog/on-declaration-sorting/
 [codepen1]: http://codepen.io/gwawr/pen/VaROdB
 [bem-101]: https://css-tricks.com/bem-101/
 [airbnb-oocss]: https://github.com/airbnb/css#oocss-and-bem

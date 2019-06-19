@@ -1,10 +1,11 @@
 @import '~bulma/sass/utilities/_all';
-
 @import '_base';
+@import '~bulma';
 @import '_layout';
 
-@import '~bulma';
-
+// Yes we break our own rules here by applying styles to elements
+// But we're styling the output of markdown-it so do not have the luxury of class-names.
+// Consider resolving this through implementing markdown-it-classy?
 h1,
 h2,
 h3,
