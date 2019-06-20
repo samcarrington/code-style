@@ -4,7 +4,15 @@ All notable changes to this project will be documented in this file. This projec
 
 ## Unreleased {.title .is-2}
 
-## 1.2.1 - 2019-06-20 {.title .is-2}
+### Added {.title .is-3}
+
+### Changed {.title .is-3}
+
+### Removed {.title .is-3}
+
+### Fixed {.title .is-3}
+
+## [1.2.1](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.2.1/) - 2019-06-20 {.title .is-2}
 
 ### Added {.title .is-3}
 
@@ -15,7 +23,7 @@ All notable changes to this project will be documented in this file. This projec
 - Browserslist support
 - More detail on ES6 and Babel
 
-## 1.0.5 - 2019-06-19 {.title .is-2}
+## [1.0.5](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.0.5/) - 2019-06-19 {.title .is-2}
 
 ### Added {.title .is-3}
 
@@ -30,14 +38,14 @@ All notable changes to this project will be documented in this file. This projec
 - Table of Contents and JS headings correct nesting
 - Fixed contrast levels to reach 100/100 Accessibility score in Lighthouse
 
-## 1.0.1 - 2019-06-18 {.title .is-2}
+## [1.0.1](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.0.1/) - 2019-06-18 {.title .is-2}
 
 ### Added {.title .is-3}
 
 - .NET section first draft
 - More details in JavaScript section
 
-## 1.0.0 - 2019-06-17 {.title .is-2}
+## [1.0.0](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.0.0/) - 2019-06-17 {.title .is-2}
 
 ### Changed {.title .is-3}
 
@@ -48,7 +56,7 @@ All notable changes to this project will be documented in this file. This projec
 
 - Some typos and proofing
 
-## 0.0.1 - 2016-05-12 {.title .is-2}
+## [0.0.1](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v0.0.1/) - 2016-05-12 {.title .is-2}
 
 ### Added {.title .is-3}
 
