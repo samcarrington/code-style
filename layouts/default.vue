@@ -5,6 +5,7 @@
 </template>
 
 <style lang="scss">
+@import '~assets/sass/base';
 html {
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -23,7 +24,7 @@ html {
 }
 
 body {
-  background-color: #f3f3f3;
+  background-color: $off-white;
   color: #000000;
 }
 
@@ -33,11 +34,11 @@ p {
 }
 
 a {
-  color: scale-color(#ff004c, $lightness: -50%);
+  color: scale-color($brand-red, $lightness: -50%);
   text-decoration: underline;
 
   &:hover {
-    color: #ff004c;
+    color: $brand-red;
     text-decoration: underline;
   }
 }
@@ -63,7 +64,7 @@ pre {
 }
 
 section section {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid scale-color($off-white, $lightness: -20%);
   padding: 1em 0 1.2em;
 }
 </style>

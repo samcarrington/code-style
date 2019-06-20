@@ -1,20 +1,20 @@
-# CHANGELOG {.title .is-1}
+# CHANGELOG
 
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## Unreleased {.title .is-2}
+## Unreleased
 
-### Added {.title .is-3}
+### Added
 
-### Changed {.title .is-3}
+### Changed
 
-### Removed {.title .is-3}
+### Removed
 
-### Fixed {.title .is-3}
+### Fixed
 
-## [1.2.1](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.2.1/) - 2019-06-20 {.title .is-2}
+## [1.2.1](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.2.1/) - 2019-06-20
 
-### Added {.title .is-3}
+### Added
 
 - BEM file structure to SCSS files
 - Accessible syntax highlighting
@@ -23,41 +23,41 @@ All notable changes to this project will be documented in this file. This projec
 - Browserslist support
 - More detail on ES6 and Babel
 
-## [1.0.5](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.0.5/) - 2019-06-19 {.title .is-2}
+## [1.0.5](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.0.5/) - 2019-06-19
 
-### Added {.title .is-3}
+### Added
 
 - Favicon
 
-### Changed {.title .is-3}
+### Changed
 
 - Updated Accessibility baseline to WCAG 2.1
 
-### Fixed {.title .is-3}
+### Fixed
 
 - Table of Contents and JS headings correct nesting
 - Fixed contrast levels to reach 100/100 Accessibility score in Lighthouse
 
-## [1.0.1](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.0.1/) - 2019-06-18 {.title .is-2}
+## [1.0.1](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.0.1/) - 2019-06-18
 
-### Added {.title .is-3}
+### Added
 
 - .NET section first draft
 - More details in JavaScript section
 
-## [1.0.0](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.0.0/) - 2019-06-17 {.title .is-2}
+## [1.0.0](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.0.0/) - 2019-06-17
 
-### Changed {.title .is-3}
+### Changed
 
 - Rebuild using Nuxt
 - Updated to AF 2019 branding (mainly just the webfont)
 
-### Fixed {.title .is-3}
+### Fixed
 
 - Some typos and proofing
 
-## [0.0.1](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v0.0.1/) - 2016-05-12 {.title .is-2}
+## [0.0.1](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v0.0.1/) - 2016-05-12
 
-### Added {.title .is-3}
+### Added
 
 - Initial Prototype using Pug and Yeoman
