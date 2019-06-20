@@ -1,19 +1,19 @@
-## HTML
+## HTML {.title .is-2}
 
 HTML should be prepared using a template language. [Pug](#pug) is recommended
 for static files.
 
-### Syntax
+### Syntax {.title .is-3}
 
 - Use two spaces for indentation
 - Use single quotation marks for attributes
 - Don't repeat IDs in a document
 
-### Encoding
+### Encoding {.title .is-3}
 
 - Use UTF-8 encoding and custom characters instead of HTML entities.
 
-### Attributes
+### Attributes {.title .is-3}
 
 - Omit `type` attributes in CSS and JavaScript
 - Omit values in boolean attributes
@@ -25,7 +25,7 @@ for static files.
   - title, alt
   - role, aria-*
 
-### Nesting
+### Nesting {.title .is-3}
 
 HTML Tags should be properly nested per the document specification.
 Incorrectly nested tags are usually not a problem if a templating language 
@@ -35,7 +35,7 @@ multiple partials.
 Ideally run pages through the [W3C markup validation service][w3c-validation]
 as part of build. This will reveal issues immediately.
 
-### Accessibility
+### Accessibility {.title .is-3}
 
 Projects published by AnalogFolk must meet AA checkpoints from 
 [WCAG 2.1 standards][wcag], and where possible, we should aim for support 

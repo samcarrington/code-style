@@ -1,4 +1,4 @@
-## JavaScript
+## JavaScript {.title .is-2}
 
 It is important to note that JavaScript should be used to enhance the
 user's experience by adding engaging and interactive functionality. It
@@ -16,7 +16,7 @@ CSS can achieve the same effect.
 It's recommended that you implement Prettier to automatically lint and format
 your code during editing. 
 
-### Syntax
+### Syntax {.title .is-3}
 
 In common with the file formats and encodings conventions, indent with
 two spaces. Tabs MUST NOT be used. Lines SHOULD be kept to a reasonable
@@ -40,7 +40,7 @@ file to ensure that each developer uses the same set of rules & settings.
 Generally - two spaces for indentation, no semi-colons, single quotes are the
 preferred set of simple sub-rules for formatting.
 
-### Naming
+### Naming {.title .is-3}
 
 Variables and functions SHOULD have concise but meaningful names. When
 referring to a jQuery wrapped object (for example, a collection returned
@@ -60,7 +60,7 @@ and "htmlLength".
 - Use `UpperCamelCase` for constructors and prototype objects
 - Use `CAPITALS_WITH_UNDERSCORES` for constants.
 
-### Scope
+### Scope {.title .is-3}
 
 Keeping scope small decreases the possibility of namespace collisions.
 
@@ -77,7 +77,7 @@ Keeping scope small decreases the possibility of namespace collisions.
 })();
 ```
 
-### Braces and brackets
+### Braces and brackets {.title .is-3}
 
 The following style of indentation MUST be used for functions (this
 is referred to as the One True Brace Style and is a variant of that
@@ -97,7 +97,7 @@ function func(arg1, arg2) {
 Indentation and bracketing style should be enforced on save or pre-commit
 through an automated linting rule, such as in use for this documentation.
 
-### ES2015 & ES6
+### ES2015 & ES6 {.title .is-3}
 
 As of v7, [Babel have deprecated the official Stage presets][babel-7]. This makes it a bit 
 tougher to set a mandatory and consistent level of support for language 
@@ -140,7 +140,7 @@ stage-1 and stage-0.
 }
 ```
 
-### Commenting code
+### Commenting code {.title .is-3}
 
 - Short inline comments SHOULD generally follow a line
 - Functions and constructors, classes and modules SHOULD be preceded
@@ -159,24 +159,24 @@ function Book(title, author) {
 }
 ````
 
-### Frameworks and Libraries
+### Frameworks and Libraries {.title .is-3}
 
 At project inception an agreement should be in place as to the frameworks 
 and/or libraries of use. Even if no library is to be used, the specification
 should identify [a consistent pattern][osmani-patterns] (beyond just linting rules) to be used 
 for the organisation of JavaScript within a project. 
 
-#### React
+#### React {.title .is-4}
 
 Follow [the Airbnb React guidelines][airbnb-react]. Except where it conflicts with Prettier.
 
-#### Angular
+#### Angular {.title .is-4}
 
 Analogfolk London have not historically used this monolithic framework. But if
 a project requires it, follow 
 [the official Angular style guide][angular-official].
 
-#### jQuery
+#### jQuery {.title .is-4}
 
 If you're using jQuery for a project in 2019 the implementation of the
 framework should be cleared with senior technologists. You MUST yse version
@@ -185,19 +185,19 @@ framework should be cleared with senior technologists. You MUST yse version
 Use of the [jQuery UI Widget factory][jq-widget] is recommended for robust
 organisation of your code. Each UI element should be initialised as a widget
 
-#### Vue
+#### Vue {.title .is-4}
 
 Use [single file components][vue-single-file] to organise the components in
 your project. The [official Vue style guide][vue-style] should be followed.
 
-#### Underscore
+#### Underscore {.title .is-4}
 
 You may not need underscore/lodash. If you're targeting modern browsers there
 are [a number of native methods][underscore-native] you can use instead of the
 utility methods it supplies. However it does provide a uniform interface and
 API and therefore is supported for use in projects.
 
-#### Svelte
+#### Svelte {.title .is-4}
 
 Analogfolk London have not fully evaluated [Svelte][svelte-js] for use in
 production projects. It's recommended to use Vue or React until the 

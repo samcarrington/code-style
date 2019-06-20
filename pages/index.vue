@@ -1,7 +1,7 @@
 <template lang="pug">
   .container
     section#header
-      h1 Folk Style
+      h1.title.is-1 Folk Style
     section#intro(v-html="intro")
     section#toc(v-html="toc")
     section#html(v-html="mdhtml")

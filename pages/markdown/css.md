@@ -1,10 +1,10 @@
-## CSS
+## CSS {.title .is-2}
 
 The ruleset [defined by Airbnb][airbnb-css] for their CSS is the best one-stop
 set of rules and should be followed in projects for Analogfolk.
 
 
-### Formatting & Syntax
+### Formatting & Syntax {.title .is-3}
 
 - Use **two spaces** for indentation
 - Use a space to separate the colon after the property from its value
@@ -25,7 +25,7 @@ set of rules and should be followed in projects for Analogfolk.
 
 See [this codepen][codepen1] for examples of correct usage.
 
-#### Declaration ordering
+#### Declaration ordering {.title .is-4}
 
 If declarations are to be consistently ordered, it SHOULD be in
 accordance with a single, simple principle. Define either 
@@ -37,7 +37,7 @@ depending on the requirements and preferences of the team. The standard
 a lot of css has been written can be a cause of style regression bugs.
 
 
-### Pre-processing
+### Pre-processing {.title .is-3}
 
 We use SASS (with SCSS syntax) as a preprocessor of choice.
 
@@ -62,13 +62,13 @@ declaration block, after any `@extend` statements
 }
 ```
 
-### Units and Colours
+### Units and Colours {.title .is-3}
 
 - Omit units after "0"
 - Omit leading "0"s in values (i.e. `.5em` not `0.5em`)
 
 
-### Specificity
+### Specificity {.title .is-3}
 
 Generally use of BEM and OO principles should avoid falling into any of the bad practice below.
 
@@ -98,7 +98,7 @@ section.intro {
 }
 ```
 
-### Class naming
+### Class naming {.title .is-3}
 
 - You SHOULD use kebab case, i.e. hyphens not underscores or camelCase for class names
 - Underscores are acceptable if you're using BEM syntax
@@ -128,13 +128,13 @@ section.intro {
   class in both CSS and Javascript.
 
 
-### Media Queries
+### Media Queries {.title .is-3}
 
 - Add media query blocks for an element at the end of the declaration
 block for that element
 
 
-### Modularisation
+### Modularisation {.title .is-3}
 
 Use [SMACSS][smacss] principles for modular CSS. Establish top level
 folders with the following categories :
@@ -163,7 +163,7 @@ files in each directory by using `@import` rules in that index.scss
     ˪main.scss
 ```
 
-### Further reading, and acknowledgements
+### Further reading, and acknowledgements {.title .is-3}
 
 - [Idiomatic CSS][idiomatic] by Nicolas Gallagher
 

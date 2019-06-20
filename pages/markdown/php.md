@@ -1,14 +1,14 @@
-## PHP
+## PHP {.title .is-2}
 
 PHP is a server side scripting language used to generate dynamic pages.
 Analogfolk prefer the use of [Laravel][laravel] as an MVC framework for PHP projects.
 
-### Syntax
+### Syntax {.title .is-3}
 
 Follow the guidelines in the PHP Standards Recommendations. Particular attention
 should be given to [PSR-1 (Basic Coding Standard)][psr-1] and [PSR-2 (Coding Style Guide)][psr-2]
 
-#### Naming
+#### Naming {.title .is-4}
 
 - Use `camelCase` for functions and methods
 - Use `UpperCamelCase` for Class names

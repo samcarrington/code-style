@@ -1,4 +1,4 @@
-## Table of Contents
+## Table of Contents {.title .is-2}
 
 1. [HTML](#html)
     - Syntax
