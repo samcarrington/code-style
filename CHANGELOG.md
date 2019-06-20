@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file. This projec
 
 ## Unreleased {.title .is-2}
 
-## 1.2.0 - 2019-06-20 {.title .is-2}
+## 1.2.1 - 2019-06-20 {.title .is-2}
 
 ### Added {.title .is-3}
 
