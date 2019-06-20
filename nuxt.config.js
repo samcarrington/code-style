@@ -32,7 +32,10 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: [{ src: '@/assets/sass/app.scss', lang: 'scss' }],
+  css: [
+    { src: '@/assets/sass/app.scss', lang: 'scss' },
+    { src: '~/node_modules/highlight.js/styles/a11y-dark.css', lang: 'css' }
+  ],
   /*
    ** Plugins to load before mounting the App
    */
@@ -56,9 +59,10 @@ module.exports = {
   axios: {},
   markdownit: {
     preset: 'default',
-    linkify: true,
-    breaks: false // ,
+    linkify: false,
+    breaks: false,
     // use: [['markdown-it-container', 'name'], 'markdown-it-attrs']
+    use: ['markdown-it-highlightjs', 'markdown-it-attrs']
   },
   env: {
     app_version: process.env.npm_package_version

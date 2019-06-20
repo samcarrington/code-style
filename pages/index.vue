@@ -1,7 +1,7 @@
 <template lang="pug">
   .container
     section#header
-      h1 Folk Style
+      h1.title.is-1 Folk Style
     section#intro(v-html="intro")
     section#toc(v-html="toc")
     section#html(v-html="mdhtml")
@@ -62,17 +62,4 @@ export default {
 }
 </script>
 
-<style lang="scss">
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  max-width: 660px;
-  background-color: white;
-  padding: 0 1em;
-
-  @media (max-width: 659px) {
-    width: 100%;
-    padding: 0 2em;
-  }
-}
-</style>
+<style lang="scss"></style>

@@ -1,10 +1,10 @@
-## CSS
+## CSS {.title .is-2}
 
 The ruleset [defined by Airbnb][airbnb-css] for their CSS is the best one-stop
 set of rules and should be followed in projects for Analogfolk.
 
 
-### Formatting & Syntax
+### Formatting & Syntax {.title .is-3}
 
 - Use **two spaces** for indentation
 - Use a space to separate the colon after the property from its value
@@ -25,32 +25,34 @@ set of rules and should be followed in projects for Analogfolk.
 
 See [this codepen][codepen1] for examples of correct usage.
 
-
-#### Declaration ordering
+#### Declaration ordering {.title .is-4}
 
 If declarations are to be consistently ordered, it SHOULD be in
 accordance with a single, simple principle. Define either 
 [clustered ordering][css-clustered] or [alphabetical ordering][css-alpha],
 depending on the requirements and preferences of the team. The standard 
- approach MUST be and enforce it in code reviews.
+ approach MUST be documented. Code reviews should enforce the standard.
 
 **Use caution** - retrospectively ordering properties alphabetically after
 a lot of css has been written can be a cause of style regression bugs.
 
 
-### Preprocessing
+### Pre-processing {.title .is-3}
 
 We use SASS (with SCSS syntax) as a preprocessor of choice.
 
 - Use `.scss` syntax not `.sass`
 - Do not nest selectors more than three levels deep
-- Avoid using `@extend` if possible, but if you do use it...
-- Always place `@extend` statements on the first line of a declaration
+- Avoid using `@extend` if possible (use mixins instead), but if you do use it...
+   - Always place `@extend` statements on the first line of a declaration
+   - only extend `%placeholder` classes
 - Where possible, group `@include` statements at the top of a
 declaration block, after any `@extend` statements
 
 ```scss
 .block {
+
+  @extend %base-block;
 
   &__element {
     property: value;
@@ -63,31 +65,68 @@ declaration block, after any `@extend` statements
 }
 ```
 
-### Units and Colours
+### Units and Colours {.title .is-3}
 
 - Omit units after "0"
 - Omit leading "0"s in values (i.e. `.5em` not `0.5em`)
 
 
-### Specificity
+### Specificity {.title .is-3}
 
-- Use the least number of selectors required to style an element. **Don't nest SCSS more than three levels deep**
-- Ideally use [BEM][bem-101] and don't stack selectors in your CSS
+Generally use of BEM and OO principles should avoid falling into any of the bad practice below.
+
+- Use the least number of selectors required to style an element. **Don't nest SCSS or CSS selectors more than three levels deep**
+- Ideally use [BEM][bem-101] and don't nest or stack selectors
 - Avoid adding element selectors to class definitions
 - Avoid using Ids in style definitions
+- Avoid using `!important` [except in case of SMACSS state][smacss-state] rules
 
+```scss
+// BAD
+section.intro {
+  font-family: "Open Sans", sans-serif;
+  border: 0px;
+}
 
-### Class naming
+.header {
+  .title {
+    .primary {
+      em {
+        font-weight: bold;
+        line-height: 0.5rem;
+      }
+    }
+  }
+}
+
+#nav {
+  display: inline;
+}
+```
+
+### Class naming {.title .is-3}
 
 - You SHOULD use kebab case, i.e. hyphens not underscores or camelCase for class names
 - Underscores are acceptable if you're using BEM syntax
 - `camelCase` is acceptable if a classname is tied to a reactive component name (see [the Airbnb OOCSS/BEM advice][airbnb-oocss] for reference)
 
 ```scss
+// BAD
 .valid-class-name {}
 
 .invalidClassName,
 .invalid_classname {}
+
+// acceptable
+.infoBlock {
+  &__element {
+    background: yellow;
+  }
+  
+  &--modifier {
+     color: red;
+  }
+}
 ```
 
 - If an element is to have functionality bound to it in Javascript, use a 
@@ -95,26 +134,26 @@ declaration block, after any `@extend` statements
   class in both CSS and Javascript.
 
 
-### Media Queries
+### Media Queries {.title .is-3}
 
 - Add media query blocks for an element at the end of the declaration
 block for that element
 
 
-### Modularisation
+### Modularisation {.title .is-3}
 
 Use [SMACSS][smacss] principles for modular CSS. Establish top level
 folders with the following categories :
 
-- **Base**
+- **[Base][smacss-base]**
   Project-wide variables; colours, breakpoints, font imports, file locations
-- **Layout**
+- **[Layout][smacss-layout]**
   Overall layout rules; outer grid dimensions, grid etc.
-- **Module**
+- **[Module][smacss-module]**
   Functional modules within site, separated into individual files
-- **State**
+- **[State][smacss-state]**
   Modifications based on interaction - i.e. hidden and visible states
-- **Theme**
+- **[Theme][smacss-theme]**
   Customisations based on overall site context
 
 Ideally include a main.scss file at the top of the folder structure.
@@ -130,14 +169,23 @@ files in each directory by using `@import` rules in that index.scss
     ˪main.scss
 ```
 
-### Further reading, and acknowledgements
+### Further reading, and acknowledgements {.title .is-3}
 
 - [Idiomatic CSS][idiomatic] by Nicolas Gallagher
+- [Don't use @extend][dont-extend] by Tiffany B. Brown
 
 [airbnb-css]: https://github.com/airbnb/css
 [css-clustered]: https://webdesign.tutsplus.com/articles/outside-in-ordering-css-properties-by-importance--cms-21685
+[css-alpha]: https://meiert.com/en/blog/on-declaration-sorting/
 [codepen1]: http://codepen.io/gwawr/pen/VaROdB
 [bem-101]: https://css-tricks.com/bem-101/
+
 [airbnb-oocss]: https://github.com/airbnb/css#oocss-and-bem
 [smacss]: https://smacss.com/book/categorizing
+[smacss-base]: http://smacss.com/book/type-base
+[smacss-layout]: http://smacss.com/book/type-layout
+[smacss-module]: http://smacss.com/book/type-module
+[smacss-state]: http://smacss.com/book/type-state
+[smacss-theme]: http://smacss.com/book/type-theme
 [idiomatic]: https://github.com/necolas/idiomatic-css
+[dont-extend]: https://webinista.com/updates/dont-use-extend-sass/

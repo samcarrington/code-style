@@ -1,8 +1,11 @@
 @import '~bulma/sass/utilities/_all';
-$body-family: 'TT Commons Regular', 'Helvetica Neue', Arial, sans-serif;
-$title-family: 'TT Commons DemiBold', 'Helvetica Neue', Arial, sans-serif;
+@import '_base';
 @import '~bulma';
+@import '_layout';
 
+// Yes we break our own rules here by applying styles to elements
+// But we're styling the output of markdown-it so do not have the luxury of class-names.
+// Consider resolving this through implementing markdown-it-classy?
 h1,
 h2,
 h3,
@@ -14,38 +17,24 @@ h5 {
   padding-bottom: 0.3em;
 }
 
-h1 {
-  font-size: 64px;
-}
-h2 {
-  font-size: 40px;
-}
-h3 {
-  font-size: 32px;
-}
-h4 {
-  font-size: 24px;
-}
+//h1 {
+//  font-size: 64px;
+//}
+//h2 {
+//  font-size: 40px;
+//}
+//h3 {
+//  font-size: 32px;
+//}
+//h4 {
+//  font-size: 24px;
+//}
 h5 {
   font-size: 20px;
 }
 
 pre,
 code {
-  background-color: #ffffff;
+  background-color: $body-background;
   color: scale-color(#ff004c, $lightness: -50%);
-}
-
-@font-face {
-  font-family: 'TT Commons Regular';
-  src: url('~assets/fonts/tt_commons_regular.woff2') format('woff2'),
-    url('~assets/fonts/tt_commons_regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'TT Commons DemiBold';
-  src: url('~assets/fonts/tt_commons_demibold.woff2') format('woff2'),
-    url('~assets/fonts/tt_commons_demibold.woff') format('woff');
 }

@@ -1,4 +1,4 @@
-## Table of Contents
+## Table of Contents {.title .is-2}
 
 1. [HTML](#html)
     - Syntax
@@ -10,7 +10,7 @@
     - Syntax
 3. [CSS](#css)
     - Syntax
-    - Preprocessing
+    - Pre-processing
     - Specificity
     - Media Queries
     - Modularisation
