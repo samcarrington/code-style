@@ -93,7 +93,7 @@ section.intro {
     .primary {
       em {
         font-weight: bold;
-        line-height: 0.5;
+        line-height: 0.5rem;
       }
     }
   }

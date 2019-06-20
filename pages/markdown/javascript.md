@@ -29,7 +29,7 @@ for code. This allows consistent and predictable layout and formatting.
 Formatting rules should be defined in a project's prettier.rc or eslint.rc 
 file to ensure that each developer uses the same set of rules & settings.
 
-#### .prettierrc
+#### .prettierrc {.title .is-4}
 ```json
 {
   "semi": false,
@@ -47,7 +47,8 @@ referring to a jQuery wrapped object (for example, a collection returned
 from a query selector), it is a common and very useful practice to
 prefix the variable name with the jQuery `$` sigil.
 
-- You SHOULD use self-documenting names, except for enumeration variables, which SHOULD be named i, j, k, and so on.
+- You SHOULD use self-documenting names, except for enumeration variables, 
+  which SHOULD be named i, j, k, and so on.
 - You MUST use camelCase, including names that contain acronyms like "getCss"
 and "htmlLength".
 - You MUST name constructor functions with an initial uppercase letter.
@@ -65,7 +66,8 @@ and "htmlLength".
 Keeping scope small decreases the possibility of namespace collisions.
 
 - You SHOULD limit the scope of a variable to a single function.
-- You MAY use an anonymous function (IIFE) which is executed inline if necessary to keep a variable out of the global scope.
+- You MAY use an anonymous function (IIFE) which is executed inline if
+  necessary to keep a variable out of the global scope.
 - Anonymous functions that are executed inline MUST be wrapped in parentheses.
 
 ```javascript
@@ -99,16 +101,23 @@ through an automated linting rule, such as in use for this documentation.
 
 ### ES2015 & ES6 {.title .is-3}
 
-As of v7, [Babel have deprecated the official Stage presets][babel-7]. This makes it a bit 
-tougher to set a mandatory and consistent level of support for language 
-features which developers want to use, and rely on Babel to transpile them into 
-your required platform support level. This means that you should explicitly 
-state the language features you require babel to handle, and include them in 
-your project individually. Generally though, for legibility, support and 
-adoption of your code, lean toward stage-2 to stage-3 standards and avoid 
-stage-1 and stage-0.
+As of v7, [Babel have deprecated the official Stage presets][babel-7]. This 
+makes it tougher to set a mandatory and consistent level of support for 
+language features which developers want to use, and rely on Babel to transpile
+them into your required platform support level. Use of `preset-env` allows a
+project-wide setting (based on browserlist) for babel to target the same
+support level as specified in the initial technical specification for a
+project. Generally though, for legibility, support and adoption of your code,
+lean toward stage-2 to stage-3 standards and avoid stage-1 and stage-0.
 
-[Babel upgrage][babel-upgrade] can be used in existing projects to project them into the right state for Babel 7 support. The table of language features as they stood at the point of being deprecated is as follows:
+It's recommended that you use a `.browserslistrc` file to mandate the support
+level for any transpilation but also to declare in version control the mandated
+support level for your project, based on that stated in the technical
+specification.
+
+[Babel upgrage][babel-upgrade] can be used in existing projects to project 
+them into the right state for Babel 7 support. The table of language 
+features as they stood at the point of being deprecated is as follows:
 
 ```json
 {
@@ -163,12 +172,13 @@ function Book(title, author) {
 
 At project inception an agreement should be in place as to the frameworks 
 and/or libraries of use. Even if no library is to be used, the specification
-should identify [a consistent pattern][osmani-patterns] (beyond just linting rules) to be used 
-for the organisation of JavaScript within a project. 
+should identify [a consistent pattern][osmani-patterns] (beyond just linting
+rules) to be used for the organisation of JavaScript within a project. 
 
 #### React {.title .is-4}
 
-Follow [the Airbnb React guidelines][airbnb-react]. Except where it conflicts with Prettier.
+Follow [the Airbnb React guidelines][airbnb-react]. Except where it conflicts
+with Prettier.
 
 #### Angular {.title .is-4}
 
