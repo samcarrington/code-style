@@ -1,8 +1,29 @@
 <template lang="pug">
-  <div>
-    <nuxt />
-  </div>
+  div
+    navbar
+    nuxt
+    af-footer
 </template>
+
+<script>
+import Navbar from '~/components/Header.vue'
+import AfFooter from '~/components/AfFooter.vue'
+
+export default {
+  components: {
+    Navbar,
+    AfFooter
+  },
+  computed: {
+    visible() {
+      return this.$store.state.visibleHeader
+    }
+  },
+  watch: {
+    $route: 'setStore'
+  }
+}
+</script>
 
 <style lang="scss">
 @import '~assets/sass/base';
