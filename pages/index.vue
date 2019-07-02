@@ -1,15 +1,16 @@
 <template lang="pug">
-  .container
-    section#header
-      h1.title.is-1 Folk Style
-    section#intro(v-html="intro")
-    section#toc(v-html="toc")
-    section#html(v-html="mdhtml")
-    section#pug(v-html="mdpug")
-    section#css(v-html="mdcss")
-    section#javascript(v-html="mdjs")
-    section#php(v-html="php")
-    section#dotnet(v-html="dotnet")
+  section.section
+    .container
+      article#header.content.is-medium
+        h1 Folk Style
+      article#intro.content.is-medium(v-html="intro")
+      article#toc.content.is-medium(v-html="toc")
+      article#html.content.is-medium(v-html="mdhtml")
+      article#pug.content.is-medium(v-html="mdpug")
+      article#css.content.is-medium(v-html="mdcss")
+      article#javascript.content.is-medium(v-html="mdjs")
+      article#php.content.is-medium(v-html="php")
+      article#dotnet.content.is-medium(v-html="dotnet")
 </template>
 
 <script>

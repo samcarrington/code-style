@@ -1,17 +1,17 @@
-## .NET {.title}
+## .NET
 
 Increasingly Analogfolk are developing in Azure or using Microsoft tools. Some
 baseline coding principles and best-practices can be adopted from the Microsoft
 documentation as standard.
 
-### C# {.title .is-3}
+### C#
 
 - Prefer [dependency injection][ms-docs-di] over static classes
 - Follow the [C# coding conventions][ms-docs-csharp]
 
-### .NET MVC {.title .is-3}
+### .NET MVC
 
-#### Models {.title .is-4}
+#### Models
 
 - Put all business logic in the model
 - Put all validation logic in the model
@@ -24,20 +24,20 @@ documentation as standard.
 - Use Post/Redirect/Get when submitting forms
 - Implement HandleUnknownAction and HandleError
 
-#### Routing {.title .is-4}
+#### Routing
 
 - Order routes from specific to general when using standard routing
 - Use named routes to avoid route ambiguity
 
-#### Extensibility {.title .is-4}
+#### Extensibility
 
 - Use filters for adding behaviours
 
-#### Testing {.title .is-4}
+#### Testing
 
 - Write unit tests
 
-#### Security {.title .is-4}
+#### Security
 
 - Guard against common attack vectors
   - Cross-site scripting (XSS) attacks
@@ -47,7 +47,7 @@ documentation as standard.
 - Authenticate and authorise users
 - Use `<%: %>` to protect against XSS
 
-#### Performance {.title .is-4}
+#### Performance
 
 - Consider partial page updates using AJAX
 - Don't over-use session, instead use TempData for intra-request storage

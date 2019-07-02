@@ -99,6 +99,10 @@ function func(arg1, arg2) {
 Indentation and bracketing style should be enforced on save or pre-commit
 through an automated linting rule, such as in use for this documentation.
 
+Prettier as a code-quality tool is both highly opinionated and also automated
+so if it is implemented in a project, the code style enforcement looks after
+itself.
+
 ### ES2015 & ES6 {.title .is-3}
 
 As of v7, [Babel have deprecated the official Stage presets][babel-7]. This 
