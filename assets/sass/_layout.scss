@@ -1,12 +1,6 @@
 $max-width: 660px;
 
 .container {
-  margin: 0 auto;
-  min-height: 100vh;
-  max-width: $max-width;
-  background-color: white;
-  padding: 0 1em;
-// #{$mediaMinWidth + 1}
   @media (max-width: (#{$max-width - 1})) {
     width: 100%;
     padding: 0 2em;
