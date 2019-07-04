@@ -1,7 +1,8 @@
 @import '~bulma/sass/utilities/_all';
-@import '_base';
+@import 'base';
 @import '~bulma';
-@import '_layout';
+@import 'layout';
+@import 'module';
 
 // Yes we break our own rules here by applying styles to elements
 // But we're styling the output of markdown-it so do not have the luxury of class-names.

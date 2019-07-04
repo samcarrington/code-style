@@ -119,7 +119,7 @@ level for any transpilation but also to declare in version control the mandated
 support level for your project, based on that stated in the technical
 specification.
 
-[Babel upgrage][babel-upgrade] can be used in existing projects to project 
+[Babel upgrade][babel-upgrade] can be used in existing projects to project 
 them into the right state for Babel 7 support. The table of language 
 features as they stood at the point of being deprecated is as follows:
 
@@ -204,6 +204,9 @@ organisation of your code. Each UI element should be initialised as a widget
 Use [single file components][vue-single-file] to organise the components in
 your project. The [official Vue style guide][vue-style] should be followed.
 
+There's a useful article on setting up your IDE for use with Vue and eslint
+[on Medium][vue-eslint-medium].
+
 #### Underscore {.title .is-4}
 
 You may not need underscore/lodash. If you're targeting modern browsers there
@@ -229,5 +232,6 @@ framework is fully reviewed.
 [jq-widget]: https://jqueryui.com/widget/
 [vue-single-file]: https://vuejs.org/v2/guide/single-file-components.html
 [vue-style]: https://vuejs.org/v2/style-guide/
+[vue-eslint-medium]: https://medium.com/@gogl.alex/how-to-properly-set-up-eslint-with-prettier-for-vue-or-nuxt-in-vscode-e42532099a9c
 [underscore-native]: https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore
 [svelte-js]: https://svelte.dev/

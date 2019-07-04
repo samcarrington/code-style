@@ -1,11 +1,31 @@
 <template lang="pug">
   header.header
-    nuxt-link.header__logo(to="/",@click.right.native.prevent="showChanges")
-      af-logo
-      h1.header__logo__text Analogfolk
-    .header__toggler
-      .header__toggler__button(@click="toggle")
-        div(:class="{ 'icon menu': !visible, 'icon close': visible }")
+    nav.navbar(role="navigation", aria-label="main navigation")
+      .navbar-brand
+        nuxt-link.header__logo.navbar-item(to="/", title="Home", aria-label="return to homepage")
+          af-logo
+          span AnalogFolk
+        a.navbar-burger.burger(
+          aria-label="menu",
+          aria-expanded="false",
+          data-target="navbarBasic",
+          @click="showNav = !showNav"
+          :class="{ 'is-active': showNav }"
+        )
+          span(aria-hidden="true")
+          span(aria-hidden="true")
+          span(aria-hidden="true")
+      #navbarBasic.navbar-menu(:class="{ 'is-active': showNav }")
+        .navbar-start
+          nuxt-link.navbar-item(to="/html") HTML
+          nuxt-link.navbar-item(to="/pug") PUG
+          nuxt-link.navbar-item(to="/css") CSS
+          nuxt-link.navbar-item(to="/javascript") Javascript
+          nuxt-link.navbar-item(to="/php") PHP
+          nuxt-link.navbar-item(to="/dotnet") .NET
+        .navbar-end
+          a.navbar-item(href="https://analogfolk.com") AF.com
+
 </template>
 
 <script>
@@ -16,17 +36,9 @@ export default {
   components: {
     afLogo
   },
-  computed: {
-    visible() {
-      return this.$store.state.visibleHeader
-    }
-  },
-  methods: {
-    toggle() {
-      this.$store.commit('toggle', 'visibleHeader')
-    },
-    showChanges() {
-      this.$router.push('/changelog')
+  data() {
+    return {
+      showNav: false
     }
   }
 }
@@ -46,10 +58,14 @@ export default {
 
   &__logo {
     display: flex;
-    width: 400px;
+    width: 240px;
 
     svg {
-      width: 200px;
+      width: 150px;
+    }
+
+    span {
+      display: none;
     }
   }
 
@@ -66,5 +82,9 @@ export default {
       cursor: pointer;
     }
   }
+}
+
+.navbar {
+  width: 100%;
 }
 </style>

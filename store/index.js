@@ -1,10 +1,9 @@
-// import Vuex from 'vuex'
 export const state = () => ({
-  visibleHeader: false
+  counter: 0
 })
 
 export const mutations = {
-  toggle(state, key) {
-    state[key] = !state[key]
+  increment(state) {
+    state.counter++
   }
 }

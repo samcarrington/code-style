@@ -1,24 +1,17 @@
 <template lang="pug">
-  div.home
-    section.hero.is-medium.is-bold.is-dark
-      .hero-body
-        .container
-          h1.title.is-1(v-html="pageTitle")
-          h2.subtitle(v-html="subtitle")
+  div.pug
     section.section
       .container
-        article#intro.content.is-medium(v-html="intro")
-        article#toc.content.is-medium(v-html="toc")
+        article#html.content.is-medium(v-html="dotnet")
 </template>
 
 <script>
-import intro from './markdown/intro.md'
-import toc from './markdown/toc.md'
+import dotnet from './markdown/dotnet.md'
 
 export default {
   data() {
     this.title = 'Stylish AF'
-    this.subtitle = 'An Analogfolk coding style guide'
+    this.subtitle = '.NET'
     return {
       pageTitle: this.title,
       subtitle: this.subtitle,
@@ -26,11 +19,8 @@ export default {
     }
   },
   computed: {
-    intro() {
-      return intro
-    },
-    toc() {
-      return toc
+    dotnet() {
+      return dotnet
     }
   },
   async mounted() {

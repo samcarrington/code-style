@@ -2,7 +2,7 @@
   "name": "folk-style",
   "version": "1.3.0",
   "description": "A house coding styleguide for Analogfolk London",
-  "author": "Sam Carrington",
+  "author": "Sam Carrington <sam.carrington@analogfolk.com>",
   "private": true,
   "scripts": {
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",

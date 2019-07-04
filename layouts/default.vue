@@ -16,11 +16,11 @@ export default {
   },
   computed: {
     visible() {
-      return this.$store.state.visibleHeader
+      return true
     }
   },
   watch: {
-    $route: 'setStore'
+    // $route: 'setStore'
   }
 }
 </script>
@@ -54,23 +54,35 @@ p {
   padding-bottom: 1em;
 }
 
-a {
-  color: scale-color($brand-red, $lightness: -50%);
-  text-decoration: underline;
+.content a {
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+  z-index: 0;
 
   &:hover {
-    color: $brand-red;
-    text-decoration: underline;
+    //color: $brand-red;
+
+    &:after {
+      top: 0%;
+    }
+  }
+
+  &:after {
+    content: '';
+    z-index: -1;
+    top: 70%;
+    left: -0.2em;
+    right: -0.2em;
+    bottom: 0;
+    position: absolute;
+    transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+    background-color: rgba($brand-red, 0.5);
+    border-radius: 5px;
   }
 }
 
-ol {
-  padding-left: 1.2em;
-}
-
 ul {
-  padding-left: 1.2em;
-
   li {
     list-style-type: disc;
     p {
@@ -82,10 +94,5 @@ ul {
 
 pre {
   margin-bottom: 1em;
-}
-
-section section {
-  border-bottom: 1px solid scale-color($off-white, $lightness: -20%);
-  padding: 1em 0 1.2em;
 }
 </style>
