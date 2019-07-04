@@ -22,8 +22,8 @@
     - ES2015 & ES6
     - Commenting code
     - Frameworks and Libraries
-5. [PHP](#php)
+5. [PHP](/php)
     - Syntax
-6. [.NET](#dotnet)
+6. [.NET](/dotnet)
     - C#
     - .NET MVC
