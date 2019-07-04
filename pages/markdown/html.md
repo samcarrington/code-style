@@ -1,6 +1,6 @@
 ## HTML
 
-HTML should be prepared using a template language. [Pug](#pug) is recommended
+HTML should be prepared using a template language. [Pug](/pug) is recommended
 for static files.
 
 ### Syntax
