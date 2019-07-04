@@ -1354,7 +1354,7 @@
     axios-retry "^3.1.2"
     consola "^2.7.1"
 
-"@nuxtjs/bulma@^1.2.1":
+"@nuxtjs/bulma@^1.2.4":
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/@nuxtjs/bulma/-/bulma-1.2.4.tgz#9efe53a3516ed36ed23682fbf20ec4c806d1c42b"
   integrity sha512-IIaCD2YJx345syPicI3hap1D9dyl17v4YdQ0+8IXyQA+mZPl46vmGa9Goe5ElQZW268B/RmD3mANAnfTCeersg==
