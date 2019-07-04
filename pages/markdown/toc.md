@@ -1,20 +1,20 @@
-## Table of Contents {.title .is-2}
+## Table of Contents
 
-1. [HTML](#html)
+1. [HTML](/html)
     - Syntax
     - Encoding
     - Attributes
     - Nesting
     - Accessibility
-2. [PUG](#pug)
+2. [PUG](/pug)
     - Syntax
-3. [CSS](#css)
+3. [CSS](/css)
     - Syntax
     - Pre-processing
     - Specificity
     - Media Queries
     - Modularisation
-4. [JavaScript](#javascript)
+4. [JavaScript](/javascript)
     - Syntax
     - Naming
     - Scope
