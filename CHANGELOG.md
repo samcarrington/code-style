@@ -12,7 +12,7 @@ All notable changes to this project will be documented in this file. This projec
 
 ### Fixed
 
-## [1.3.0](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.3.1/) - 2019-07-04
+## [1.3.1](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.3.1/) - 2019-07-04
 
 ### Fixed
 
