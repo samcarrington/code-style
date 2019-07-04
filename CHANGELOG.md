@@ -12,6 +12,26 @@ All notable changes to this project will be documented in this file. This projec
 
 ### Fixed
 
+## [1.3.0](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.3.0/) - 2019-07-04
+
+### Added
+
+- Branding - header and footer
+- Some links to the PHP section
+
+### Changed
+
+- Split content into page routes
+- Link styling
+
+### Removed
+
+- markdown-attrs from headers in markdown source files
+
+### Fixed
+
+- Typos
+
 ## [1.2.1](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.2.1/) - 2019-06-20
 
 ### Added
