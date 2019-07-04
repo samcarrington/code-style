@@ -59,10 +59,9 @@ p {
   text-decoration: none;
   position: relative;
   z-index: 0;
+  display: inline-block;
 
   &:hover {
-    //color: $brand-red;
-
     &:after {
       top: 0%;
     }

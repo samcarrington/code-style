@@ -1,6 +1,8 @@
 <template lang="pug">
-  .container
-    section#changelog(v-html="changelog")
+  div.html
+    section.section
+      .container
+        article#html.content.is-medium(v-html="changelog")
 </template>
 
 <script>
