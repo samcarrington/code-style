@@ -220,6 +220,13 @@ Analogfolk London have not fully evaluated [Svelte][svelte-js] for use in
 production projects. It's recommended to use Vue or React until the 
 framework is fully reviewed.
 
+### Further reading
+
+- [Google JS-Doc reference](https://google.github.io/styleguide/jsguide.html#appendices-jsdoc-tag-reference)
+- [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
+- [YUI Theatre - 'JavaScript: The Good Parts', an inspiring historical view of JS](https://www.youtube.com/watch?v=_DKkVvOt6dk)
+- [Notes on Crockford's "Javascript The Good Parts"](https://github.com/dwyl/Javascript-the-Good-Parts-notes)
+
 [jsdoc]: http://usejsdoc.org/
 [prettier-js]: https://prettier.io/
 [standard-js]: https://standardjs.com/
