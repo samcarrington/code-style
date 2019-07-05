@@ -1,4 +1,4 @@
-## JavaScript {.title .is-2}
+## JavaScript
 
 It is important to note that JavaScript should be used to enhance the
 user's experience by adding engaging and interactive functionality. It
@@ -16,7 +16,7 @@ CSS can achieve the same effect.
 It's recommended that you implement Prettier to automatically lint and format
 your code during editing. 
 
-### Syntax {.title .is-3}
+### Syntax
 
 In common with the file formats and encodings conventions, indent with
 two spaces. Tabs MUST NOT be used. Lines SHOULD be kept to a reasonable
@@ -29,7 +29,7 @@ for code. This allows consistent and predictable layout and formatting.
 Formatting rules should be defined in a project's prettier.rc or eslint.rc 
 file to ensure that each developer uses the same set of rules & settings.
 
-#### .prettierrc {.title .is-4}
+#### .prettierrc
 ```json
 {
   "semi": false,
@@ -40,7 +40,7 @@ file to ensure that each developer uses the same set of rules & settings.
 Generally - two spaces for indentation, no semi-colons, single quotes are the
 preferred set of simple sub-rules for formatting.
 
-### Naming {.title .is-3}
+### Naming 
 
 Variables and functions SHOULD have concise but meaningful names. When
 referring to a jQuery wrapped object (for example, a collection returned
@@ -61,7 +61,7 @@ and "htmlLength".
 - Use `UpperCamelCase` for constructors and prototype objects
 - Use `CAPITALS_WITH_UNDERSCORES` for constants.
 
-### Scope {.title .is-3}
+### Scope
 
 Keeping scope small decreases the possibility of namespace collisions.
 
@@ -79,7 +79,7 @@ Keeping scope small decreases the possibility of namespace collisions.
 })();
 ```
 
-### Braces and brackets {.title .is-3}
+### Braces and brackets
 
 The following style of indentation MUST be used for functions (this
 is referred to as the One True Brace Style and is a variant of that
@@ -103,7 +103,7 @@ Prettier as a code-quality tool is both highly opinionated and also automated
 so if it is implemented in a project, the code style enforcement looks after
 itself.
 
-### ES2015 & ES6 {.title .is-3}
+### ES2015 & ES6
 
 As of v7, [Babel have deprecated the official Stage presets][babel-7]. This 
 makes it tougher to set a mandatory and consistent level of support for 
@@ -153,7 +153,7 @@ features as they stood at the point of being deprecated is as follows:
 }
 ```
 
-### Commenting code {.title .is-3}
+### Commenting code
 
 - Short inline comments SHOULD generally follow a line
 - Functions and constructors, classes and modules SHOULD be preceded
@@ -172,25 +172,25 @@ function Book(title, author) {
 }
 ````
 
-### Frameworks and Libraries {.title .is-3}
+### Frameworks and Libraries
 
 At project inception an agreement should be in place as to the frameworks 
 and/or libraries of use. Even if no library is to be used, the specification
 should identify [a consistent pattern][osmani-patterns] (beyond just linting
 rules) to be used for the organisation of JavaScript within a project. 
 
-#### React {.title .is-4}
+#### React
 
 Follow [the Airbnb React guidelines][airbnb-react]. Except where it conflicts
 with Prettier.
 
-#### Angular {.title .is-4}
+#### Angular
 
 Analogfolk London have not historically used this monolithic framework. But if
 a project requires it, follow 
 [the official Angular style guide][angular-official].
 
-#### jQuery {.title .is-4}
+#### jQuery
 
 If you're using jQuery for a project in 2019 the implementation of the
 framework should be cleared with senior technologists. You MUST yse version
@@ -199,7 +199,7 @@ framework should be cleared with senior technologists. You MUST yse version
 Use of the [jQuery UI Widget factory][jq-widget] is recommended for robust
 organisation of your code. Each UI element should be initialised as a widget
 
-#### Vue {.title .is-4}
+#### Vue
 
 Use [single file components][vue-single-file] to organise the components in
 your project. The [official Vue style guide][vue-style] should be followed.
@@ -207,14 +207,14 @@ your project. The [official Vue style guide][vue-style] should be followed.
 There's a useful article on setting up your IDE for use with Vue and eslint
 [on Medium][vue-eslint-medium].
 
-#### Underscore {.title .is-4}
+#### Underscore
 
 You may not need underscore/lodash. If you're targeting modern browsers there
 are [a number of native methods][underscore-native] you can use instead of the
 utility methods it supplies. However it does provide a uniform interface and
 API and therefore is supported for use in projects.
 
-#### Svelte {.title .is-4}
+#### Svelte
 
 Analogfolk London have not fully evaluated [Svelte][svelte-js] for use in
 production projects. It's recommended to use Vue or React until the 
