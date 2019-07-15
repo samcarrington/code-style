@@ -12,6 +12,16 @@ All notable changes to this project will be documented in this file. This projec
 
 ### Fixed
 
+## [1.3.3](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.3.3/) - Unreleased
+
+### Fixed
+
+- Uppercase hex colour declarations
+
+### Changed
+
+- Some wording, in CSS and JavaScript sections
+
 ## [1.3.2](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.3.2/) - 2019-07-04
 
 ### Fixed
