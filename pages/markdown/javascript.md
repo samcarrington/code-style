@@ -181,7 +181,7 @@ rules) to be used for the organisation of JavaScript within a project.
 
 #### React
 
-Follow [the Airbnb React guidelines][airbnb-react]. Except where it conflicts
+Follow the [Airbnb React/JSX Style Guide][airbnb-react]. Except where it conflicts
 with Prettier.
 
 #### Angular
