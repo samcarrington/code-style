@@ -15,4 +15,9 @@ monitored and enforced by Technical Leads.
 - Never mix spaces and tabs for indentation.
 - An [EditorConfig][editorconfig] should be added to any project to maintain conventions
 
+Generally use and enforce the standards outlined here. If your project varies in
+style at all from this document, agree that up front, document the standard, and
+enforce the standard you're using by adding tooling to your project. Overall, it
+is important to be internally consistent and predictable.
+
 [editorconfig]: https://editorconfig.org/

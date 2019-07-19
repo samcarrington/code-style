@@ -17,7 +17,7 @@ set of rules and should be followed in projects for Analogfolk.
 ```
 - Include a single space before the opening brace of a rule set.
 - Use one level of indentation for each declaration
-- Use lowercase and shorthand hex values.
+- Use lowercase hex values
 - use long form hex values (seven characters including the hash character) for consistency
 - Use single quotes consistently
 - Include a space after each comma in comma-separated property or function values
