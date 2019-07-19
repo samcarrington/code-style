@@ -14,6 +14,10 @@ All notable changes to this project will be documented in this file. This projec
 
 ## [1.3.3](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.3.3/) - Unreleased
 
+### Added
+
+- Google Analytics
+
 ### Fixed
 
 - Uppercase hex colour declarations
