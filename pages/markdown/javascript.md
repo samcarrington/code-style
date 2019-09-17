@@ -207,6 +207,166 @@ your project. The [official Vue style guide][vue-style] should be followed.
 There's a useful article on setting up your IDE for use with Vue and eslint
 [on Medium][vue-eslint-medium].
 
+The following list of useful best practices is based on 
+[Vue Best Practices][vue-best] by Riccardo Polacci
+
+##### Clear event listeners 
+
+Ahh memory leaks. Remember to remove listeners created with `$on` by use of 
+`$off` when `destroyed()`
+
+##### Always use kebab-case for event names
+
+Events are transformed automatically into lower case so declare as they will
+be listened to.
+
+```js
+// Emitting
+this.$emit('my-event') // instead of myEvent
+// Listening
+`v-on:my-event`
+```
+
+##### Don't call the same method from both created and watch
+
+Don't use the same method in two places, instead make use of the `immediate`
+flag on a component to forge the watch handler to run on initiation. You can
+also implement the `handler()` method inside the watch if it's not required
+elsewhere in your component.
+
+```js
+watch: {
+  myProperty: {
+    immediate: true, // forcing handler on initial status
+    handler() {
+      this.doSomething();
+    }
+  }
+},
+methods: {
+  doSomething() {
+     console.log('doing something...');
+  }
+},
+// Even better solution
+watch: {
+  myProperty: {
+    immediate: true, // forcing handler on initial status
+    handler() {
+      console.log('doing something...'); // No need to declare a function on methods for 1 use case
+    }
+  }
+},
+```
+
+##### Always use :key in v-for loops
+
+Your IDE *should* warn about this if configured properly. But always add a key
+to your loops.
+
+##### Use $_ for mixins properties
+
+When you add a mixin to a component, the mixin code is merged to the component
+and the component has priority. This can lead to overlapping property issues.
+Prepend mixin properties with `$_` to avoid this namespace clash. It's a
+convention from the VueJs style guide.
+
+However in the style guide they suggest also adding the mixin name. i.e. 
+`$_MixinName_methodName` however this can negatively impact readability. It
+should be enough simply to prepend `$_`.
+
+##### Values used in a mixin should be acquired inside the mixin
+
+If we create a mixin which uses a value from the store but the value is not
+defined or grabbed from the store inside the mixin then the Component where
+the mixin is defined has to contain the property.
+
+This is error prone. In order to avoid this, the value should be grabbed
+inside the mixin. Vue is clever enough to avoid duplication of work.
+
+##### Use PascalCase for single file components
+
+Pascal case has better integration with IDEs so use of this standard gives
+better QoL for devs, kebab-case is only a consideration in case insensitive
+operating systems.
+
+##### Use a prefix for Base component names
+
+Presentational dumb or pure components should have a prefix in your project
+which distinguishes them from other non pure components.
+
+##### Use PascalCase for component names
+
+PascalCase is the convention for constructors and classes. It makes sense
+to also use this for Vue components.
+
+##### Use the options order from the Vue style guide
+
+Follow the same order for all options across your project. The [VueJs
+convention][vue-options] can be found in the style guide.
+
+##### Never use v-if on the same element as v-for
+
+If you do this, the whole list will have to be iterated through by
+your code in order to render the output of a component. It's a big
+performance sink.
+
+##### Actions must always return
+
+Vuex actions use async/await and promises. Not returning from an 
+action will result in unpredictable code execution order.
+
+```js
+/** BAD! */
+
+// Store
+[SOME_ACTION] () {
+   // Doing stuff that takes a while
+   console.log('Action done');
+}
+// Consuming action
+async doSomething() {
+  await dispatch(SOME_ACTION);
+  console.log('Do stuff now');
+}
+`
+This will output:
+Do stuff now
+Action done
+`
+```
+
+Instead do this;
+
+```js
+// Store
+[SOME_ACTION] () {
+   // Doing stuff that takes a while
+   console.log('Action done');
+   Promise.resolve();
+}
+// Consuming action
+async doSomething() {
+  await dispatch(SOME_ACTION);
+  console.log('Do stuff now');
+}
+`
+This will output:
+// Action done
+// Do stuff now
+`
+```
+
+##### Use selectors inside actions and getters
+
+We create selectors for a reason, not only to be used all around the 
+app, but also within the Vuex Store.
+
+##### Further Reading
+
+1. [https://learn-vuejs.github.io/vue-patterns/patterns/](https://learn-vuejs.github.io/vue-patterns/patterns/)
+2. [https://vuejs-tips.github.io/cheatsheet/](https://vuejs-tips.github.io/cheatsheet/)
+
 #### Underscore
 
 You may not need underscore/lodash. If you're targeting modern browsers there
@@ -240,5 +400,7 @@ framework is fully reviewed.
 [vue-single-file]: https://vuejs.org/v2/guide/single-file-components.html
 [vue-style]: https://vuejs.org/v2/style-guide/
 [vue-eslint-medium]: https://medium.com/@gogl.alex/how-to-properly-set-up-eslint-with-prettier-for-vue-or-nuxt-in-vscode-e42532099a9c
+[vue-best]: https://blog.usejournal.com/vue-js-best-practices-c5da8d7af48d
+[vue-options]: https://vuejs.org/v2/style-guide/#Component-instance-options-order-recommended
 [underscore-native]: https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore
 [svelte-js]: https://svelte.dev/
