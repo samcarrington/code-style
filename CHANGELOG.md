@@ -12,7 +12,13 @@ All notable changes to this project will be documented in this file. This projec
 
 ### Fixed
 
-## [1.3.3](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.3.3/) - Unreleased
+## [1.4.0](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.4.0/) - 2019-09-17
+
+### Added
+
+- VueJs Best Practices
+
+## [1.3.3](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.3.3/) - 2019-07-19
 
 ### Added
 
