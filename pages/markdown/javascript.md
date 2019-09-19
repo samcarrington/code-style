@@ -230,7 +230,7 @@ this.$emit('my-event') // instead of myEvent
 ##### Don't call the same method from both created and watch
 
 Don't use the same method in two places, instead make use of the `immediate`
-flag on a component to forge the watch handler to run on initiation. You can
+flag on a component to force the watch handler to run on initiation. You can
 also implement the `handler()` method inside the watch if it's not required
 elsewhere in your component.
 

@@ -12,6 +12,12 @@ All notable changes to this project will be documented in this file. This projec
 
 ### Fixed
 
+## [1.4.2](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.4.2/) - 2019-09-19
+
+### Fixed
+
+- Some typos
+
 ## [1.4.0](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.4.0/) - 2019-09-17
 
 ### Added
