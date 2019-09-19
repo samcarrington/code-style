@@ -193,7 +193,7 @@ a project requires it, follow
 #### jQuery
 
 If you're using jQuery for a project in 2019 the implementation of the
-framework should be cleared with senior technologists. You MUST yse version
+framework should be cleared with senior technologists. You MUST use version
 3.1 or higher.
 
 Use of the [jQuery UI Widget factory][jq-widget] is recommended for robust
