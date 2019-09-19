@@ -46,5 +46,5 @@ this document. The [WAVE tool from WebAIM][wave] is a good way to audit your sit
 
 [pug]: https://pugjs.org/api/getting-started.html
 [w3c-validation]: https://validator.w3.org/
-[wcag]: https://www.w3.org/TR/WCAG20/
+[wcag]: https://www.w3.org/TR/WCAG21/
 [wave]: https://wave.webaim.org/extension/
