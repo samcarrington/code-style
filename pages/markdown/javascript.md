@@ -184,6 +184,12 @@ rules) to be used for the organisation of JavaScript within a project.
 Follow the [Airbnb React/JSX Style Guide][airbnb-react]. Except where it conflicts
 with Prettier.
 
+It's recommended that you use the [importable config setting][npm-react-config] from NPM, to ensure conformance with industry standards.
+
+```bash
+npm install --save-dev eslint-config-react-app @typescript-eslint/eslint-plugin@^4.0.0 @typescript-eslint/parser@^4.0.0 babel-eslint@^10.0.0 eslint@^7.5.0 eslint-plugin-flowtype@^5.2.0 eslint-plugin-import@^2.22.0 eslint-plugin-jsx-a11y@^6.3.1 eslint-plugin-react@^7.20.3 eslint-plugin-react-hooks@^4.0.8
+```
+
 #### Angular
 
 Analogfolk London have not historically used this monolithic framework. But if
@@ -197,7 +203,7 @@ framework should be cleared with senior technologists. You MUST use version
 3.6 or higher.
 
 Use of the [jQuery UI Widget factory][jq-widget] is recommended for robust
-organisation of your code. Each UI element should be initialised as a widget
+organisation of your code. Each UI element should be initialised as a widget.
 
 #### Vue
 
@@ -230,7 +236,7 @@ this.$emit('my-event') // instead of myEvent
 ##### Don't call the same method from both created and watch
 
 Don't use the same method in two places, instead make use of the `immediate`
-flag on a component to forge the watch handler to run on initiation. You can
+flag on a component to force the watch handler to run on initiation. You can
 also implement the `handler()` method inside the watch if it's not required
 elsewhere in your component.
 
@@ -397,6 +403,7 @@ framework is fully reviewed.
 [airbnb-react]: https://github.com/airbnb/javascript/tree/master/react
 [angular-official]: https://angular.io/guide/styleguide
 [jq-widget]: https://jqueryui.com/widget/
+[npm-react-config]: https://www.npmjs.com/package/eslint-config-react-app
 [vue-single-file]: https://vuejs.org/v2/guide/single-file-components.html
 [vue-style]: https://vuejs.org/v2/style-guide/
 [vue-eslint-medium]: https://medium.com/@gogl.alex/how-to-properly-set-up-eslint-with-prettier-for-vue-or-nuxt-in-vscode-e42532099a9c
