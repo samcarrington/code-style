@@ -18,7 +18,7 @@ clean, whitespace-sensitive syntax for writing HTML.
 
 Chain classes directly after an element
 
-````
+````pug
 input.field.field__large(placeholder = 'Enter your name')
 ````
 
