@@ -6,7 +6,7 @@ Analogfolk prefer the use of [Laravel][laravel] as an MVC framework for PHP proj
 ### Syntax
 
 Follow the guidelines in the PHP Standards Recommendations. Particular attention
-should be given to [PSR-1 (Basic Coding Standard)][psr-1] and [PSR-2 (Coding Style Guide)][psr-2]
+should be given to [PSR-1 (Basic Coding Standard)][psr-1] and [PSR-12 (Coding Style Guide)][psr-12]
 
 #### Naming
 
@@ -21,6 +21,6 @@ should be given to [PSR-1 (Basic Coding Standard)][psr-1] and [PSR-2 (Coding Sty
 
 [laravel]: https://laravel.com/
 [psr-1]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md
-[psr-2]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md
+[psr-12]: https://www.php-fig.org/psr/psr-12/
 [laravel-best]: http://www.laravelbestpractices.com/
 [solid]: https://medium.com/@dhkelmendi/solid-principles-made-easy-67b1246bcdf
