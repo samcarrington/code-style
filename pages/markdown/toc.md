@@ -6,15 +6,13 @@
     - Attributes
     - Nesting
     - Accessibility
-2. [PUG](/pug)
-    - Syntax
 3. [CSS](/css)
     - Syntax
     - Pre-processing
     - Specificity
     - Media Queries
     - Modularisation
-4. [JavaScript](/javascript)
+2. [JavaScript](/javascript)
     - Syntax
     - Naming
     - Scope
@@ -22,7 +20,9 @@
     - ES2015 & ES6
     - Commenting code
     - Frameworks and Libraries
-5. [PHP](/php)
+4. [PHP](/php)
+    - Syntax
+5. [PUG](/pug)
     - Syntax
 6. [.NET](/dotnet)
     - C#
