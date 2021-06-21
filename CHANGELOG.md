@@ -12,6 +12,18 @@ All notable changes to this project will be documented in this file. This projec
 
 ### Fixed
 
+## [1.5.0](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.5.0/) - 2021-06-21
+
+### Changed
+
+* Updated requirement for PSR-2 to PSR-12 in PHP Standards. 
+* Lowest jQuery version moved to 3.6 (latest at time of publish)
+* Order of sections in Table of Contents
+
+### Fixed
+
+* Minor typo
+
 ## [1.4.2](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.4.2/) - 2019-09-19
 
 ### Fixed
