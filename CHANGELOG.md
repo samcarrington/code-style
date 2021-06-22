@@ -29,6 +29,7 @@ the `hljs` classname from the container.
 
 ### Changed
 
+* switched to `mode: "static"` in nuxt config
 * Update core nuxt and dependencies in package.json
 * re-lint files based on 2021 linting config
 
@@ -39,7 +40,7 @@ the `hljs` classname from the container.
 * vuex
 * babel-preset-vue-app
 * cross-env
-* various outdated eslint-config includes
+* various outdated eslint-config dependencies
 * nodemon
 
 ### Fixed
@@ -49,7 +50,7 @@ the `hljs` classname from the container.
 ### Changed
 
 * Updated requirement for PSR-2 to PSR-12 in PHP Standards. 
-* Lowest jQuery version moved to 3.6 (latest at time of publish)
+* Lowest jQuery version increased to 3.6 (latest at time of publish)
 * Order of sections in Table of Contents
 
 ### Fixed
