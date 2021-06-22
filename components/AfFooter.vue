@@ -8,7 +8,7 @@
               a(href="mailto:hello@analogfolk.com") hello@analogfolk.com
         .level-right
           .level-item
-            p.has-text-light v{{ version }} &copy; 2019 AnalogFolk Ltd.
+            p.has-text-light v{{ version }} &copy; {{year}} AnalogFolk Ltd.
 
       div.right
 </template>
@@ -18,9 +18,10 @@ export default {
   name: 'AfFooter',
   data() {
     return {
-      version: process.env.app_version
+      version: process.env.app_version,
+      year: new Date().getFullYear(),
     }
-  }
+  },
 }
 </script>
 

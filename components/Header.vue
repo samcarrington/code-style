@@ -34,13 +34,13 @@ import afLogo from '@/components/icons/af'
 export default {
   name: 'Header',
   components: {
-    afLogo
+    afLogo,
   },
   data() {
     return {
-      showNav: false
+      showNav: false,
     }
-  }
+  },
 }
 </script>
 

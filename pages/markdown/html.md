@@ -20,15 +20,15 @@ for static files.
 - Comply to the following attribute order ...
   - class
   - id, name
-  - data-*
+  - data-\*
   - src, for, type, href, value
   - title, alt
-  - role, aria-*
+  - role, aria-\*
 
 ### Nesting
 
 HTML Tags should be properly nested per the document specification.
-Incorrectly nested tags are usually not a problem if a templating language 
+Incorrectly nested tags are usually not a problem if a templating language
 is used to generate HTML but can emerge if fragmented HTML is delivered from
 multiple partials.
 
@@ -37,8 +37,8 @@ as part of build. This will reveal issues immediately.
 
 ### Accessibility
 
-Projects published by AnalogFolk must meet AA checkpoints from 
-[WCAG 2.1 standards][wcag], and where possible, we should aim for support 
+Projects published by AnalogFolk must meet AA checkpoints from
+[WCAG 2.1 standards][wcag], and where possible, we should aim for support
 of AAA checkpoints.
 
 Full guidelines on implementation of accessible markup is outside the scope of

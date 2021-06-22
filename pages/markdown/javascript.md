@@ -11,10 +11,10 @@ where it is strictly necessary. Examples of unnecessary JavaScript:
 - Using JavaScript where a normal anchor link (A) would suffice.
 - Using JavaScript to submit a form, where the form's action would suffice.
 - Using JavaScript to replace images on mouse rollover/rollout, where
-CSS can achieve the same effect.
+  CSS can achieve the same effect.
 
 It's recommended that you implement Prettier to automatically lint and format
-your code during editing. 
+your code during editing.
 
 ### Syntax
 
@@ -24,12 +24,13 @@ length; < 100 characters is preferable. An editorConfig file should be
 included in a project to define the acceptable formatting rule for
 other developers.
 
-Use of [Standard JS][standard-js] or [Prettier][prettier-js] is recommended 
-for code. This allows consistent and predictable layout and formatting. 
-Formatting rules should be defined in a project's prettier.rc or eslint.rc 
+Use of [Standard JS][standard-js] or [Prettier][prettier-js] is recommended
+for code. This allows consistent and predictable layout and formatting.
+Formatting rules should be defined in a project's prettier.rc or eslint.rc
 file to ensure that each developer uses the same set of rules & settings.
 
 #### .prettierrc
+
 ```json
 {
   "semi": false,
@@ -40,19 +41,19 @@ file to ensure that each developer uses the same set of rules & settings.
 Generally - two spaces for indentation, no semi-colons, single quotes are the
 preferred set of simple sub-rules for formatting.
 
-### Naming 
+### Naming
 
 Variables and functions SHOULD have concise but meaningful names. When
 referring to a jQuery wrapped object (for example, a collection returned
 from a query selector), it is a common and very useful practice to
 prefix the variable name with the jQuery `$` sigil.
 
-- You SHOULD use self-documenting names, except for enumeration variables, 
+- You SHOULD use self-documenting names, except for enumeration variables,
   which SHOULD be named i, j, k, and so on.
 - You MUST use camelCase, including names that contain acronyms like "getCss"
-and "htmlLength".
+  and "htmlLength".
 - You MUST name constructor functions with an initial uppercase letter.
-- When a symbol is publicly accessible but is not intended for public use, you 
+- When a symbol is publicly accessible but is not intended for public use, you
   MUST prepend an underscore to the name.
 - When a symbol is intended to be constant you MUST use all-caps and optionally
   underscores to separate words.
@@ -72,11 +73,11 @@ Keeping scope small decreases the possibility of namespace collisions.
 
 ```javascript
 // this is the global scope
-(function() {
+;(function () {
   function foo() {
-    var x = 1;
+    var x = 1
   }
-})();
+})()
 ```
 
 ### Braces and brackets
@@ -85,7 +86,7 @@ The following style of indentation MUST be used for functions (this
 is referred to as the One True Brace Style and is a variant of that
 used by Kernighan and Ritchie):
 
-````javascript
+```javascript
 function func(arg1, arg2) {
   // body
   if (condition) {
@@ -94,7 +95,7 @@ function func(arg1, arg2) {
     // reaction
   }
 }
-````
+```
 
 Indentation and bracketing style should be enforced on save or pre-commit
 through an automated linting rule, such as in use for this documentation.
@@ -105,8 +106,8 @@ itself.
 
 ### ES2015 & ES6
 
-As of v7, [Babel have deprecated the official Stage presets][babel-7]. This 
-makes it tougher to set a mandatory and consistent level of support for 
+As of v7, [Babel have deprecated the official Stage presets][babel-7]. This
+makes it tougher to set a mandatory and consistent level of support for
 language features which developers want to use, and rely on Babel to transpile
 them into your required platform support level. Use of `preset-env` allows a
 project-wide setting (based on browserlist) for babel to target the same
@@ -119,8 +120,8 @@ level for any transpilation but also to declare in version control the mandated
 support level for your project, based on that stated in the technical
 specification.
 
-[Babel upgrade][babel-upgrade] can be used in existing projects to project 
-them into the right state for Babel 7 support. The table of language 
+[Babel upgrade][babel-upgrade] can be used in existing projects to project
+them into the right state for Babel 7 support. The table of language
 features as they stood at the point of being deprecated is as follows:
 
 ```json
@@ -157,10 +158,10 @@ features as they stood at the point of being deprecated is as follows:
 
 - Short inline comments SHOULD generally follow a line
 - Functions and constructors, classes and modules SHOULD be preceded
-by a header multi-line comment using [JSDoc syntax](jsdoc) to describe
-parameters and return values
+  by a header multi-line comment using [JSDoc syntax](jsdoc) to describe
+  parameters and return values
 
-````javascript
+```javascript
 /**
  * Represents a book.
  * @constructor
@@ -170,14 +171,14 @@ parameters and return values
 function Book(title, author) {
   const $el = $(options.parentElement) // The parent of the widget
 }
-````
+```
 
 ### Frameworks and Libraries
 
-At project inception an agreement should be in place as to the frameworks 
+At project inception an agreement should be in place as to the frameworks
 and/or libraries of use. Even if no library is to be used, the specification
 should identify [a consistent pattern][osmani-patterns] (beyond just linting
-rules) to be used for the organisation of JavaScript within a project. 
+rules) to be used for the organisation of JavaScript within a project.
 
 #### React
 
@@ -193,7 +194,7 @@ npm install --save-dev eslint-config-react-app @typescript-eslint/eslint-plugin@
 #### Angular
 
 Analogfolk London have not historically used this monolithic framework. But if
-a project requires it, follow 
+a project requires it, follow
 [the official Angular style guide][angular-official].
 
 #### jQuery
@@ -213,12 +214,12 @@ your project. The [official Vue style guide][vue-style] should be followed.
 There's a useful article on setting up your IDE for use with Vue and eslint
 [on Medium][vue-eslint-medium].
 
-The following list of useful best practices is based on 
+The following list of useful best practices is based on
 [Vue Best Practices][vue-best] by Riccardo Polacci
 
-##### Clear event listeners 
+##### Clear event listeners
 
-Ahh memory leaks. Remember to remove listeners created with `$on` by use of 
+Ahh memory leaks. Remember to remove listeners created with `$on` by use of
 `$off` when `destroyed()`
 
 ##### Always use kebab-case for event names
@@ -228,8 +229,7 @@ be listened to.
 
 ```js
 // Emitting
-this.$emit('my-event') // instead of myEvent
-// Listening
+this.$emit('my-event')// Listening // instead of myEvent
 `v-on:my-event`
 ```
 
@@ -267,17 +267,17 @@ watch: {
 
 ##### Always use :key in v-for loops
 
-Your IDE *should* warn about this if configured properly. But always add a key
+Your IDE _should_ warn about this if configured properly. But always add a key
 to your loops.
 
-##### Use $_ for mixins properties
+##### Use $\_ for mixins properties
 
 When you add a mixin to a component, the mixin code is merged to the component
 and the component has priority. This can lead to overlapping property issues.
 Prepend mixin properties with `$_` to avoid this namespace clash. It's a
 convention from the VueJs style guide.
 
-However in the style guide they suggest also adding the mixin name. i.e. 
+However in the style guide they suggest also adding the mixin name. i.e.
 `$_MixinName_methodName` however this can negatively impact readability. It
 should be enough simply to prepend `$_`.
 
@@ -319,7 +319,7 @@ performance sink.
 
 ##### Actions must always return
 
-Vuex actions use async/await and promises. Not returning from an 
+Vuex actions use async/await and promises. Not returning from an
 action will result in unpredictable code execution order.
 
 ```js
@@ -365,7 +365,7 @@ This will output:
 
 ##### Use selectors inside actions and getters
 
-We create selectors for a reason, not only to be used all around the 
+We create selectors for a reason, not only to be used all around the
 app, but also within the Vuex Store.
 
 ##### Further Reading
@@ -383,7 +383,7 @@ API and therefore is supported for use in projects.
 #### Svelte
 
 Analogfolk London have not fully evaluated [Svelte][svelte-js] for use in
-production projects. It's recommended to use Vue or React until the 
+production projects. It's recommended to use Vue or React until the
 framework is fully reviewed.
 
 ### Further reading

@@ -11,19 +11,19 @@ import changelog from '../CHANGELOG.md'
 export default {
   data() {
     return {
-      title: 'Stylish AF - Change log'
+      title: 'Stylish AF - Change log',
     }
   },
   computed: {
     changelog() {
       return changelog
-    }
+    },
   },
   head() {
     return {
-      title: this.title
+      title: this.title,
     }
-  }
+  },
 }
 </script>
 

@@ -15,22 +15,22 @@ export default {
     return {
       pageTitle: this.title,
       subtitle: this.subtitle,
-      title: [this.title, this.subtitle].join(' - ')
+      title: [this.title, this.subtitle].join(' - '),
     }
   },
   computed: {
     javascript() {
       return javascript
-    }
+    },
   },
   async mounted() {
     this.title = (await this.pageTitle) + ' - ' + this.subtitle
   },
   head() {
     return {
-      title: this.title
+      title: this.title,
     }
-  }
+  },
 }
 </script>
 
