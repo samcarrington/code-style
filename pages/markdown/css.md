@@ -3,18 +3,19 @@
 The ruleset [defined by Airbnb][airbnb-css] for their CSS is the best one-stop
 set of rules and should be followed in projects for Analogfolk.
 
-
 ### Formatting & Syntax
 
 - Use **two spaces** for indentation
 - Use a space to separate the colon after the property from its value
 - Always end a `property: value` pair with a semicolon and new line
 - Use one discreet selector per line in multi-selector rule sets.
+
 ```
 .box--selected,
 .item--selected,
 .title--selected {}
 ```
+
 - Include a single space before the opening brace of a rule set.
 - Use one level of indentation for each declaration
 - Use lowercase hex values
@@ -28,14 +29,13 @@ See [this codepen][codepen1] for examples of correct usage.
 #### Declaration ordering
 
 If declarations are to be consistently ordered, it SHOULD be in
-accordance with a single, simple principle. Define either 
+accordance with a single, simple principle. Define either
 [clustered ordering][css-clustered] or [alphabetical ordering][css-alpha],
-depending on the requirements and preferences of the team. The standard 
- approach MUST be documented. Code reviews should enforce the standard.
+depending on the requirements and preferences of the team. The standard
+approach MUST be documented. Code reviews should enforce the standard.
 
 **Use caution** - retrospectively ordering properties alphabetically after
 a lot of css has been written can be a cause of style regression bugs.
-
 
 ### Pre-processing
 
@@ -44,14 +44,13 @@ We use SASS (with SCSS syntax) as a preprocessor of choice.
 - Use `.scss` syntax not `.sass`
 - Do not nest selectors more than three levels deep
 - Avoid using `@extend` if possible (use mixins instead), but if you do use it...
-   - Always place `@extend` statements on the first line of a declaration
-   - only extend `%placeholder` classes
+  - Always place `@extend` statements on the first line of a declaration
+  - only extend `%placeholder` classes
 - Where possible, group `@include` statements at the top of a
-declaration block, after any `@extend` statements
+  declaration block, after any `@extend` statements
 
 ```scss
 .block {
-
   @extend %base-block;
 
   &__element {
@@ -61,7 +60,6 @@ declaration block, after any `@extend` statements
   &--modifier {
     property: value;
   }
-
 }
 ```
 
@@ -69,7 +67,6 @@ declaration block, after any `@extend` statements
 
 - Omit units after "0"
 - Omit leading "0"s in values (i.e. `.5em` not `0.5em`)
-
 
 ### Specificity
 
@@ -84,7 +81,7 @@ Generally use of BEM and OO principles should avoid falling into any of the bad 
 ```scss
 // BAD
 section.intro {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   border: 0px;
 }
 
@@ -112,33 +109,33 @@ section.intro {
 
 ```scss
 // BAD
-.valid-class-name {}
+.valid-class-name {
+}
 
 .invalidClassName,
-.invalid_classname {}
+.invalid_classname {
+}
 
 // acceptable
 .infoBlock {
   &__element {
     background: yellow;
   }
-  
+
   &--modifier {
-     color: red;
+    color: red;
   }
 }
 ```
 
-- If an element is to have functionality bound to it in Javascript, use a 
+- If an element is to have functionality bound to it in Javascript, use a
   className prepended with 'js-' to identify it. Avoid binding to the same
   class in both CSS and Javascript.
-
 
 ### Media Queries
 
 - Add media query blocks for an element at the end of the declaration
-block for that element
-
+  block for that element
 
 ### Modularisation
 
@@ -179,7 +176,6 @@ files in each directory by using `@import` rules in that index.scss
 [css-alpha]: https://meiert.com/en/blog/on-declaration-sorting/
 [codepen1]: http://codepen.io/gwawr/pen/VaROdB
 [bem-101]: https://css-tricks.com/bem-101/
-
 [airbnb-oocss]: https://github.com/airbnb/css#oocss-and-bem
 [smacss]: https://smacss.com/book/categorizing
 [smacss-base]: http://smacss.com/book/type-base

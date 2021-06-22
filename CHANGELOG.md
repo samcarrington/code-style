@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file. This projec
 
 ## Unreleased
 
+Still to update - proper buefy/nuxt support to update use of Bulma. Alternatively,
+switch to Tailwind. Additionally, an issue with markdown-it and highlight.js is
+preventing an update to the latest versions of the related dependencies as we lose 
+the `hljs` classname from the container.
+
 ### Added
 
 ### Changed
@@ -12,12 +17,40 @@ All notable changes to this project will be documented in this file. This projec
 
 ### Fixed
 
+* Fix Pug not found error on build
+
+## [2.0.0](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v2.0.0/) - 2021-06-21
+
+### Added
+
+* Known issue: Pug not found error message (project still compiles)
+* Buefy
+* @nuxt/types
+
+### Changed
+
+* switched to `mode: "static"` in nuxt config
+* Update core nuxt and dependencies in package.json
+* re-lint files based on 2021 linting config
+
+### Removed
+
+* node-sass 
+* express
+* vuex
+* babel-preset-vue-app
+* cross-env
+* various outdated eslint-config dependencies
+* nodemon
+
+### Fixed
+
 ## [1.5.0](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.5.0/) - 2021-06-21
 
 ### Changed
 
 * Updated requirement for PSR-2 to PSR-12 in PHP Standards. 
-* Lowest jQuery version moved to 3.6 (latest at time of publish)
+* Lowest jQuery version increased to 3.6 (latest at time of publish)
 * Order of sections in Table of Contents
 
 ### Fixed

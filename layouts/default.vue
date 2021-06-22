@@ -12,16 +12,16 @@ import AfFooter from '~/components/AfFooter.vue'
 export default {
   components: {
     Navbar,
-    AfFooter
+    AfFooter,
   },
   computed: {
     visible() {
       return true
-    }
+    },
   },
   watch: {
     // $route: 'setStore'
-  }
+  },
 }
 </script>
 

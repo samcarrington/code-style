@@ -1,29 +1,29 @@
 ## Table of Contents
 
 1. [HTML](/html)
-    - Syntax
-    - Encoding
-    - Attributes
-    - Nesting
-    - Accessibility
+   - Syntax
+   - Encoding
+   - Attributes
+   - Nesting
+   - Accessibility
 2. [JavaScript](/javascript)
-    - Syntax
-    - Naming
-    - Scope
-    - Braces and Brackets
-    - ES2015 & ES6
-    - Commenting code
-    - Frameworks and Libraries
+   - Syntax
+   - Naming
+   - Scope
+   - Braces and Brackets
+   - ES2015 & ES6
+   - Commenting code
+   - Frameworks and Libraries
 3. [CSS](/css)
-    - Syntax
-    - Pre-processing
-    - Specificity
-    - Media Queries
-    - Modularisation
+   - Syntax
+   - Pre-processing
+   - Specificity
+   - Media Queries
+   - Modularisation
 4. [PHP](/php)
-    - Syntax
+   - Syntax
 5. [PUG](/pug)
-    - Syntax
+   - Syntax
 6. [.NET](/dotnet)
-    - C#
-    - .NET MVC
+   - C#
+   - .NET MVC

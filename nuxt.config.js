@@ -1,5 +1,5 @@
-module.exports = {
-  mode: 'universal',
+export default {
+  target: 'static',
   /*
    ** Headers of the page
    */
@@ -11,19 +11,19 @@ module.exports = {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
-      }
+        content: process.env.npm_package_description || '',
+      },
     ],
     link: [
       {
         rel: 'icon',
         type: 'image/x-icon',
-        href: '/favicon.ico'
-      }
+        href: '/favicon.ico',
+      },
     ],
     bodyAttrs: {
-      'data-version': process.env.npm_package_version || ''
-    }
+      'data-version': process.env.npm_package_version || '',
+    },
   },
   /*
    ** Customize the progress-bar color
@@ -34,7 +34,7 @@ module.exports = {
    */
   css: [
     { src: '@/assets/sass/app.scss', lang: 'scss' },
-    { src: '~/node_modules/highlight.js/styles/a11y-dark.css', lang: 'css' }
+    { src: '~/node_modules/highlight.js/styles/a11y-dark.css', lang: 'css' },
   ],
   /*
    ** Plugins to load before mounting the App
@@ -52,11 +52,11 @@ module.exports = {
     [
       '@nuxtjs/google-analytics',
       {
-        id: 'UA-26457988-4'
-      }
+        id: 'UA-26457988-4',
+      },
     ],
     '@nuxtjs/markdownit',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
   ],
   /*
    ** Axios module configuration
@@ -68,10 +68,10 @@ module.exports = {
     linkify: false,
     breaks: false,
     // use: [['markdown-it-container', 'name'], 'markdown-it-attrs']
-    use: ['markdown-it-highlightjs', 'markdown-it-attrs']
+    use: ['markdown-it-highlightjs', 'markdown-it-attrs'],
   },
   env: {
-    app_version: process.env.npm_package_version
+    app_version: process.env.npm_package_version,
   },
   /*
    ** Build configuration
@@ -80,13 +80,13 @@ module.exports = {
     postcss: {
       preset: {
         features: {
-          customProperties: false
-        }
-      }
+          customProperties: false,
+        },
+      },
     },
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
-  }
+    extend(config, ctx) {},
+  },
 }
