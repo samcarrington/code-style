@@ -10,6 +10,6 @@
 
 <style scoped>
 .af-monogram-fill {
-  fill: #13110c;
+  fill: theme('colors.gray.100');
 }
 </style>

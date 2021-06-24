@@ -94,4 +94,8 @@ ul {
 pre {
   margin-bottom: 1em;
 }
+
+.container article {
+  @apply pb-0.5 mb-16;
+}
 </style>

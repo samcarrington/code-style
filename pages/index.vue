@@ -7,8 +7,9 @@
           h2.subtitle {{ subtitle }}
     section.section
       .container.mx-auto
-        article#intro.content.is-medium(v-html="intro")
-        article#toc.content.is-medium(v-html="toc")
+        article
+          #intro.content.is-medium(v-html="intro")
+          #toc.content.is-medium(v-html="toc")
 </template>
 
 <script>
