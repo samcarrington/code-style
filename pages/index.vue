@@ -3,10 +3,10 @@
     section.hero.is-medium.is-bold.is-dark
       .hero-body
         .container
-          h1.title.is-1(v-html="pageTitle")
-          h2.subtitle(v-html="subtitle")
+          h1.title.is-1 {{ pageTitle }}
+          h2.subtitle {{ subtitle }}
     section.section
-      .container
+      .container.mx-auto
         article#intro.content.is-medium(v-html="intro")
         article#toc.content.is-medium(v-html="toc")
 </template>
@@ -25,6 +25,11 @@ export default {
       title: [this.title, this.subtitle].join(' - '),
     }
   },
+  head() {
+    return {
+      title: this.title,
+    }
+  },
   computed: {
     intro() {
       return intro
@@ -35,11 +40,6 @@ export default {
   },
   async mounted() {
     this.title = (await this.pageTitle) + ' - ' + this.subtitle
-  },
-  head() {
-    return {
-      title: this.title,
-    }
   },
 }
 </script>

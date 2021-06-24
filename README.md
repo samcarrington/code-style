@@ -1,6 +1,6 @@
 # Folk Style
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f5c90e22-b264-499b-beb0-8257a35883b3/deploy-status)](https://app.netlify.com/sites/hardcore-blackwell-d77203/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a68a85f7-ee00-4dc1-bd8d-e1916b7e4e41/deploy-status)](https://app.netlify.com/sites/determined-jackson-17a74d/deploys)
 
 An opinionated but simple style guide for technical projects authored at
 Analogfolk London.

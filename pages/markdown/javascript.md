@@ -229,7 +229,9 @@ be listened to.
 
 ```js
 // Emitting
-this.$emit('my-event')// Listening // instead of myEvent
+this.$emit(
+  'my-event'
+) // Listening // instead of myEvent
 `v-on:my-event`
 ```
 

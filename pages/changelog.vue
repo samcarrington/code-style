@@ -1,7 +1,7 @@
 <template lang="pug">
   div.html
     section.section
-      .container
+      .container.mx-auto
         article#html.content.is-medium(v-html="changelog")
 </template>
 
@@ -14,15 +14,15 @@ export default {
       title: 'Stylish AF - Change log',
     }
   },
-  computed: {
-    changelog() {
-      return changelog
-    },
-  },
   head() {
     return {
       title: this.title,
     }
+  },
+  computed: {
+    changelog() {
+      return changelog
+    },
   },
 }
 </script>
