@@ -5,7 +5,9 @@
         p.text-gray-300.py-3.text-sm
           a(href="mailto:hello@analogfolk.com") hello@analogfolk.com
 
-        p.text-gray-300.py-3.text-sm v{{ version }} &copy; {{year}} AnalogFolk Ltd.
+        .text-gray-300.py-3.text-sm.flex
+          .bg-green-500.rounded-sm.px-2.mx-2.text-gray-800 v{{ version }}
+          div &copy; {{year}} AnalogFolk Ltd.
 
       div.right
 </template>

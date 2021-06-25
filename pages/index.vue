@@ -1,10 +1,11 @@
 <template lang="pug">
   div.home
-    section.hero.is-medium.is-bold.is-dark
-      .hero-body
-        .container
-          h1.title.is-1 {{ pageTitle }}
-          h2.subtitle {{ subtitle }}
+    section.hero.bg-gray-500.mb-16
+      .hero-body.max-w-7xl
+        .container.mx-auto
+          .py-16
+            h1.title.text-gray-100 {{ pageTitle }}
+            h2.subtitle.text-gray-100 {{ subtitle }}
     section.section
       .container.mx-auto
         article
@@ -49,5 +50,13 @@ export default {
 .section > .container {
   background-color: white;
   padding: 0 1em;
+}
+
+.title {
+  @apply text-4xl sm:text-5xl;
+}
+
+.subtitle {
+  @apply text-2xl sm:text-4xl;
 }
 </style>
