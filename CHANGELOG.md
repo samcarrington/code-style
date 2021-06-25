@@ -19,7 +19,7 @@ the `hljs` classname from the container.
 
 * Fix Pug not found error on build
 
-## [3.0.0](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v2.0.0/) - 2021-06-21
+## [3.0.0](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v3.0.0/) - 2021-06-25
 
 ### Added
 
@@ -28,10 +28,11 @@ the `hljs` classname from the container.
 ### Removed
 
 - Buefy and Bulma
+- Some Bulma class names
 
 ### Changed
 
-- Utility styles from Tailwa
+- Minor and patch updates to existing dependencies
 
 ## [2.0.0](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v2.0.0/) - 2021-06-21
 
