@@ -3,7 +3,8 @@
   "version": "3.0.0",
   "description": "A house coding styleguide for Analogfolk London",
   "author": "Sam Carrington <sam.carrington@analogfolk.com>",
-  "private": true,
+  "license": "MIT",
+  "repository": "https://github.com/AnalogFolk/folk-style.git",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
