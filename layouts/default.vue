@@ -70,20 +70,22 @@ p {
   &:after {
     content: '';
     z-index: -1;
-    top: 70%;
+    top: 17px;
     left: -0.2em;
     right: -0.2em;
     bottom: 0;
     position: absolute;
     transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
-    background-color: rgba($brand-red, 0.5);
+    background-color: rgba($brand-red, 0.3);
     border-radius: 5px;
   }
 }
 
-ul {
+ul,
+ol {
   li {
     list-style-type: disc;
+    line-height: 1.2;
     p {
       padding-bottom: 0;
     }
@@ -93,5 +95,9 @@ ul {
 
 pre {
   margin-bottom: 1em;
+}
+
+.container article {
+  @apply pb-0.5 mb-16;
 }
 </style>

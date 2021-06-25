@@ -1,8 +1,14 @@
-// bulma over-ride
+// reset override
 .content {
   ol,
   ul {
-    //margin-left: 1em;
-    //margin-top: 0.5em;
+    @apply ml-4;
+    @apply mt-2;
+  }
+}
+
+pre {
+  code {
+    @apply text-sm;
   }
 }

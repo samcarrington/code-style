@@ -19,6 +19,21 @@ the `hljs` classname from the container.
 
 * Fix Pug not found error on build
 
+## [3.0.0](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v3.0.0/) - 2021-06-25
+
+### Added
+
+- Tailwind via `@nuxtjs/tailwindcss`
+
+### Removed
+
+- Buefy and Bulma
+- Some Bulma class names
+
+### Changed
+
+- Minor and patch updates to existing dependencies
+
 ## [2.0.0](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v2.0.0/) - 2021-06-21
 
 ### Added
@@ -29,6 +44,7 @@ the `hljs` classname from the container.
 
 ### Changed
 
+* switched to `mode: "static"` in nuxt config
 * Update core nuxt and dependencies in package.json
 * re-lint files based on 2021 linting config
 
@@ -39,7 +55,7 @@ the `hljs` classname from the container.
 * vuex
 * babel-preset-vue-app
 * cross-env
-* various outdated eslint-config includes
+* various outdated eslint-config dependencies
 * nodemon
 
 ### Fixed
@@ -49,7 +65,7 @@ the `hljs` classname from the container.
 ### Changed
 
 * Updated requirement for PSR-2 to PSR-12 in PHP Standards. 
-* Lowest jQuery version moved to 3.6 (latest at time of publish)
+* Lowest jQuery version increased to 3.6 (latest at time of publish)
 * Order of sections in Table of Contents
 
 ### Fixed
