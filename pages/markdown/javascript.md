@@ -49,15 +49,14 @@ from a query selector), it is a common and very useful practice to
 prefix the variable name with the jQuery `$` sigil.
 
 - You SHOULD use self-documenting names, except for enumeration variables,
-  which SHOULD be named i, j, k, and so on.
+  which SHOULD be named i, j, k, and so on
 - You MUST use camelCase, including names that contain acronyms like "getCss"
-  and "htmlLength".
+  and "htmlLength"
 - You MUST name constructor functions with an initial uppercase letter.
 - When a symbol is publicly accessible but is not intended for public use, you
-  MUST prepend an underscore to the name.
+  MUST prepend an underscore to the name
 - When a symbol is intended to be constant you MUST use all-caps and optionally
-  underscores to separate words.
-
+  underscores to separate words
 - Use `camelCase` for variables & functions
 - Use `UpperCamelCase` for constructors and prototype objects
 - Use `CAPITALS_WITH_UNDERSCORES` for constants.
@@ -229,7 +228,9 @@ be listened to.
 
 ```js
 // Emitting
-this.$emit('my-event')// Listening // instead of myEvent
+this.$emit(
+  'my-event'
+) // Listening // instead of myEvent
 `v-on:my-event`
 ```
 
@@ -390,7 +391,7 @@ framework is fully reviewed.
 
 - [Google JS-Doc reference](https://google.github.io/styleguide/jsguide.html#appendices-jsdoc-tag-reference)
 - [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
-- [YUI Theatre - 'JavaScript: The Good Parts', an inspiring historical view of JS](https://www.youtube.com/watch?v=_DKkVvOt6dk)
+- YUI Theatre - ['JavaScript: The Good Parts'](https://www.youtube.com/watch?v=_DKkVvOt6dk), an inspiring historical view of JS
 - [Notes on Crockford's "Javascript The Good Parts"](https://github.com/dwyl/Javascript-the-Good-Parts-notes)
 
 [jsdoc]: http://usejsdoc.org/

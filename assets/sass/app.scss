@@ -1,6 +1,4 @@
-@import '~bulma/sass/utilities/_all';
 @import 'base';
-@import '~bulma';
 @import 'layout';
 @import 'module';
 
@@ -13,13 +11,29 @@ h3,
 h4,
 h5 {
   font-family: $title-family;
-  font-weight: 700;
+  font-weight: 400;
   padding-top: 0.4em;
   padding-bottom: 0.3em;
 }
 
+h1 {
+  @apply text-5xl;
+}
+
+h2 {
+  @apply text-4xl;
+}
+
+h3 {
+  @apply text-3xl;
+}
+
+h4 {
+  @apply text-2xl;
+}
+
 h5 {
-  font-size: 20px;
+  @apply text-2xl;
 }
 
 pre,

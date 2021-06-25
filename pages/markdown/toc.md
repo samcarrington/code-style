@@ -22,8 +22,8 @@
    - Modularisation
 4. [PHP](/php)
    - Syntax
-5. [PUG](/pug)
-   - Syntax
-6. [.NET](/dotnet)
+5. [.NET](/dotnet)
    - C#
    - .NET MVC
+6. [PUG](/pug)
+   - Syntax

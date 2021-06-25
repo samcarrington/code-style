@@ -1,7 +1,7 @@
 <template lang="pug">
   div.css
     section.section
-      .container
+      .container.mx-auto
         article#html.content.is-medium(v-html="css")
 </template>
 
@@ -18,6 +18,11 @@ export default {
       title: [this.title, this.subtitle].join(' - '),
     }
   },
+  head() {
+    return {
+      title: this.title,
+    }
+  },
   computed: {
     css() {
       return css
@@ -25,11 +30,6 @@ export default {
   },
   async mounted() {
     this.title = (await this.pageTitle) + ' - ' + this.subtitle
-  },
-  head() {
-    return {
-      title: this.title,
-    }
   },
 }
 </script>

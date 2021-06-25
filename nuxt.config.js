@@ -33,6 +33,7 @@ export default {
    ** Global CSS
    */
   css: [
+    { src: '@/assets/css/tailwind.css', lang: 'css' },
     { src: '@/assets/sass/app.scss', lang: 'scss' },
     { src: '~/node_modules/highlight.js/styles/a11y-dark.css', lang: 'css' },
   ],
@@ -40,9 +41,20 @@ export default {
    ** Plugins to load before mounting the App
    */
   plugins: [],
-  /*
-   ** Nuxt.js modules
-   */
+
+  // Auto import components: https://go.nuxtjs.dev/config-components
+  components: true,
+
+  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
+  buildModules: [
+    // https://go.nuxtjs.dev/eslint
+    '@nuxtjs/eslint-module',
+    // https://go.nuxtjs.dev/tailwindcss
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/markdownit',
+  ],
+
+  // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
     // '@nuxtjs/bulma',
@@ -55,7 +67,7 @@ export default {
         id: 'UA-26457988-4',
       },
     ],
-    '@nuxtjs/markdownit',
+
     '@nuxtjs/pwa',
   ],
   /*
@@ -69,6 +81,11 @@ export default {
     breaks: false,
     // use: [['markdown-it-container', 'name'], 'markdown-it-attrs']
     use: ['markdown-it-highlightjs', 'markdown-it-attrs'],
+  },
+  pwa: {
+    manifest: {
+      lang: 'en',
+    },
   },
   env: {
     app_version: process.env.npm_package_version,
