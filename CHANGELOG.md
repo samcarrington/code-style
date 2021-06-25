@@ -19,6 +19,20 @@ the `hljs` classname from the container.
 
 * Fix Pug not found error on build
 
+## [3.0.0](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v2.0.0/) - 2021-06-21
+
+### Added
+
+- Tailwind via `@nuxtjs/tailwindcss`
+
+### Removed
+
+- Buefy and Bulma
+
+### Changed
+
+- Utility styles from Tailwa
+
 ## [2.0.0](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v2.0.0/) - 2021-06-21
 
 ### Added
