@@ -51,6 +51,7 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/markdownit',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -66,7 +67,7 @@ export default {
         id: 'UA-26457988-4',
       },
     ],
-    '@nuxtjs/markdownit',
+
     '@nuxtjs/pwa',
   ],
   /*
