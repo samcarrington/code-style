@@ -19,26 +19,26 @@ the `hljs` classname from the container.
 
 * Fix Pug not found error on build
 
-## [3.0.0](https://github.com/AnalogFolk/folk-style/tree/v3.0.1) - 2021-06-25
-
-Still to update - proper buefy/nuxt support to update use of Bulma. Alternatively,
-switch to Tailwind. Additionally, an issue with markdown-it and highlight.js is
-preventing an update to the latest versions of the related dependencies as we lose
-the `hljs` classname from the container.
+## [3.0.1](https://github.com/AnalogFolk/folk-style/tree/v3.0.1) - 2021-06-25
 
 ### Added
 
 ### Changed
 
+- References to Bitbucket in chagelog into github tag links
+
 ### Removed
 
 ### Fixed
+
+- Hero header max width
 
 ## [3.0.0](https://github.com/AnalogFolk/folk-style/tree/v3.0.0) - 2021-06-25
 
 ### Added
 
 - Tailwind via `@nuxtjs/tailwindcss`
+- MIT license
 
 ### Removed
 
