@@ -19,11 +19,26 @@ the `hljs` classname from the container.
 
 * Fix Pug not found error on build
 
-## [3.0.0](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v3.0.0/) - 2021-06-25
+## [3.0.1](https://github.com/AnalogFolk/folk-style/tree/v3.0.1) - 2021-06-25
+
+### Added
+
+### Changed
+
+- References to Bitbucket in chagelog into github tag links
+
+### Removed
+
+### Fixed
+
+- Hero header max width
+
+## [3.0.0](https://github.com/AnalogFolk/folk-style/tree/v3.0.0) - 2021-06-25
 
 ### Added
 
 - Tailwind via `@nuxtjs/tailwindcss`
+- MIT license
 
 ### Removed
 
@@ -34,7 +49,7 @@ the `hljs` classname from the container.
 
 - Minor and patch updates to existing dependencies
 
-## [2.0.0](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v2.0.0/) - 2021-06-21
+## [2.0.0](https://github.com/AnalogFolk/folk-style/tree/v2.0.0) - 2021-06-21
 
 ### Added
 
@@ -60,7 +75,7 @@ the `hljs` classname from the container.
 
 ### Fixed
 
-## [1.5.0](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.5.0/) - 2021-06-21
+## [1.5.0](https://github.com/AnalogFolk/folk-style/tree//v1.5.0) - 2021-06-21
 
 ### Changed
 
@@ -72,19 +87,19 @@ the `hljs` classname from the container.
 
 * Minor typo
 
-## [1.4.2](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.4.2/) - 2019-09-19
+## [1.4.2](https://github.com/AnalogFolk/folk-style/tree/v1.4.2) - 2019-09-19
 
 ### Fixed
 
 - Some typos
 
-## [1.4.0](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.4.0/) - 2019-09-17
+## [1.4.0](https://github.com/AnalogFolk/folk-style/tree/v1.4.0) - 2019-09-17
 
 ### Added
 
 - VueJs Best Practices
 
-## [1.3.3](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.3.3/) - 2019-07-19
+## [1.3.3](https://github.com/AnalogFolk/folk-style/tree/v1.3.3) - 2019-07-19
 
 ### Added
 
@@ -98,19 +113,19 @@ the `hljs` classname from the container.
 
 - Some wording, in CSS and JavaScript sections
 
-## [1.3.2](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.3.2/) - 2019-07-04
+## [1.3.2](https://github.com/AnalogFolk/folk-style/tree/v1.3.2) - 2019-07-04
 
 ### Fixed
 
 - Broken links in TOC
 
-## [1.3.1](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.3.1/) - 2019-07-04
+## [1.3.1](https://github.com/AnalogFolk/folk-style/tree/v1.3.1) - 2019-07-04
 
 ### Fixed
 
 - Broken link
 
-## [1.3.0](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.3.0/) - 2019-07-04
+## [1.3.0](https://github.com/AnalogFolk/folk-style/tree/v1.3.0) - 2019-07-04
 
 ### Added
 
@@ -130,7 +145,7 @@ the `hljs` classname from the container.
 
 - Typos
 
-## [1.2.1](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.2.1/) - 2019-06-20
+## [1.2.1](https://github.com/AnalogFolk/folk-style/tree/v1.2.1) - 2019-06-20
 
 ### Added
 
@@ -141,7 +156,7 @@ the `hljs` classname from the container.
 - Browserslist support
 - More detail on ES6 and Babel
 
-## [1.0.5](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.0.5/) - 2019-06-19
+## [1.0.5](https://github.com/AnalogFolk/folk-style/tree/v1.0.5) - 2019-06-19
 
 ### Added
 
@@ -156,14 +171,14 @@ the `hljs` classname from the container.
 - Table of Contents and JS headings correct nesting
 - Fixed contrast levels to reach 100/100 Accessibility score in Lighthouse
 
-## [1.0.1](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.0.1/) - 2019-06-18
+## [1.0.1](https://github.com/AnalogFolk/folk-style/tree/v1.0.1) - 2019-06-18
 
 ### Added
 
 - .NET section first draft
 - More details in JavaScript section
 
-## [1.0.0](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v1.0.0/) - 2019-06-17
+## [1.0.0](https://github.com/AnalogFolk/folk-style/tree/v1.0.0) - 2019-06-17
 
 ### Changed
 
@@ -174,7 +189,7 @@ the `hljs` classname from the container.
 
 - Some typos and proofing
 
-## [0.0.1](https://bitbucket.org/analogfolk-ondemand/folk-style/src/v0.0.1/) - 2016-05-12
+## [0.0.1](https://github.com/AnalogFolk/folk-style/tree/v0.0.1) - 2016-05-12
 
 ### Added
 

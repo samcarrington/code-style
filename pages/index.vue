@@ -1,7 +1,7 @@
 <template lang="pug">
   div.home
     section.hero.bg-gray-500.mb-16
-      .hero-body.max-w-7xl
+      .hero-body
         .container.mx-auto
           .py-16
             h1.title.text-gray-100 {{ pageTitle }}
