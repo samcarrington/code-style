@@ -14,7 +14,7 @@ monitored and enforced by Technical Leads.
 - Enforce the agreed upon styles through automation, code review and pull request
 - Never mix spaces and tabs for indentation.
 - An [EditorConfig][editorconfig] should be added to any project to maintain conventions
-- Use configuration files committed to the project repository to set up rules for 
+- Use configuration files committed to the project repository to set up rules for
   [eslint][eslint-config] and/or [prettier][prettier-config]
 
 Generally use and enforce the standards outlined here. If your project varies in
