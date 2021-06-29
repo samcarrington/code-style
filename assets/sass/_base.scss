@@ -13,10 +13,12 @@ $brand-red: #ff004c;
     url('~assets/fonts/tt_commons_regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'TT Commons DemiBold';
   src: url('~assets/fonts/tt_commons_demibold.woff2') format('woff2'),
     url('~assets/fonts/tt_commons_demibold.woff') format('woff');
+  font-display: swap;
 }
