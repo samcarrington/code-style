@@ -1,6 +1,6 @@
 ---
 title: PHP
-description: Initial guidance for working with the PHP scripting language
+description: Guidance for working with PHP at AnalogFolk
 position: 4
 category: PHP
 ---

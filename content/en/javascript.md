@@ -1,6 +1,6 @@
 ---
 title: JavaScript
-description: Standard practice when working with JavaScript
+description: Standard practice when working with JavaScript at AnalogFolk
 position: 2
 category: JavaScript, front-end, back-end
 ---

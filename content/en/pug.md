@@ -1,6 +1,6 @@
 ---
-title: PHP
-description: Initial guidance for working with the PHP scripting language
+title: PUG
+description: Initial guidance for working at AnalogFolk with the PUG (formerly Jade) templating language at
 position: 6
 category: PUG
 ---

@@ -1,3 +1,10 @@
+---
+title: CSS
+description: Structure and syntax for working on CSS and Sass style sheets at AnalogFolk
+position: 3
+category: CSS, front-end
+---
+
 ## CSS
 
 The ruleset [defined by Airbnb][airbnb-css] for their CSS is the best one-stop
