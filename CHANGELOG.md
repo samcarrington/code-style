@@ -14,7 +14,13 @@ Need to update the section on Babel 7 and support for stages/features
 
 ### Fixed
 
-## [3.2.0](https://github.com/AnalogFolk/folk-style/tree/v3.2.0) - 2021-06-29
+## [3.1.1](https://github.com/AnalogFolk/folk-style/tree/v3.1.1) - 2021-06-29
+
+### Fixed
+
+- Links to content in the toc.md
+
+## [3.1.0](https://github.com/AnalogFolk/folk-style/tree/v3.1.0) - 2021-06-29
 
 ### Added
 
@@ -40,13 +46,9 @@ Need to update the section on Babel 7 and support for stages/features
 
 ## [3.0.1](https://github.com/AnalogFolk/folk-style/tree/v3.0.1) - 2021-06-25
 
-### Added
-
 ### Changed
 
 - References to Bitbucket in chagelog into github tag links
-
-### Removed
 
 ### Fixed
 
@@ -91,8 +93,6 @@ Need to update the section on Babel 7 and support for stages/features
 * cross-env
 * various outdated eslint-config dependencies
 * nodemon
-
-### Fixed
 
 ## [1.5.0](https://github.com/AnalogFolk/folk-style/tree//v1.5.0) - 2021-06-21
 
