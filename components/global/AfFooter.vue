@@ -8,13 +8,19 @@
         .text-gray-300.py-3.text-sm.flex
           .bg-green-500.rounded-sm.px-2.mx-2.text-gray-800 v{{ version }}
           div &copy; {{year}} AnalogFolk Ltd.
-
-      div.right
+          div.ml-4.h-5.w-5
+            a(href="https://github.com/AnalogFolk/folk-style",
+            rel="nofollow")
+              github-icon
 </template>
 
 <script>
+import githubIcon from '~/components/icons/github'
 export default {
   name: 'AfFooter',
+  components: {
+    githubIcon,
+  },
   data() {
     return {
       version: process.env.app_version,

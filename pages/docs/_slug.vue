@@ -1,8 +1,8 @@
 <template lang="pug">
   div.pug
     section.section
-      .container.mx-auto
-        article#html.content.is-medium
+      .container.mx-auto.max-w-4xl
+        article.content.is-medium(:id="post.slug")
           nuxt-content(:document="post")
 </template>
 

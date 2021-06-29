@@ -4,10 +4,6 @@ All notable changes to this project will be documented in this file. This projec
 
 ## Unreleased
 
-Still to update - an issue with markdown-it and highlight.js is
-preventing an update to the latest versions of the related dependencies as we lose 
-the `hljs` classname from the container.
-
 Need to update the section on Babel 7 and support for stages/features
 
 ### Added
@@ -18,7 +14,29 @@ Need to update the section on Babel 7 and support for stages/features
 
 ### Fixed
 
-* Fix Pug not found error on build
+## [3.2.0](https://github.com/AnalogFolk/folk-style/tree/v3.2.0) - 2021-06-29
+
+### Added
+
+- @nuxt/content
+- nuxt-i18n
+- Added front-matter to markdown content
+- prism theme for styling code blocks
+- Initial content & config to support i18n 
+
+### Changed
+
+- Moved markdown to content folder
+- moved component files around to add atomic folder structure
+
+### Removed
+
+- @nuxtjs/markdownit
+
+### Fixed
+
+- Pug not found error on build
+
 
 ## [3.0.1](https://github.com/AnalogFolk/folk-style/tree/v3.0.1) - 2021-06-25
 

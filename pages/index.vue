@@ -2,12 +2,12 @@
   div.home
     section.hero.bg-gray-500.mb-16
       .hero-body
-        .container.mx-auto
+        .container.mx-auto.max-w-4xl
           .py-16
             h1.title.text-gray-100 {{ intro.title}}
             h2.subtitle.text-gray-100 {{ intro.description }}
     section.section
-      .container.mx-auto
+      .container.mx-auto.max-w-4xl
         article
           #intro.content.is-medium
             nuxt-content(:document="intro")

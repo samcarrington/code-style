@@ -18,7 +18,7 @@ unmaintained project.
 
 ### Syntax
 
-Pug syntax is familiar if you use Emmet and is influenced by HAML. It is a
+Pug syntax is familiar if you use [Emmet][emmet] and is influenced by [HAML][haml]. It is a
 clean, whitespace-sensitive syntax for writing HTML.
 
 #### Class Chaining
@@ -30,3 +30,5 @@ input.field.field--large(placeholder = 'Enter your name')
 ```
 
 [pug-docs]: https://pugjs.org/api/getting-started.html
+[emmet]: https://docs.emmet.io/
+[haml]: https://haml.info/
