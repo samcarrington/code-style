@@ -4,7 +4,10 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
+    htmlAttrs: {
+      lang: process.env.NUXT_LOCALE,
+      dir: ['fa', 'ar', 'he'].includes(process.env.NUXT_LOCALE) ? 'rtl' : 'ltr',
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -35,12 +38,11 @@ export default {
   css: [
     { src: '@/assets/css/tailwind.css', lang: 'css' },
     { src: '@/assets/sass/app.scss', lang: 'scss' },
-    { src: '~/node_modules/highlight.js/styles/a11y-dark.css', lang: 'css' },
   ],
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ['~/plugins/i18n'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -51,7 +53,6 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/markdownit',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -67,7 +68,8 @@ export default {
         id: 'UA-26457988-4',
       },
     ],
-
+    '@nuxt/content',
+    'nuxt-i18n',
     '@nuxtjs/pwa',
   ],
   /*
@@ -75,13 +77,6 @@ export default {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {},
-  markdownit: {
-    preset: 'default',
-    linkify: false,
-    breaks: false,
-    // use: [['markdown-it-container', 'name'], 'markdown-it-attrs']
-    use: ['markdown-it-highlightjs', 'markdown-it-attrs'],
-  },
   pwa: {
     manifest: {
       lang: 'en',
@@ -89,6 +84,36 @@ export default {
   },
   env: {
     app_version: process.env.npm_package_version,
+  },
+  /* nuxt content settings */
+  content: {
+    markdown: {
+      prism: {
+        theme: 'prism-themes/themes/prism-material-oceanic.css',
+      },
+    },
+  },
+  /* nuxt i18n settings */
+  i18n: {
+    strategy: 'no_prefix',
+    locales: [
+      {
+        code: 'en',
+        iso: 'en-GB',
+        file: 'en-GB.js',
+        name: 'English',
+        domain: 'https://folk-style.analogfolk.com',
+      },
+    ],
+    vueI18n: {
+      fallbackLocale: 'en',
+    },
+    defaultLocale: 'en',
+    parsePages: false,
+    detectBrowserLanguage: false,
+    seo: false,
+    lazy: true,
+    langDir: 'i18n/',
   },
   /*
    ** Build configuration

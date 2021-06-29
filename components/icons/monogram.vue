@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: 'monogram',
+  name: 'Monogram',
 }
 </script>
 

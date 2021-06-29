@@ -1,7 +1,14 @@
+---
+title: Stylish AF
+description: An AnalogFolk Coding Style Guide
+position: 4
+category: Introduction, Home
+---
+
 ## Introduction
 
-This guide should be used to assist members of the team at Analogfolk
-London in writing good quality applications. This is intended as a
+This guide should be used to assist members of the engineering team at Analogfolk
+in writing good quality applications. This is intended as a
 brief checklist and set of baseline standards for the team to follow. It
 should be shared with development partners as the set of standards to
 follow in all work on behalf of Analogfolk. Adherence to standards should be
