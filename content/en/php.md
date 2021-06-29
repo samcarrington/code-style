@@ -1,3 +1,10 @@
+---
+title: PHP
+description: Initial guidance for working with the PHP scripting language
+position: 4
+category: PHP
+---
+
 ## PHP
 
 PHP is a server side scripting language used to generate dynamic pages.

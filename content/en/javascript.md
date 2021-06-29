@@ -1,3 +1,10 @@
+---
+title: JavaScript
+description: Standard practice when working with JavaScript
+position: 2
+category: JavaScript, front-end, back-end
+---
+
 ## JavaScript
 
 It is important to note that JavaScript should be used to enhance the

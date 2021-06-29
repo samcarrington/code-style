@@ -4,10 +4,11 @@ All notable changes to this project will be documented in this file. This projec
 
 ## Unreleased
 
-Still to update - proper buefy/nuxt support to update use of Bulma. Alternatively,
-switch to Tailwind. Additionally, an issue with markdown-it and highlight.js is
+Still to update - an issue with markdown-it and highlight.js is
 preventing an update to the latest versions of the related dependencies as we lose 
 the `hljs` classname from the container.
+
+Need to update the section on Babel 7 and support for stages/features
 
 ### Added
 

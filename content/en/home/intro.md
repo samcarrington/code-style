@@ -1,3 +1,10 @@
+---
+title: Stylish AF
+description: An AnalogFolk Coding Style Guide
+position: 4
+category: Introduction, Home
+---
+
 ## Introduction
 
 This guide should be used to assist members of the team at Analogfolk

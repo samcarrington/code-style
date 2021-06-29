@@ -1,3 +1,10 @@
+---
+title: PHP
+description: Initial guidance for working with the PHP scripting language
+position: 6
+category: PUG
+---
+
 ## Pug (formerly Jade)
 
 [Pug][pug-docs] is a terse templating/pre-processing language used to build HTML.

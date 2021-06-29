@@ -2,13 +2,26 @@
   div.html
     section.section
       .container.mx-auto
-        article#html.content.is-medium(v-html="changelog")
+        article#html.content.is-medium
+          nuxt-content {{ changelog }}
 </template>
 
 <script>
-import changelog from '../CHANGELOG.md'
-
 export default {
+  async asyncData({ $content, app, error }) {
+    const path = `../`
+    let changelog
+
+    try {
+      changelog = await $content(path, 'CHANGELOG').fetch()
+    } catch (e) {
+      return error({ statusCode: 404, message: 'Page not found' })
+    }
+
+    return {
+      changelog,
+    }
+  },
   data() {
     return {
       title: 'Stylish AF - Change log',
@@ -18,11 +31,6 @@ export default {
     return {
       title: this.title,
     }
-  },
-  computed: {
-    changelog() {
-      return changelog
-    },
   },
 }
 </script>
