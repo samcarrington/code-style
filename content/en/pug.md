@@ -1,3 +1,10 @@
+---
+title: PUG
+description: Initial guidance for working at AnalogFolk with the PUG (formerly Jade) templating language at
+position: 6
+category: PUG
+---
+
 ## Pug (formerly Jade)
 
 [Pug][pug-docs] is a terse templating/pre-processing language used to build HTML.
@@ -11,15 +18,17 @@ unmaintained project.
 
 ### Syntax
 
-Pug syntax is familiar if you use Emmet and is influenced by HAML. It is a
+Pug syntax is familiar if you use [Emmet][emmet] and is influenced by [HAML][haml]. It is a
 clean, whitespace-sensitive syntax for writing HTML.
 
 #### Class Chaining
 
 Chain classes directly after an element
 
-```pug
-input.field.field__large(placeholder = 'Enter your name')
+```
+input.field.field--large(placeholder = 'Enter your name')
 ```
 
 [pug-docs]: https://pugjs.org/api/getting-started.html
+[emmet]: https://docs.emmet.io/
+[haml]: https://haml.info/

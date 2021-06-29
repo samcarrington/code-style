@@ -1,3 +1,10 @@
+---
+title: PHP
+description: Guidance for working with PHP at AnalogFolk
+position: 4
+category: PHP
+---
+
 ## PHP
 
 PHP is a server side scripting language used to generate dynamic pages.

@@ -6,13 +6,39 @@
 </template>
 
 <script>
-import Navbar from '~/components/Header.vue'
-import AfFooter from '~/components/AfFooter.vue'
+import Navbar from '~/components/global/Header.vue'
+import AfFooter from '~/components/global/AfFooter.vue'
 
 export default {
   components: {
     Navbar,
     AfFooter,
+  },
+  head() {
+    return {
+      meta: [
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: this.$i18n.t('homepage.meta.title'),
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.$i18n.t('homepage.meta.description'),
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: this.$i18n.t('homepage.meta.title'),
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: this.$i18n.t('homepage.meta.description'),
+        },
+      ],
+    }
   },
   computed: {
     visible() {

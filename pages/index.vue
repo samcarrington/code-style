@@ -2,46 +2,43 @@
   div.home
     section.hero.bg-gray-500.mb-16
       .hero-body
-        .container.mx-auto
+        .container.mx-auto.max-w-4xl
           .py-16
-            h1.title.text-gray-100 {{ pageTitle }}
-            h2.subtitle.text-gray-100 {{ subtitle }}
+            h1.title.text-gray-100 {{ intro.title}}
+            h2.subtitle.text-gray-100 {{ intro.description }}
     section.section
-      .container.mx-auto
+      .container.mx-auto.max-w-4xl
         article
-          #intro.content.is-medium(v-html="intro")
-          #toc.content.is-medium(v-html="toc")
+          #intro.content.is-medium
+            nuxt-content(:document="intro")
+          #toc.content.is-medium
+            nuxt-content(:document="toc")
 </template>
 
 <script>
-import intro from './markdown/intro.md'
-import toc from './markdown/toc.md'
-
 export default {
-  data() {
-    this.title = 'Stylish AF'
-    this.subtitle = 'An Analogfolk coding style guide'
+  async asyncData({ $content, app, error }) {
+    // const { slug } = params
+    const path = `/${app.i18n.defaultLocale}/home`
+    let intro, toc
+
+    try {
+      intro = await $content(path, 'intro').fetch()
+      toc = await $content(path, 'toc').fetch()
+    } catch (e) {
+      return error({ statusCode: 404, message: 'Page not found' })
+    }
+
     return {
-      pageTitle: this.title,
-      subtitle: this.subtitle,
-      title: [this.title, this.subtitle].join(' - '),
+      toc,
+      intro,
     }
   },
   head() {
+    const title = this.$i18n.t('homepage.title')
     return {
-      title: this.title,
+      title,
     }
-  },
-  computed: {
-    intro() {
-      return intro
-    },
-    toc() {
-      return toc
-    },
-  },
-  async mounted() {
-    this.title = (await this.pageTitle) + ' - ' + this.subtitle
   },
 }
 </script>
