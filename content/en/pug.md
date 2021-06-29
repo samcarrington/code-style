@@ -18,8 +18,8 @@ clean, whitespace-sensitive syntax for writing HTML.
 
 Chain classes directly after an element
 
-```pug
-input.field.field__large(placeholder = 'Enter your name')
+```
+input.field.field--large(placeholder = 'Enter your name')
 ```
 
 [pug-docs]: https://pugjs.org/api/getting-started.html
