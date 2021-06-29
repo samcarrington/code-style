@@ -35,9 +35,3 @@ h4 {
 h5 {
   @apply text-2xl;
 }
-
-pre,
-code {
-  background-color: $body-background;
-  color: scale-color(#ff004c, $lightness: -50%);
-}

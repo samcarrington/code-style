@@ -1,3 +1,10 @@
+---
+title: .NET
+description: Expected standards for working with Microsoft .NET
+position: 5
+category: .NET, back-end
+---
+
 ## .NET
 
 Increasingly Analogfolk are developing in Azure or using Microsoft tools. Some

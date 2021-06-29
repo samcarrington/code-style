@@ -1,7 +1,17 @@
+---
+title: CSS
+description: Structure and syntax for working on CSS and Sass style sheets at AnalogFolk
+position: 3
+category: CSS, front-end
+---
+
 ## CSS
 
 The ruleset [defined by Airbnb][airbnb-css] for their CSS is the best one-stop
 set of rules and should be followed in projects for Analogfolk.
+
+Consider the implementation of prettier, and/or stylelint in your project as a
+way to enforce a consistent style.
 
 ### Formatting & Syntax
 
@@ -10,7 +20,7 @@ set of rules and should be followed in projects for Analogfolk.
 - Always end a `property: value` pair with a semicolon and new line
 - Use one discreet selector per line in multi-selector rule sets.
 
-```
+```css
 .box--selected,
 .item--selected,
 .title--selected {}

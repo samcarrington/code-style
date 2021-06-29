@@ -49,56 +49,22 @@
                 af-logo
                 span AnalogFolk
               nuxt-link(
-                to="/html",
-                active-class="bg-redS-600 hover:bg-red-600 text-white",
-                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-              ) HTML
-              nuxt-link(
-                to="/javascript",
+                v-for="link in $t('header.links')"
+                :key="link.slug"
+                :to="`/docs/${link.slug}`"
                 active-class="bg-red-600 hover:bg-red-600 text-white",
                 class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-              ) Javascript
-              nuxt-link(
-                to="/css",
-                active-class="bg-red-600 hover:bg-red-600 text-white",
-                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-              ) CSS
-              nuxt-link(
-                to="/php",
-                active-class="bg-red-600 hover:bg-red-600 text-white",
-                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-              ) PHP
-              nuxt-link(
-                to="/dotnet",
-                active-class="bg-red-600 hover:bg-red-600 text-white",
-                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-              ) .NET
-              nuxt-link(
-                to="/pug",
-                active-class="bg-red-600 hover:bg-red-600 text-white",
-                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-              ) PUG
+              ) {{ link.name }}
           div(class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0")
       div(class="md:hidden", id="mobile-menu", :class="{'hidden': !showNav}")
         .px-2.pt-2.pb-3.space-y-1.flex.flex-col
-          nuxt-link(to="/html",
+          nuxt-link(
+            v-for="link in $t('header.links')"
+            :key="link.slug"
+            :to="`/docs/${link.slug}`"
             active-class="bg-red-600 hover:bg-red-600 text-white",
-            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium") HTML
-          nuxt-link(to="/javascript",
-            active-class="bg-red-600 hover:bg-red-600 text-white",
-            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium") Javascript
-          nuxt-link(to="/css",
-            active-class="bg-red-600 hover:bg-red-600 text-white",
-            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium") CSS
-          nuxt-link(to="/php",
-            active-class="bg-red-600 hover:bg-red-600 text-white",
-            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium") PHP
-          nuxt-link(to="/dotnet",
-            active-class="bg-red-600 hover:bg-red-600 text-white",
-            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium") .NET
-          nuxt-link(to="/pug",
-            active-class="bg-red-600 hover:bg-red-600 text-white",
-            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium") PUG
+            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+          ) {{ link.name }}
 </template>
 
 <script>

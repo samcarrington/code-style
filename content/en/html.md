@@ -1,3 +1,10 @@
+---
+title: HTML
+description: Initial guidance for working with Hypertext Markup Language
+position: 4
+category: HTML, front-end
+---
+
 ## HTML
 
 HTML should be prepared using a template language. [Pug](/pug) is recommended
