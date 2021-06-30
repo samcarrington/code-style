@@ -1,7 +1,7 @@
 <template lang="pug">
   footer.footer.bg-gray-800(role="contentinfo", aria-label="footer")
     .max-w-4xl.mx-auto.relative(class="px-2 sm:px-6 lg:px-8")
-      .container.flex.justify-between
+      .flex.justify-between
         p.text-gray-300.py-3.text-sm
           a.email(href="mailto:hello@analogfolk.com") hello@analogfolk.com
         .text-gray-300.py-3.text-sm.flex
