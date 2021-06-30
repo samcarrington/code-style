@@ -1,6 +1,6 @@
 # Folk Style
 
-![Netlify](https://img.shields.io/netlify/a68a85f7-ee00-4dc1-bd8d-e1916b7e4e41)
+![Netlify](https://img.shields.io/netlify/a68a85f7-ee00-4dc1-bd8d-e1916b7e4e41?style=flat-square)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 An opinionated but simple style guide for technical projects authored at
