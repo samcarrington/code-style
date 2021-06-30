@@ -18,14 +18,14 @@ unmaintained project.
 
 ### Syntax
 
-Pug syntax is familiar if you use [Emmet][emmet] and is influenced by [HAML][haml]. It is a
-clean, whitespace-sensitive syntax for writing HTML.
+Pug syntax is familiar if you use [Emmet][emmet] and is influenced by
+[HAML][haml]. It is a clean, whitespace-sensitive syntax for writing HTML.
 
 #### Class Chaining
 
 Chain classes directly after an element
 
-```
+```emmet
 input.field.field--large(placeholder = 'Enter your name')
 ```
 

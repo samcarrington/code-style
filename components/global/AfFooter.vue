@@ -1,7 +1,7 @@
 <template lang="pug">
   footer.footer.bg-gray-800(role="contentinfo", aria-label="footer")
-    .max-w-7x1.relative(class="mx-auto px-2 sm:px-6 lg:px-8")
-      .container.mx-auto.flex.justify-between
+    .max-w-4xl.mx-auto.relative(class="px-2 sm:px-6 lg:px-8")
+      .container.flex.justify-between
         p.text-gray-300.py-3.text-sm
           a.email(href="mailto:hello@analogfolk.com") hello@analogfolk.com
         .text-gray-300.py-3.text-sm.flex
@@ -13,7 +13,7 @@
                 rel="nofollow noopener noreferrer"
                 target="_blank"
               ) v{{ version }}
-          div &copy; {{year}} AnalogFolk
+          div © {{year}} AnalogFolk
             | {{' '}}
             span(class="hidden sm:inline-block") Ltd.
           div.ml-4.h-5.w-5
@@ -21,6 +21,7 @@
             rel="nofollow noopener noreferrer"
             target="_blank")
               icon-github
+              .sr-only View this project on Github
 </template>
 
 <script>

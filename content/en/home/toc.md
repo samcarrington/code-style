@@ -1,3 +1,12 @@
+---
+title: Table of Contents
+description:
+position: 3
+category: Metadata
+---
+
+<!-- markdownlint-disable-file MD033 -->
+
 ## Table of Contents
 
 1. <nuxt-link to="/docs/html">HTML</nuxt-link>

@@ -1,3 +1,4 @@
+import { resolve } from 'path'
 export default {
   target: 'static',
   /*
@@ -91,6 +92,9 @@ export default {
   },
   env: {
     app_version: process.env.npm_package_version,
+  },
+  alias: {
+    root: resolve(__dirname, '.'),
   },
   /* nuxt content settings */
   content: {

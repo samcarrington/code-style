@@ -23,7 +23,8 @@ way to enforce a consistent style.
 ```css
 .box--selected,
 .item--selected,
-.title--selected {}
+.title--selected {
+}
 ```
 
 - Include a single space before the opening brace of a rule set.
@@ -80,9 +81,11 @@ We use SASS (with SCSS syntax) as a preprocessor of choice.
 
 ### Specificity
 
-Generally use of BEM and OO principles should avoid falling into any of the bad practice below.
+Generally use of BEM and OO principles should avoid falling into any of the
+bad practice below.
 
-- Use the least number of selectors required to style an element. **Don't nest SCSS or CSS selectors more than three levels deep**
+- Use the least number of selectors required to style an element. **Don't
+  nest SCSS or CSS selectors more than three levels deep**
 - Ideally use [BEM][bem-101] and don't nest or stack selectors
 - Avoid adding element selectors to class definitions
 - Avoid using Ids in style definitions
@@ -113,9 +116,11 @@ section.intro {
 
 ### Class naming
 
-- You SHOULD use kebab case, i.e. hyphens not underscores or camelCase for class names
+- You SHOULD use kebab case. i.e., hyphens not underscores or camelCase for
+  class names
 - Underscores are acceptable if you're using BEM syntax
-- `camelCase` is acceptable if a classname is tied to a reactive component name (see [the Airbnb OOCSS/BEM advice][airbnb-oocss] for reference)
+- `camelCase` is acceptable if a classname is tied to a reactive component
+  name (see [the Airbnb OOCSS/BEM advice][airbnb-oocss] for reference)
 
 ```scss
 // BAD
@@ -167,7 +172,7 @@ Ideally include a main.scss file at the top of the folder structure.
 Import an index files from each of the subsidiary folders, and import
 files in each directory by using `@import` rules in that index.scss
 
-```
+```text
 ./app
   ˪/styles
     ˫/base

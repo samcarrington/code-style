@@ -95,7 +95,7 @@ p {
   &:after {
     content: '';
     z-index: -1;
-    top: 17px;
+    top: 70%;
     left: -0.2em;
     right: -0.2em;
     bottom: 0;
