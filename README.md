@@ -1,7 +1,9 @@
 # Folk Style
 
+![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/AnalogFolk/folk-style/main?style=flat-square)
 ![Netlify](https://img.shields.io/netlify/a68a85f7-ee00-4dc1-bd8d-e1916b7e4e41?style=flat-square)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+![GitHub](https://img.shields.io/github/license/AnalogFolk/folk-style?style=flat-square)
 
 An opinionated but simple style guide for technical projects authored at
 Analogfolk.
