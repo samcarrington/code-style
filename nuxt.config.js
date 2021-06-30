@@ -45,7 +45,14 @@ export default {
   plugins: ['~/plugins/i18n'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  components: [
+    '~/components/atoms',
+    '~/components/global',
+    '~/components/icons',
+    '~/components/molecules',
+    '~/components/organisms',
+    '~/components/templates',
+  ],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [

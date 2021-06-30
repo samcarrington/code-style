@@ -76,7 +76,6 @@ body {
 }
 
 p {
-  line-height: 1.2;
   padding-bottom: 1em;
 }
 
@@ -111,7 +110,6 @@ ul,
 ol {
   li {
     list-style-type: disc;
-    line-height: 1.2;
     p {
       padding-bottom: 0;
     }
