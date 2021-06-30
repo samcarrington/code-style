@@ -2,17 +2,22 @@
 
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## Unreleased
-
 Need to update the section on Babel 7 and support for stages/features
+
+## [3.1.2](https://github.com/AnalogFolk/folk-style/tree/v3.1.2) - Unreleased
 
 ### Added
 
 ### Changed
 
+- Use nuxt config to auto-import components
+- renamed some components
+
 ### Removed
 
 ### Fixed
+
+- Modified responsive footer
 
 ## [3.1.1](https://github.com/AnalogFolk/folk-style/tree/v3.1.1) - 2021-06-29
 
