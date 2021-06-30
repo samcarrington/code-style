@@ -39,6 +39,7 @@ export default {
 
 <style scoped lang="scss">
 @import '~assets/sass/base';
+
 .footer {
   @apply fixed bottom-0 w-full;
   a.email {

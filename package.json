@@ -51,7 +51,7 @@
     "markdownlint-cli": "^0.27.1",
     "nuxt-i18n": "^6.27.2",
     "postcss": "^8.3.5",
-    "prettier": "^2.3.2",
+    "prettier": "2.3.2",
     "prism-themes": "^1.7.0",
     "pug": "^3.0.2",
     "pug-plain-loader": "^1.1.0",
