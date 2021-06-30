@@ -1,18 +1,15 @@
 <template lang="pug">
   div.home
-    section.hero.bg-gray-500.mb-16
-      .hero-body
-        .container.mx-auto.max-w-4xl
-          .py-16
-            h1.title.text-gray-100 {{ intro.title}}
-            h2.subtitle.text-gray-100 {{ intro.description }}
-    section.section
+    home-hero(:title="intro.title", :subtitle="intro.description")
+
+    section.section.mt-16
       .container.mx-auto.max-w-4xl
         article
           #intro.content.is-medium
             nuxt-content(:document="intro")
           #toc.content.is-medium
-            nuxt-content(:document="toc")
+            h3 Table of Contents
+            docs-contents(:pages="pages")
 </template>
 
 <script>
@@ -20,17 +17,19 @@ export default {
   async asyncData({ $content, app, error }) {
     // const { slug } = params
     const path = `/${app.i18n.defaultLocale}/home`
-    let intro, toc
+    let intro, pages
 
     try {
       intro = await $content(path, 'intro').fetch()
-      toc = await $content(path, 'toc').fetch()
+      pages = await $content(`/${app.i18n.defaultLocale}`)
+        .sortBy('position', 'asc')
+        .fetch()
     } catch (e) {
       return error({ statusCode: 404, message: 'Page not found' })
     }
 
     return {
-      toc,
+      pages,
       intro,
     }
   },
@@ -43,17 +42,9 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .section > .container {
   background-color: white;
   padding: 0 1em;
-}
-
-.title {
-  @apply text-4xl sm:text-5xl;
-}
-
-.subtitle {
-  @apply text-2xl sm:text-4xl;
 }
 </style>

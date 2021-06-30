@@ -2,15 +2,37 @@
 
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+
+<div style="display: none;">
+
+## Unreleased
+
 Need to update the section on Babel 7 and support for stages/features
+
+### Added
+
+### Changed
+
+### Removed
+
+### Fixed
+
+</div>
 
 ## [3.1.3](https://github.com/AnalogFolk/folk-style/tree/v3.1.3) - 2021-06-30
 
 ### Added
 
 - Pride badge
+- Hero gradient
+- Body background gradient
 
-## [3.1.2](https://github.com/AnalogFolk/folk-style/tree/v3.1.2) - 2021-06-30
+### Changed
+
+- Moved homepage hero to component
+- Automatically generate Table of Contents
+
+## [3.1.2](https://github.com/AnalogFolk/folk-style/tree/v3.1.2) - Unreleased
 
 ### Added
 
