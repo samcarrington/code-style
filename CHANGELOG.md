@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file. This projec
 
 Need to update the section on Babel 7 and support for stages/features
 
+## [3.1.3](https://github.com/AnalogFolk/folk-style/tree/v3.1.3) - 2021-06-30
+
+### Added
+
+- Pride badge
+
 ## [3.1.2](https://github.com/AnalogFolk/folk-style/tree/v3.1.2) - 2021-06-30
 
 ### Added

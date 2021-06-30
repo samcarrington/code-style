@@ -27,6 +27,7 @@ export default {
     ],
     bodyAttrs: {
       'data-version': process.env.npm_package_version || '',
+      'data-af-pride': '',
     },
   },
   /*
