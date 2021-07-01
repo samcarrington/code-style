@@ -13,7 +13,7 @@ Analogfolk.
 Local setup is simple enough; install dependencies and run the Nuxt project.
 The master branch automatically deploys to Netlify.
 
-It's a static (nuxt generated) site. Individual guidelines are Markdown files, 
+It's a static (nuxt generated) site. Individual guidelines are Markdown files,
 added to pages via `@nuxt/content`.
 
 ```bash

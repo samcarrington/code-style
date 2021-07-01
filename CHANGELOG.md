@@ -2,7 +2,6 @@
 
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-
 <div style="display: none;">
 
 ## Unreleased
@@ -18,7 +17,6 @@ Need to update the section on Babel 7 and support for stages/features
 ### Fixed
 
 </div>
-
 
 ## [3.1.4](https://github.com/AnalogFolk/folk-style/tree/v3.1.4) - 2021-07-01
 
