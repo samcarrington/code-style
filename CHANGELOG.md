@@ -19,6 +19,13 @@ Need to update the section on Babel 7 and support for stages/features
 
 </div>
 
+
+## [3.1.4](https://github.com/AnalogFolk/folk-style/tree/v3.1.4) - 2021-07-01
+
+### Fixed
+
+- Re-added class name to fix link underline regression
+
 ## [3.1.3](https://github.com/AnalogFolk/folk-style/tree/v3.1.3) - 2021-06-30
 
 ### Added
