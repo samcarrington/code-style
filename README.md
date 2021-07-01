@@ -5,7 +5,7 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 ![GitHub](https://img.shields.io/github/license/AnalogFolk/folk-style?style=flat-square)
 
-An opinionated but simple style guide for technical projects authored at
+An [opinionated but simple style][folk-style] guide for technical projects authored at
 Analogfolk.
 
 ## Build Setup
@@ -39,3 +39,5 @@ For detailed explanation on how things work, checkout [Nuxt.js docs](https://nux
 - Add section on Infrastructure as code
 - Add API Design principles (REST, versioning etc.)
 - Add Typescript section
+
+[folk-style]: https://folk-style.analogfolk.com/
