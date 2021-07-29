@@ -1,7 +1,7 @@
 ---
 title: PUG
 description: Initial guidance for working at AnalogFolk with the PUG (formerly Jade) templating language at
-position: 6
+position: 7
 category: PUG
 ---
 

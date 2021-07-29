@@ -30,6 +30,11 @@ module.exports = {
         slug: 'dotnet',
       },
       {
+        name: 'Python',
+        icon: '',
+        slug: 'python',
+      },
+      {
         name: 'Pug',
         icon: '',
         slug: 'pug',
