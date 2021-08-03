@@ -39,6 +39,11 @@ module.exports = {
         icon: '',
         slug: 'pug',
       },
+      {
+        name: 'TypeScript',
+        icon: '',
+        slug: 'typescript',
+      },
     ],
   },
   homepage: {

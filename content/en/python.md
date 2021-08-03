@@ -72,4 +72,22 @@ income = (gross_wages
 
 #### Indentation
 
-Hanging indents
+No single approach for hanging indents is enforced above others, per the PEP-8 guidance. However, the 
+adopted pattern should be internally consistent within any particular project.
+
+#### Quotes
+
+Prefer single quotes for strings.
+
+#### Whitespace
+
+If operators with different priority are used, add whitespace around the operators with the lowest priority.
+
+```python
+# Correct:
+i = i + 1
+submitted += 1
+x = x*2 - 1
+hypot2 = x*x + y*y
+c = (a+b) * (a-b)
+```

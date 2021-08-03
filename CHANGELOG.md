@@ -18,6 +18,16 @@ Need to update the section on Babel 7 and support for stages/features
 
 </div>
 
+## [3.2.0](https://github.com/AnalogFolk/folk-style/tree/v3.2.0) - Unreleased
+
+### Added
+
+- Page for Python code style and guidance
+
+### Changed
+
+- Updated patch and minor version dependencies
+
 ## [3.1.4](https://github.com/AnalogFolk/folk-style/tree/v3.1.4) - 2021-07-01
 
 ### Fixed
