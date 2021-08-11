@@ -73,3 +73,24 @@ return undefined;
 > Reason: It is conventional in Node.js e.g. error is null for NodeBack style callbacks.
 
 - Use truthy check for objects being null or undefined
+
+### Formatting
+
+IDEs should be used which allow typescript support and 
+automatic formatting. It's also possible to use `tsfmt` on the command line.
+
+- Prefer single quotes
+- Use 2 space, not tabs
+- Use semicolons
+
+#### Arrays 
+
+Annotate arrays as `foos: Foo[]` instead of `foos: Array<Foo>`
+
+> It's easier to read and is used by the TypeScript team.
+
+#### type vs. interface
+
+- Use `type` when you _might_ need a union or intersection.
+- Use `interface` when you want `extends` or `implements`
+- Otherwise, use what you prefer

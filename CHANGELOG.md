@@ -23,10 +23,13 @@ Need to update the section on Babel 7 and support for stages/features
 ### Added
 
 - Page for Python code style and guidance
+- Page for TypeScript
 
 ### Changed
 
 - Updated patch and minor version dependencies
+- Update to JavaScript guidelines to cover some 'Better Parts' of ES6
+- Updated advice on use of Babel with presets
 
 ## [3.1.4](https://github.com/AnalogFolk/folk-style/tree/v3.1.4) - 2021-07-01
 
