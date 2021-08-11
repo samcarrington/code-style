@@ -9,11 +9,10 @@
 <script>
 export default {
   async asyncData({ $content, app, error }) {
-    const path = `../`
     let changelog
 
     try {
-      changelog = await $content(path, 'CHANGELOG').fetch()
+      changelog = await $content('~~/CHANGELOG').fetch()
     } catch (e) {
       return error({ statusCode: 404, message: 'Page not found' })
     }

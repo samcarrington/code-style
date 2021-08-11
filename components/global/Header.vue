@@ -41,12 +41,12 @@
                   d="M6 18L18 6M6 6l12 12"
                 )
             nuxt-link.header__monogram.navbar-item(to="/", title="Home", aria-label="return to homepage")
-              af-monogram
+              icon-monogram
               span AnalogFolk
           div(class="hidden md:flex flex-1 flex items-center justify-center sm:items-stretch sm:justify-start")
             .flex.space-x-4
               nuxt-link.header__logo.navbar-item(to="/", title="Home", aria-label="return to homepage")
-                af-logo
+                icon-af
                 span AnalogFolk
               nuxt-link(
                 v-for="link in $t('header.links')"
@@ -68,15 +68,8 @@
 </template>
 
 <script>
-import afLogo from '@/components/icons/af'
-import afMonogram from '@/components/icons/monogram'
-
 export default {
   name: 'Header',
-  components: {
-    afLogo,
-    afMonogram,
-  },
   data() {
     return {
       showNav: false,

@@ -1,26 +1,33 @@
 <template lang="pug">
   footer.footer.bg-gray-800(role="contentinfo", aria-label="footer")
-    .max-w-7x1.relative(class="mx-auto px-2 sm:px-6 lg:px-8")
-      .container.mx-auto.flex.justify-between
+    .max-w-4xl.mx-auto.relative(class="px-2 sm:px-6 lg:px-8")
+      .flex.justify-between
         p.text-gray-300.py-3.text-sm
-          a(href="mailto:hello@analogfolk.com") hello@analogfolk.com
-
+          a.email(href="mailto:hello@analogfolk.com") hello@analogfolk.com
         .text-gray-300.py-3.text-sm.flex
-          .bg-green-500.rounded-sm.px-2.mx-2.text-gray-800 v{{ version }}
-          div &copy; {{year}} AnalogFolk Ltd.
+          .mx-2
+            span.text-gray-800
+              a.bg-green-500.px-2.rounded-sm.text-gray-800(
+                :href="`https://github.com/AnalogFolk/folk-style/releases/tag/v${version}`"
+                class="hover:bg-gray-100 hover:text-gray-800 hover:rounded-sm"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              ) v{{ version }}
+          div © {{year}} AnalogFolk
+            | {{' '}}
+            span(class="hidden sm:inline-block") Ltd.
           div.ml-4.h-5.w-5
             a(href="https://github.com/AnalogFolk/folk-style",
-            rel="nofollow")
-              github-icon
+            rel="nofollow noopener noreferrer"
+            target="_blank")
+              icon-github
+              .sr-only View this project on Github
 </template>
 
 <script>
-import githubIcon from '~/components/icons/github'
 export default {
   name: 'AfFooter',
-  components: {
-    githubIcon,
-  },
+
   data() {
     return {
       version: process.env.app_version,
@@ -32,9 +39,10 @@ export default {
 
 <style scoped lang="scss">
 @import '~assets/sass/base';
+
 .footer {
   @apply fixed bottom-0 w-full;
-  a {
+  a.email {
     color: scale-color($brand-red, $lightness: 80%);
 
     &:hover {

@@ -5,10 +5,12 @@ position: 4
 category: HTML, front-end
 ---
 
+<!-- markdownlint-disable-file MD033 -->
+
 ## HTML
 
-HTML should be prepared using a template language. [Pug](/pug) is recommended
-for static files.
+HTML should be prepared using a template language.
+<nuxt-link to="/docs/pug">Pug</nuxt-link> is recommended for static files.
 
 ### Syntax
 

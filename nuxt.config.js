@@ -1,3 +1,4 @@
+import { resolve } from 'path'
 export default {
   target: 'static',
   /*
@@ -26,6 +27,7 @@ export default {
     ],
     bodyAttrs: {
       'data-version': process.env.npm_package_version || '',
+      'data-af-pride': '',
     },
   },
   /*
@@ -45,7 +47,14 @@ export default {
   plugins: ['~/plugins/i18n'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  components: [
+    '~/components/atoms',
+    '~/components/global',
+    '~/components/icons',
+    '~/components/molecules',
+    '~/components/organisms',
+    '~/components/templates',
+  ],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
@@ -85,11 +94,14 @@ export default {
   env: {
     app_version: process.env.npm_package_version,
   },
+  alias: {
+    root: resolve(__dirname, '.'),
+  },
   /* nuxt content settings */
   content: {
     markdown: {
       prism: {
-        theme: 'prism-themes/themes/prism-material-oceanic.css',
+        theme: 'prism-themes/themes/prism-a11y-dark.css',
       },
     },
   },

@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+
+<div style="display: none;">
+
 ## Unreleased
 
 Need to update the section on Babel 7 and support for stages/features
@@ -14,6 +17,47 @@ Need to update the section on Babel 7 and support for stages/features
 
 ### Fixed
 
+</div>
+
+
+## [3.1.4](https://github.com/AnalogFolk/folk-style/tree/v3.1.4) - 2021-07-01
+
+### Fixed
+
+- Re-added class name to fix link underline regression
+
+## [3.1.3](https://github.com/AnalogFolk/folk-style/tree/v3.1.3) - 2021-06-30
+
+### Added
+
+- Pride badge
+- Hero gradient
+- Body background gradient
+
+### Changed
+
+- Moved homepage hero to component
+- Automatically generate Table of Contents
+
+## [3.1.2](https://github.com/AnalogFolk/folk-style/tree/v3.1.2) - Unreleased
+
+### Added
+
+- Link to release in footer
+- Brand font for body text
+- Badges
+
+### Changed
+
+- Use nuxt config to auto-import components
+- renamed some components
+
+### Fixed
+
+- Modified responsive footer
+- Consistent line-height
+- Screen reader text on Github icon link
+
 ## [3.1.1](https://github.com/AnalogFolk/folk-style/tree/v3.1.1) - 2021-06-29
 
 ### Fixed
@@ -24,11 +68,10 @@ Need to update the section on Babel 7 and support for stages/features
 
 ### Added
 
-- @nuxt/content
-- nuxt-i18n
+- added packages `@nuxt/content` and `nuxt-i18n`
 - Added front-matter to markdown content
 - prism theme for styling code blocks
-- Initial content & config to support i18n 
+- Initial content & config to support i18n
 
 ### Changed
 
@@ -42,7 +85,6 @@ Need to update the section on Babel 7 and support for stages/features
 ### Fixed
 
 - Pug not found error on build
-
 
 ## [3.0.1](https://github.com/AnalogFolk/folk-style/tree/v3.0.1) - 2021-06-25
 
@@ -74,37 +116,37 @@ Need to update the section on Babel 7 and support for stages/features
 
 ### Added
 
-* Known issue: Pug not found error message (project still compiles)
-* Buefy
-* @nuxt/types
+- Known issue: Pug not found error message (project still compiles)
+- Buefy
+- @nuxt/types
 
 ### Changed
 
-* switched to `mode: "static"` in nuxt config
-* Update core nuxt and dependencies in package.json
-* re-lint files based on 2021 linting config
+- switched to `mode: "static"` in nuxt config
+- Update core nuxt and dependencies in package.json
+- re-lint files based on 2021 linting config
 
 ### Removed
 
-* node-sass 
-* express
-* vuex
-* babel-preset-vue-app
-* cross-env
-* various outdated eslint-config dependencies
-* nodemon
+- node-sass
+- express
+- vuex
+- babel-preset-vue-app
+- cross-env
+- various outdated eslint-config dependencies
+- nodemon
 
 ## [1.5.0](https://github.com/AnalogFolk/folk-style/tree//v1.5.0) - 2021-06-21
 
 ### Changed
 
-* Updated requirement for PSR-2 to PSR-12 in PHP Standards. 
-* Lowest jQuery version increased to 3.6 (latest at time of publish)
-* Order of sections in Table of Contents
+- Updated requirement for PSR-2 to PSR-12 in PHP Standards.
+- Lowest jQuery version increased to 3.6 (latest at time of publish)
+- Order of sections in Table of Contents
 
 ### Fixed
 
-* Minor typo
+- Minor typo
 
 ## [1.4.2](https://github.com/AnalogFolk/folk-style/tree/v1.4.2) - 2019-09-19
 

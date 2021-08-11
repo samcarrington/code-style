@@ -76,7 +76,6 @@ body {
 }
 
 p {
-  line-height: 1.2;
   padding-bottom: 1em;
 }
 
@@ -96,7 +95,7 @@ p {
   &:after {
     content: '';
     z-index: -1;
-    top: 17px;
+    top: 70%;
     left: -0.2em;
     right: -0.2em;
     bottom: 0;
@@ -111,7 +110,6 @@ ul,
 ol {
   li {
     list-style-type: disc;
-    line-height: 1.2;
     p {
       padding-bottom: 0;
     }

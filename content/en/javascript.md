@@ -191,11 +191,16 @@ rules) to be used for the organisation of JavaScript within a project.
 Follow the [Airbnb React/JSX Style Guide][airbnb-react]. Except where it conflicts
 with Prettier.
 
-It's recommended that you use the [importable config setting][npm-react-config] from NPM, to ensure conformance with industry standards.
+It's recommended that you use the [importable config setting][npm-react-config]
+from NPM, to ensure conformance with industry standards.
+
+<!-- markdownlint-disable -->
 
 ```bash
 npm install --save-dev eslint-config-react-app @typescript-eslint/eslint-plugin@^4.0.0 @typescript-eslint/parser@^4.0.0 babel-eslint@^10.0.0 eslint@^7.5.0 eslint-plugin-flowtype@^5.2.0 eslint-plugin-import@^2.22.0 eslint-plugin-jsx-a11y@^6.3.1 eslint-plugin-react@^7.20.3 eslint-plugin-react-hooks@^4.0.8
 ```
+
+<!-- markdownlint-restore -->
 
 #### Angular
 
@@ -267,7 +272,7 @@ watch: {
   myProperty: {
     immediate: true, // forcing handler on initial status
     handler() {
-      console.log('doing something...'); // No need to declare a function on methods for 1 use case
+      console.log('doing something...'); // a function on methods for 1 use case
     }
   }
 },
@@ -398,7 +403,9 @@ framework is fully reviewed.
 
 - [Google JS-Doc reference](https://google.github.io/styleguide/jsguide.html#appendices-jsdoc-tag-reference)
 - [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
-- YUI Theatre - ['JavaScript: The Good Parts'](https://www.youtube.com/watch?v=_DKkVvOt6dk), an inspiring historical view of JS
+- YUI Theatre -
+  ['JavaScript: The Good Parts'](https://www.youtube.com/watch?v=_DKkVvOt6dk),
+  an inspiring historical view of JS
 - [Notes on Crockford's "Javascript The Good Parts"](https://github.com/dwyl/Javascript-the-Good-Parts-notes)
 
 [jsdoc]: http://usejsdoc.org/

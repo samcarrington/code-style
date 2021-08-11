@@ -5,6 +5,11 @@
 // Yes we break our own rules here by applying styles to elements
 // But we're styling the output of markdown-it so do not have the luxury of class-names.
 // Consider resolving this through implementing markdown-it-classy?
+body {
+  font-family: $body-family;
+  @apply bg-gradient-to-b from-gray-100 to-gray-300;
+  min-height: 100vh;
+}
 h1,
 h2,
 h3,

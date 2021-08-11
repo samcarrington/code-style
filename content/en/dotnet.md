@@ -11,7 +11,7 @@ Increasingly Analogfolk are developing in Azure or using Microsoft tools. Some
 baseline coding principles and best-practices can be adopted from the Microsoft
 documentation as standard.
 
-### C#
+### C\#
 
 - Prefer [dependency injection][ms-docs-di] over static classes
 - Follow the [C# coding conventions][ms-docs-csharp]
