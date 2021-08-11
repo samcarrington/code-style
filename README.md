@@ -38,6 +38,6 @@ For detailed explanation on how things work, checkout [Nuxt.js docs](https://nux
 - Improve .NET section
 - Add section on Infrastructure as code
 - Add API Design principles (REST, versioning etc.)
-- Add TypeScript section
+- Translation in to Spanish
 
 [folk-style]: https://folk-style.analogfolk.com/

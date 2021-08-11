@@ -164,11 +164,11 @@ features as they stood at the point of being deprecated is as follows:
 ```
 
 It is recommended to use `@babel/preset-env` ([docs][preset-env]) in projects, where additional
-settings are necessary and not covered by one of the common language presets offered by the 
+settings are necessary and not covered by one of the common language presets offered by the
 Babel team.
 
 Frameworks [in common use][babel-frameworks] also offer ready-made Babel configurations and
-these are excellent and  provide a consistent baseline for transpilation of JavaScript for 
+these are excellent and provide a consistent baseline for transpilation of JavaScript for
 use in browsers.
 
 [preset-env]: https://babeljs.io/docs/en/babel-preset-env
@@ -191,12 +191,14 @@ if you're just using the keystroke saving and end up writing difficult-to-parse 
 
 Remember the arrow-function gotchas; there's no `arguments` object inside an arrow
 function, and be careful when returning an object literal; it must be wrapped in
-parentheses. 
+parentheses.
 
 ```javascript
-(() => console.log(arguments))(1, 2); // will raise ReferenceError: arguments is not defined
+;(() => console.log(arguments))(1, 2) // will raise ReferenceError: arguments is not defined
 
-(() => {foo: 1})() // this will return undefined. 'foo: 1' is interpreted as a statement composed of a label and the literal 1
+;(() => {
+  foo: 1
+})() // this will return undefined. 'foo: 1' is interpreted as a statement composed of a label and the literal 1
 ```
 
 [better-parts]: https://www.youtube.com/watch?v=XFTOG895C7c

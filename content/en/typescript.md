@@ -11,7 +11,7 @@ TypeScript is a superset of JavaScript and is used to write
 code which is preprocessed into JavaScript at build time.
 
 There is not yet an 'official' guide or convention but most
-rules you use for your JavaScript code should extend to 
+rules you use for your JavaScript code should extend to
 suitability for TypeScript as well. At this time TypeScript
 is not extensively deployed in projects with AnalogFolk.
 
@@ -35,8 +35,8 @@ The following advice is borrowed heavily from [Basarat Al Syed][ts-book]
 
 ### Enum
 
- - Use `PascalCase` for enum names
- - Use `PascalCase` for enum member
+- Use `PascalCase` for enum names
+- Use `PascalCase` for enum member
 
 ### Null vs. Undefined
 
@@ -45,13 +45,13 @@ The following advice is borrowed heavily from [Basarat Al Syed][ts-book]
 #### Bad
 
 ```typescript
-let foo = { x: 123, y: undefined };
+let foo = { x: 123, y: undefined }
 ```
 
 #### Good
 
 ```typescript
-let foo: { x: number, y?: number } = { x:123 };
+let foo: { x: number; y?: number } = { x: 123 }
 ```
 
 - Use undefined in general (do consider returning an object like `{valid:boolean, value?:Foo}` instead)
@@ -59,13 +59,13 @@ let foo: { x: number, y?: number } = { x:123 };
 #### Bad
 
 ```typescript
-return null;
+return null
 ```
 
 #### Good
 
 ```typescript
-return undefined;
+return undefined
 ```
 
 - Use null where it's a part of the API or conventional
@@ -76,14 +76,14 @@ return undefined;
 
 ### Formatting
 
-IDEs should be used which allow typescript support and 
+IDEs should be used which allow typescript support and
 automatic formatting. It's also possible to use `tsfmt` on the command line.
 
 - Prefer single quotes
 - Use 2 space, not tabs
 - Use semicolons
 
-#### Arrays 
+#### Arrays
 
 Annotate arrays as `foos: Foo[]` instead of `foos: Array<Foo>`
 
