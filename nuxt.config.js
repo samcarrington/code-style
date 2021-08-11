@@ -66,8 +66,6 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
-    // '@nuxtjs/bulma',
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/eslint-module',
@@ -78,7 +76,7 @@ export default {
       },
     ],
     '@nuxt/content',
-    'nuxt-i18n',
+    '@nuxtjs/i18n',
     '@nuxtjs/pwa',
   ],
   /*

@@ -28,8 +28,14 @@ Need to update the section on Babel 7 and support for stages/features
 ### Changed
 
 - Updated patch and minor version dependencies
+- Updated to Jest v27
 - Update to JavaScript guidelines to cover some 'Better Parts' of ES6
 - Updated advice on use of Babel with presets
+- Switched `nuxt-i18n` for `@nuxt/i18n`
+
+### Removed
+
+- `nuxt-i18n` package
 
 ## [3.1.4](https://github.com/AnalogFolk/folk-style/tree/v3.1.4) - 2021-07-01
 

@@ -35,14 +35,14 @@ module.exports = {
         slug: 'python',
       },
       {
-        name: 'Pug',
-        icon: '',
-        slug: 'pug',
-      },
-      {
         name: 'TypeScript',
         icon: '',
         slug: 'typescript',
+      },
+      {
+        name: 'Pug',
+        icon: '',
+        slug: 'pug',
       },
     ],
   },
