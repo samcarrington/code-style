@@ -18,6 +18,13 @@ Need to update the section on Babel 7 and support for stages/features
 
 </div>
 
+## [3.2.1](https://github.com/AnalogFolk/folk-style/tree/v3.2.1) - Unreleased
+
+### Changed
+
+- Removed out-dated link to Laravel Best Practices site (now squatted) and
+  replaced with a Github link
+
 ## [3.2.0](https://github.com/AnalogFolk/folk-style/tree/v3.2.0) - Unreleased
 
 ### Added

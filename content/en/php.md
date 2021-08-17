@@ -30,5 +30,5 @@ should be given to [PSR-1 (Basic Coding Standard)][psr-1] and
 [laravel]: https://laravel.com/
 [psr-1]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md
 [psr-12]: https://www.php-fig.org/psr/psr-12/
-[laravel-best]: http://www.laravelbestpractices.com/
+[laravel-best]: https://github.com/alexeymezenin/laravel-best-practices
 [solid]: https://medium.com/@dhkelmendi/solid-principles-made-easy-67b1246bcdf
