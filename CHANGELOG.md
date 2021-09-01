@@ -18,6 +18,14 @@ Need to update the section on Babel 7 and support for stages/features
 
 </div>
 
+## [3.2.2](https://github.com/AnalogFolk/folk-style/tree/v3.2.2) - Unreleased
+
+### Added
+
+- Details on WordPress PHP rules as variations from PSRs
+- Information relating to install and use of PHP CodeSniffer
+
+
 ## [3.2.1](https://github.com/AnalogFolk/folk-style/tree/v3.2.1) - 2021-08-17
 
 ### Changed
