@@ -45,8 +45,11 @@ file to ensure that each developer uses the same set of rules & settings.
 }
 ```
 
-Generally - two spaces for indentation, no semi-colons, single quotes are the
+Generally - two spaces for indentation, no semicolons, single quotes are the
 preferred set of simple sub-rules for formatting.
+
+> Author's note: At some point we're going to have to mandate the use of
+> semicolons again. General advice from TC39 is to avoid reliance on ASI
 
 ### Naming
 
@@ -159,6 +162,55 @@ features as they stood at the point of being deprecated is as follows:
   ]
 }
 ```
+
+It is recommended to use `@babel/preset-env` ([docs][preset-env]) in projects, where additional
+settings are necessary and not covered by one of the common language presets offered by the
+Babel team.
+
+Frameworks [in common use][babel-frameworks] also offer ready-made Babel configurations and
+these are excellent and provide a consistent baseline for transpilation of JavaScript for
+use in browsers.
+
+[preset-env]: https://babeljs.io/docs/en/babel-preset-env
+[babel-frameworks]: https://babeljs.io/docs/en/presets#other-integrations
+
+#### The New Bad Parts
+
+Generally, per the recommendations from [Douglas Crockford][better-parts],
+the following language constructs should be avoided;
+
+- Class (it's just syntactical sugar, added to appease Java programmers!)
+- [Proxies][proxies]
+- [Generators][generators]
+- Iterators
+- [Symbols][symbols]
+- [Reflect][reflect]
+
+However, contrary to his advice, we like arrow functions. Be careful though
+if you're just using the keystroke saving and end up writing difficult-to-parse code.
+
+Remember the arrow-function gotchas; there's no `arguments` object inside an arrow
+function, and be careful when returning an object literal; it must be wrapped in
+parentheses.
+
+```javascript
+;(() => console.log(arguments))(1, 2) // will raise ReferenceError: arguments is not defined
+
+;(() => {
+  foo: 1
+})() // this will return undefined. 'foo: 1' is interpreted as a statement composed of a label and the literal 1
+```
+
+[better-parts]: https://www.youtube.com/watch?v=XFTOG895C7c
+[proxies]: https://javascript.info/proxy
+[generators]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators#generator_functions
+[symbols]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol
+[reflect]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect
+
+##### Loops
+
+- Don't use `for` use `array.forEach` and its sisters
+- Don't use `for in`. Use `Object.keys(object).forEach`
 
 ### Commenting code
 

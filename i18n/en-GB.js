@@ -30,6 +30,16 @@ module.exports = {
         slug: 'dotnet',
       },
       {
+        name: 'Python',
+        icon: '',
+        slug: 'python',
+      },
+      {
+        name: 'TypeScript',
+        icon: '',
+        slug: 'typescript',
+      },
+      {
         name: 'Pug',
         icon: '',
         slug: 'pug',

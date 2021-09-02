@@ -70,11 +70,14 @@ export default {
 
 <style lang="scss">
 .section > .container {
-  background-color: white;
-  padding: 0 1em;
+  @apply bg-white px-4;
 }
 
 .nuxt-content-highlight pre {
   @apply rounded;
+}
+
+blockquote {
+  @apply bg-gray-100 p-4 pb-0 border-l-4 border-indigo-400;
 }
 </style>
