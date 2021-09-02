@@ -18,7 +18,13 @@ Need to update the section on Babel 7 and support for stages/features
 
 </div>
 
-## [3.2.2](https://github.com/AnalogFolk/folk-style/tree/v3.2.2) - Unreleased
+## [3.2.3](https://github.com/AnalogFolk/folk-style/tree/v3.2.3) - Unreleased
+
+### Changed
+
+- New hero gradient
+
+## [3.2.2](https://github.com/AnalogFolk/folk-style/tree/v3.2.2) - 2021-08-31
 
 ### Added
 
