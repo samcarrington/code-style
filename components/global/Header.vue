@@ -1,6 +1,6 @@
 <template lang="pug">
   header.header
-    nav.bg-gray-800(role="navigation", aria-label="main navigation")
+    nav.bg-confident(role="navigation", aria-label="main navigation")
       .max-w-7x1(class="mx-auto px-2 sm:px-6 lg:px-8")
         .relative.flex.items-center.justify-between.h-16
           .absolute(class="inset-y-2 left-0 flex items-center md:hidden align-middle")
@@ -52,8 +52,8 @@
                 v-for="link in $t('header.links')"
                 :key="link.slug"
                 :to="`/docs/${link.slug}`"
-                active-class="bg-red-600 hover:bg-red-600 text-white",
-                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                active-class="bg-influential hover:bg-red-600 text-white",
+                class="transition-colors duration-500 ease-in-out text-gray-300 hover:bg-positive hover:text-confident px-3 py-2 rounded-md text-sm font-medium"
               ) {{ link.name }}
           div(class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0")
       div(class="md:hidden", id="mobile-menu", :class="{'hidden': !showNav}")
@@ -62,8 +62,8 @@
             v-for="link in $t('header.links')"
             :key="link.slug"
             :to="`/docs/${link.slug}`"
-            active-class="bg-red-600 hover:bg-red-600 text-white",
-            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+            active-class="bg-influential hover:bg-red-600 text-white",
+            class="transition-colors duration-500 ease-in-out text-gray-300 hover:bg-positive hover:text-confident px-3 py-2 rounded-md text-sm font-medium"
           ) {{ link.name }}
 </template>
 

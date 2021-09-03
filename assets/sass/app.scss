@@ -1,6 +1,7 @@
 @import 'base';
 @import 'layout';
 @import 'module';
+@import 'theme';
 
 // Yes we break our own rules here by applying styles to elements
 // But we're styling the output of markdown-it so do not have the luxury of class-names.

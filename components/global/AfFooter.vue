@@ -1,5 +1,5 @@
 <template lang="pug">
-  footer.footer.bg-gray-800(role="contentinfo", aria-label="footer")
+  footer.footer.bg-confident(role="contentinfo", aria-label="footer")
     .max-w-4xl.mx-auto.relative(class="px-2 sm:px-6 lg:px-8")
       .flex.justify-between
         p.text-gray-300.py-3.text-sm
@@ -9,7 +9,7 @@
             span.text-gray-800
               a.bg-green-500.px-2.rounded-sm.text-gray-800(
                 :href="`https://github.com/AnalogFolk/folk-style/releases/tag/v${version}`"
-                class="hover:bg-gray-100 hover:text-gray-800 hover:rounded-sm"
+                class="transition-colors duration-500 ease-in-out hover:bg-positive hover:text-confident hover:rounded-sm"
                 rel="nofollow noopener noreferrer"
                 target="_blank"
               ) v{{ version }}
