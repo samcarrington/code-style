@@ -30,9 +30,9 @@ export default {
       rgba(9, 222, 228, 0.5),
       transparent 40%
     ),
-    linear-gradient(135deg, #f9e450 3%, transparent 55%),
-    linear-gradient(45deg, #09dee4 5%, transparent 65%),
-    radial-gradient(circle at top, #ff004c, transparent 95%),
+    linear-gradient(135deg, var(--color-positive) 3%, transparent 55%),
+    linear-gradient(45deg, var(--color-hopeful) 5%, transparent 65%),
+    radial-gradient(circle at top, var(--color-influential), transparent 95%),
     linear-gradient(#000, #000);
 }
 

@@ -10,11 +10,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        influential: '#ff004c',
-        confident: '#2b272b',
-        dynamic: '#f3f3f3',
-        hopeful: '#34ccd7',
-        positive: '#feea34',
+        influential: 'var(--color-influential)',
+        confident: 'var(--color-confident)',
+        dynamic: 'var(--color-dynamic)',
+        hopeful: 'var(--color-hopeful)',
+        positive: 'var(--color-positive)',
       },
     },
   },

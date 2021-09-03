@@ -20,9 +20,14 @@ Need to update the section on Babel 7 and support for stages/features
 
 ## [3.2.3](https://github.com/AnalogFolk/folk-style/tree/v3.2.3) - Unreleased
 
+### Added
+
+- Brand colour names to tailwind config
+
 ### Changed
 
 - New hero gradient
+- Header and footer colours to adopt brand standards
 
 ## [3.2.2](https://github.com/AnalogFolk/folk-style/tree/v3.2.2) - 2021-08-31
 
@@ -30,7 +35,6 @@ Need to update the section on Babel 7 and support for stages/features
 
 - Details on WordPress PHP rules as variations from PSRs
 - Information relating to install and use of PHP CodeSniffer
-
 
 ## [3.2.1](https://github.com/AnalogFolk/folk-style/tree/v3.2.1) - 2021-08-17
 
