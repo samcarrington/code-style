@@ -8,7 +8,15 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        influential: '#ff004c',
+        confident: '#2b272b',
+        dynamic: '#f3f3f3',
+        hopeful: '#34ccd7',
+        positive: '#feea34',
+      },
+    },
   },
   variants: {
     extend: {},
