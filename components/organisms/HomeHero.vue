@@ -24,10 +24,12 @@ export default {
 </script>
 
 <style scoped>
+@debug 'var(--color-hopeful)';
+
 .hero {
   background: radial-gradient(
       ellipse at bottom left,
-      rgba(9, 222, 228, 0.5),
+      var(--color-hopeful-transparent),
       transparent 40%
     ),
     linear-gradient(135deg, var(--color-positive) 3%, transparent 55%),
