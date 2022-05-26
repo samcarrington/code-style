@@ -1,25 +1,17 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
-  purge: [
-    './components/**/*.{vue,js}',
-    './layouts/**/*.vue',
-    './pages/**/*.vue',
-    './plugins/**/*.{js,ts}',
-    './nuxt.config.{js,ts}',
+  darkMode: 'class',
+  plugins: [
+    require('@tailwindcss/typography')
   ],
-  darkMode: false, // or 'media' or 'class'
+  content: ['content/**/*.{md,yml,json,json5,csv}'],
   theme: {
     extend: {
       colors: {
-        influential: 'var(--color-influential)',
-        confident: 'var(--color-confident)',
-        dynamic: 'var(--color-dynamic)',
-        hopeful: 'var(--color-hopeful)',
-        positive: 'var(--color-positive)',
-      },
-    },
-  },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
+        // Customize the feeling of your site
+        gray: colors.stone
+      }
+    }
+  }
 }

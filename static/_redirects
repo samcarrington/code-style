@@ -1,7 +1,0 @@
-# [LEGACY] Redirect URLs (FROM, TO, 301!)
-/html /docs/html 301!
-/javascript /docs/javascript 301!
-/css /docs/css 301!
-/php /docs/php 301!
-/dotnet /docs/dotnet 301!
-/pug /docs/pug 301!

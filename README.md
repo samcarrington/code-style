@@ -1,12 +1,11 @@
-# Folk Style
+# Code Style
 
-![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/AnalogFolk/folk-style/main?style=flat-square)
+![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/samcarrington/code-style/main?style=flat-square)
 ![Netlify](https://img.shields.io/netlify/a68a85f7-ee00-4dc1-bd8d-e1916b7e4e41?style=flat-square)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-![GitHub](https://img.shields.io/github/license/AnalogFolk/folk-style?style=flat-square)
+![GitHub](https://img.shields.io/github/license/samcarrington/code-style?style=flat-square)
 
-An [opinionated but simple style guide][folk-style] for technical projects authored at
-Analogfolk.
+An [opinionated but simple style guide][code-style] for engineering projects.
 
 ## Build Setup
 
@@ -40,4 +39,4 @@ For detailed explanation on how things work, checkout [Nuxt.js docs](https://nux
 - Add API Design principles (REST, versioning etc.)
 - Translation in to Spanish
 
-[folk-style]: https://folk-style.analogfolk.com/
+[code-style]: https://code-style.gwawr.co.uk/
