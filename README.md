@@ -1,42 +1,42 @@
-# Code Style
+# Content v2 Minimal Starter
 
-![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/samcarrington/code-style/main?style=flat-square)
-![Netlify](https://img.shields.io/netlify/a68a85f7-ee00-4dc1-bd8d-e1916b7e4e41?style=flat-square)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-![GitHub](https://img.shields.io/github/license/samcarrington/code-style?style=flat-square)
+Look at the [Content documentation](https://content-v2.nuxtjs.org/) to learn more.
 
-An [opinionated but simple style guide][code-style] for engineering projects.
+## Setup
 
-## Build Setup
-
-Local setup is simple enough; install dependencies and run the Nuxt project.
-The master branch automatically deploys to Netlify.
-
-It's a static (nuxt generated) site. Individual guidelines are Markdown files,
-added to pages via `@nuxt/content`.
+Make sure to install the dependencies:
 
 ```bash
-# install dependencies
-$ yarn install
+# yarn
+yarn install
 
-# serve with hot reload at localhost:3000
-$ yarn run dev
+# npm
+npm install
 
-# build for production and launch server
-$ yarn run build
-$ yarn start
-
-# generate static project
-$ yarn run generate
+# pnpm
+pnpm install --shamefully-hoist
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+## Development Server
 
-## TODO
+Start the development server on http://localhost:3000
 
-- Improve .NET section
-- Add section on Infrastructure as code
-- Add API Design principles (REST, versioning etc.)
-- Translation in to Spanish
+```bash
+npm run dev
+```
 
-[code-style]: https://code-style.gwawr.co.uk/
+## Production
+
+Build the application for production:
+
+```bash
+npm run build
+```
+
+Locally preview production build:
+
+```bash
+npm run preview
+```
+
+Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment) for more information.
