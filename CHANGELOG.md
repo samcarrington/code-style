@@ -18,6 +18,16 @@ Need to update the section on Babel 7 and support for stages/features
 
 </div>
 
+## [4.0.0](https://github.com/samcarrington/code-style/tree/v4.0.0) - Unreleased
+
+### Changed
+
+- Migrate to Nuxt v3 and nuxt/content v2
+
+### Removed
+
+- Eliminate previous branding, header, footer and references to AF
+
 ## [3.2.3](https://github.com/AnalogFolk/folk-style/tree/v3.2.3) - Unreleased
 
 ### Added
@@ -154,7 +164,7 @@ Need to update the section on Babel 7 and support for stages/features
 
 - Minor and patch updates to existing dependencies
 
-## [2.0.0](https://github.com/AnalogFolk/folk-style/tree/v2.0.0) - 2021-06-21
+## [2.0.0](https://github.com/samcarrington/code-style/tree/v2.0.0) - 2021-06-21
 
 ### Added
 
@@ -178,7 +188,7 @@ Need to update the section on Babel 7 and support for stages/features
 - various outdated eslint-config dependencies
 - nodemon
 
-## [1.5.0](https://github.com/AnalogFolk/folk-style/tree//v1.5.0) - 2021-06-21
+## [1.5.0](https://github.com/samcarrington/code-style/tree//v1.5.0) - 2021-06-21
 
 ### Changed
 
@@ -190,19 +200,19 @@ Need to update the section on Babel 7 and support for stages/features
 
 - Minor typo
 
-## [1.4.2](https://github.com/AnalogFolk/folk-style/tree/v1.4.2) - 2019-09-19
+## [1.4.2](https://github.com/samcarrington/code-style/tree/v1.4.2) - 2019-09-19
 
 ### Fixed
 
 - Some typos
 
-## [1.4.0](https://github.com/AnalogFolk/folk-style/tree/v1.4.0) - 2019-09-17
+## [1.4.0](https://github.com/samcarrington/code-style/tree/v1.4.0) - 2019-09-17
 
 ### Added
 
 - VueJs Best Practices
 
-## [1.3.3](https://github.com/AnalogFolk/folk-style/tree/v1.3.3) - 2019-07-19
+## [1.3.3](https://github.com/samcarrington/code-style/tree/v1.3.3) - 2019-07-19
 
 ### Added
 
@@ -216,19 +226,19 @@ Need to update the section on Babel 7 and support for stages/features
 
 - Some wording, in CSS and JavaScript sections
 
-## [1.3.2](https://github.com/AnalogFolk/folk-style/tree/v1.3.2) - 2019-07-04
+## [1.3.2](https://github.com/samcarrington/code-style/tree/v1.3.2) - 2019-07-04
 
 ### Fixed
 
 - Broken links in TOC
 
-## [1.3.1](https://github.com/AnalogFolk/folk-style/tree/v1.3.1) - 2019-07-04
+## [1.3.1](https://github.com/samcarrington/code-style/tree/v1.3.1) - 2019-07-04
 
 ### Fixed
 
 - Broken link
 
-## [1.3.0](https://github.com/AnalogFolk/folk-style/tree/v1.3.0) - 2019-07-04
+## [1.3.0](https://github.com/samcarrington/code-style/tree/v1.3.0) - 2019-07-04
 
 ### Added
 
@@ -248,7 +258,7 @@ Need to update the section on Babel 7 and support for stages/features
 
 - Typos
 
-## [1.2.1](https://github.com/AnalogFolk/folk-style/tree/v1.2.1) - 2019-06-20
+## [1.2.1](https://github.com/samcarrington/code-style/tree/v1.2.1) - 2019-06-20
 
 ### Added
 
@@ -259,7 +269,7 @@ Need to update the section on Babel 7 and support for stages/features
 - Browserslist support
 - More detail on ES6 and Babel
 
-## [1.0.5](https://github.com/AnalogFolk/folk-style/tree/v1.0.5) - 2019-06-19
+## [1.0.5](https://github.com/samcarrington/code-style/tree/v1.0.5) - 2019-06-19
 
 ### Added
 
@@ -274,14 +284,14 @@ Need to update the section on Babel 7 and support for stages/features
 - Table of Contents and JS headings correct nesting
 - Fixed contrast levels to reach 100/100 Accessibility score in Lighthouse
 
-## [1.0.1](https://github.com/AnalogFolk/folk-style/tree/v1.0.1) - 2019-06-18
+## [1.0.1](https://github.com/samcarrington/code-style/tree/v1.0.1) - 2019-06-18
 
 ### Added
 
 - .NET section first draft
 - More details in JavaScript section
 
-## [1.0.0](https://github.com/AnalogFolk/folk-style/tree/v1.0.0) - 2019-06-17
+## [1.0.0](https://github.com/samcarrington/code-style/tree/v1.0.0) - 2019-06-17
 
 ### Changed
 
@@ -292,7 +302,7 @@ Need to update the section on Babel 7 and support for stages/features
 
 - Some typos and proofing
 
-## [0.0.1](https://github.com/AnalogFolk/folk-style/tree/v0.0.1) - 2016-05-12
+## [0.0.1](https://github.com/samcarrington/code-style/tree/v0.0.1) - 2016-05-12
 
 ### Added
 
