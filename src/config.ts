@@ -1,7 +1,7 @@
 export const SITE = {
-	title: 'Documentation',
-	description: 'Your website description.',
-	defaultLanguage: 'en_US',
+	title: 'Code Style',
+	description: 'A brief coding style guide for use on projects.',
+	defaultLanguage: 'en_GB',
 };
 
 export const OPEN_GRAPH = {
@@ -56,7 +56,6 @@ export const SIDEBAR: Sidebar = {
 			{ text: 'PHP', link: 'en/php' },
 			{ text: 'Python', link: 'en/python' },
 			{ text: 'PUG', link: 'en/pug' }
-		],
-		'Another Section': [{ text: 'Page 4', link: 'en/page-4' }],
+		]
 	},
 };
