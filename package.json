@@ -1,16 +1,16 @@
 {
   "name": "Code Style",
   "description": "Code Style guidelines for various languages",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/samcarrington/code-style"
   },
   "author": {
-    "name" : "Sam Carrington",
-    "email" : "code@gwawr.co.uk",
-    "url" : "https://code-style.gwawr.uk/"
+    "name": "Sam Carrington",
+    "email": "code@gwawr.co.uk",
+    "url": "https://code-style.gwawr.uk/"
   },
   "scripts": {
     "build": "nuxt build",
