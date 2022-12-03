@@ -18,7 +18,18 @@ Need to update the section on Babel 7 and support for stages/features
 
 </div>
 
-## [4.0.0](https://github.com/samcarrington/code-style/tree/v4.0.0) - Unreleased
+
+## [4.0.2](https://github.com/samcarrington/code-style/tree/v4.0.2) - 2022-12-03
+
+### Changed
+
+- Tweaked package.json to add proper metadata
+
+### Added
+
+- Netlify config now deploys to a custom domain
+
+## [4.0.0](https://github.com/samcarrington/code-style/tree/v4.0.0) - 2022-11-20
 
 ### Changed
 
