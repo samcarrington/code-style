@@ -8,6 +8,11 @@ export default defineNuxtConfig({
     colorMode: {
         classSuffix: ''
     },
+    nitro: {
+      prerender: {
+        routes: ['/rss.xml']
+      }
+    },
     content: {
         documentDriven: true,
         navigation: {

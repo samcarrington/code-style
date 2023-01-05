@@ -18,9 +18,20 @@ Need to update the section on Babel 7 and support for stages/features
 
 </div>
 
-## [4.0.3](https://github.com/samcarrington/code-style/tree/v4.0.3) - 2022-12-21
+## [4.1.0](https://github.com/samcarrington/code-style/tree/v4.1.0) - 2023-01-04
+
+### Added
+
+- RSS Route and pre-rendering
+- Dates to pages
 
 ### Changed
+
+- Title tag formatting
+
+## [4.0.3](https://github.com/samcarrington/code-style/tree/v4.0.3) - 2022-12-21
+
+
 
 - Packages and Readme updated
 
