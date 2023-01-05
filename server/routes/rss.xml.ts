@@ -2,7 +2,7 @@ import { serverQueryContent} from '#content/server';
 import RSS from 'rss';
 
 export default defineEventHandler(async (event) => {
-  const siteRoot = 'https://code.gwawr.uk';
+  const siteRoot = 'https://code-style.gwawr.uk';
 
   const feed = new RSS({
     title: 'Gwawr Code Style',
