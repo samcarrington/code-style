@@ -754,6 +754,11 @@
   resolved "https://registry.yarnpkg.com/@types/resolve/-/resolve-1.20.2.tgz#97d26e00cd4a0423b4af620abecf3e6f442b7975"
   integrity sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==
 
+"@types/rss@^0.0.29":
+  version "0.0.29"
+  resolved "https://registry.yarnpkg.com/@types/rss/-/rss-0.0.29.tgz#1f2b37a863021c56398bf913fd02efad484123c8"
+  integrity sha512-9hAYKyOcoxWqkJMue6bi0fcNXxjJiRutVvqyImy732LmTCxRz9BYPmSmujG7uddK0ZEP/35K3QVZ0sfAVyPnQw==
+
 "@types/unist@*", "@types/unist@^2.0.0":
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/@types/unist/-/unist-2.0.6.tgz#250a7b16c3b91f672a24552ec64678eeb1d3a08d"
