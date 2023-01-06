@@ -18,6 +18,16 @@ Need to update the section on Babel 7 and support for stages/features
 
 </div>
 
+## [4.1.1](https://github.com/samcarrington/code-style/tree/v4.1.1) - 2023-01-06
+
+### Changed
+
+- Package file version number
+
+### Added
+
+- Types for rss dependency
+
 ## [4.1.0](https://github.com/samcarrington/code-style/tree/v4.1.0) - 2023-01-04
 
 ### Added
