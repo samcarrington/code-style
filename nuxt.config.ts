@@ -1,9 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     modules: [
-        '@nuxt/content',
-        '@nuxtjs/tailwindcss',
-        '@nuxtjs/color-mode'
+      '@nuxt/content',
+      '@nuxtjs/tailwindcss',
+      '@nuxtjs/color-mode',
     ],
     colorMode: {
         classSuffix: ''
@@ -15,7 +15,7 @@ export default defineNuxtConfig({
     },
     runtimeConfig: {
       public: {
-        appVersion: process.env.npm_package_version
+        appVersion: process.env.npm_package_version,
       }
     },
     content: {

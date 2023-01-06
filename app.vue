@@ -4,7 +4,6 @@
     <Head>
       <Meta property='og:image' content='/cover.jpg' />
       <Meta name='twitter:card' content='summary_large_image' />
-      <Meta name="google-site-verification" content="zQFvguWeXUs-D-WXYGT42KwgwhrPGQmCvKt0L6JFjPM" />
     </Head>
     </Html>
     <Navbar />
@@ -17,7 +16,19 @@
 export default {
   setup() {
     useHead({
-      titleTemplate: '%s | Code Style | Gwawr'
+      titleTemplate: '%s | Code Style | Gwawr',
+      script: [{
+        async: true,
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-7C0V8P4P5D'
+      }, {
+          type: 'text/javascript',
+          innerHTML: 'window.dataLayer = window.dataLayer || [];\n' +
+            '  function gtag(){dataLayer.push(arguments);}\n' +
+            '  gtag(\'js\', new Date());\n' +
+            '\n' +
+            '  gtag(\'config\', \'G-7C0V8P4P5D\');',
+          tagPosition: 'bodyOpen'
+      }]
     })
   }
 }
