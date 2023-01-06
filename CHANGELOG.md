@@ -22,7 +22,7 @@ Need to update the section on Babel 7 and support for stages/features
 
 ### Added
 
-- Google Webmaster Tools site verification
+- Google Tracking
 
 ## [4.2.0](https://github.com/samcarrington/code-style/tree/v4.2.0) - 2023-01-06
 
