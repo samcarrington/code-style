@@ -1,7 +1,7 @@
 <template lang="pug">
 footer.footer.max-w-2xl.px-4.py-5.m-auto.flex.justify-between(role="contentinfo", aria-label="footer", class="sm:px-8")
-  div.text-sm.text-gray-500 &copy; Sam Carrington {{ year }}
-  div.text-sm.text-gray-500.flex
+  div.text-xs.text-gray-500 &copy; Sam Carrington {{ year }}
+  div.text-xs.text-gray-500.flex
     .mx-2
       span.text-gray-500
         a.bg-green-500.px-2.rounded-sm.text-gray-800(
