@@ -3,14 +3,17 @@ export default defineNuxtConfig({
     modules: [
       '@nuxt/content',
       '@nuxtjs/tailwindcss',
-      '@nuxtjs/color-mode',
+      '@nuxtjs/color-mode'
     ],
     colorMode: {
         classSuffix: ''
     },
     nitro: {
       prerender: {
-        routes: ['/rss.xml']
+        routes: [
+          '/rss.xml',
+          'sitemap.xml'
+        ]
       }
     },
     runtimeConfig: {
