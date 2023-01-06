@@ -8,6 +8,7 @@
     </Html>
     <Navbar />
     <NuxtPage />
+    <SiteFooter />
   </div>
 </template>
 
