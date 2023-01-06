@@ -4,6 +4,7 @@
     <Head>
       <Meta property='og:image' content='/cover.jpg' />
       <Meta name='twitter:card' content='summary_large_image' />
+      <Meta name="google-site-verification" content="zQFvguWeXUs-D-WXYGT42KwgwhrPGQmCvKt0L6JFjPM" />
     </Head>
     </Html>
     <Navbar />
