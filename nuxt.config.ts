@@ -13,6 +13,11 @@ export default defineNuxtConfig({
         routes: ['/rss.xml']
       }
     },
+    runtimeConfig: {
+      public: {
+        appVersion: process.env.npm_package_version
+      }
+    },
     content: {
         documentDriven: true,
         navigation: {

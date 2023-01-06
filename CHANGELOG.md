@@ -18,6 +18,17 @@ Need to update the section on Babel 7 and support for stages/features
 
 </div>
 
+
+## [4.2.0](https://github.com/samcarrington/code-style/tree/v4.2.0) - 2023-01-06
+
+### Added
+
+- Site footer with github link and version number
+- PUG language parsing for templates
+- Site Footer template (in PUG syntax)
+- Github SVG icon
+- Copyright message
+
 ## [4.1.1](https://github.com/samcarrington/code-style/tree/v4.1.1) - 2023-01-06
 
 ### Changed
