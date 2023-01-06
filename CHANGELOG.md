@@ -18,6 +18,12 @@ Need to update the section on Babel 7 and support for stages/features
 
 </div>
 
+## [4.2.2](https://github.com/samcarrington/code-style/tree/v4.2.1) - Unreleased
+
+### Fixed
+
+- Markdown syntax error breaking jsdoc link
+
 ## [4.2.1](https://github.com/samcarrington/code-style/tree/v4.2.1) - 2023-01-06
 
 ### Added
