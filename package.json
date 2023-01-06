@@ -20,6 +20,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@types/rss": "^0.0.29",
     "nuxt": "3.0.0",
     "rss": "^1.2.2"
   },
