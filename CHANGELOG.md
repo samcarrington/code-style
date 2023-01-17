@@ -18,11 +18,23 @@ Need to update the section on Babel 7 and support for stages/features
 
 </div>
 
-## [4.2.2](https://github.com/samcarrington/code-style/tree/v4.2.1) - Unreleased
+## [4.2.2](https://github.com/samcarrington/code-style/tree/v4.2.2) - Unreleased
+
+### Added
+
+- Sitemap XML server route and pre-rendering
+- Mobile navigation using Nuxt state & store
+- Sass Loader to package manifest
+- Dark/Light styling for the mobile nav
 
 ### Fixed
 
 - Markdown syntax error breaking jsdoc link
+- Run prettier against the src folder
+
+### Changed
+
+- Patch version updates for tailwind and typography
 
 ## [4.2.1](https://github.com/samcarrington/code-style/tree/v4.2.1) - 2023-01-06
 
@@ -63,7 +75,7 @@ Need to update the section on Babel 7 and support for stages/features
 
 ## [4.0.3](https://github.com/samcarrington/code-style/tree/v4.0.3) - 2022-12-21
 
-
+### Changed
 
 - Packages and Readme updated
 
