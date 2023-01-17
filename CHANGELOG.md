@@ -18,7 +18,7 @@ Need to update the section on Babel 7 and support for stages/features
 
 </div>
 
-## [4.2.2](https://github.com/samcarrington/code-style/tree/v4.2.2) - Unreleased
+## [4.2.2](https://github.com/samcarrington/code-style/tree/v4.2.2) - 2023-01-17
 
 ### Added
 
