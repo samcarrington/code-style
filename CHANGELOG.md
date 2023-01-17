@@ -18,6 +18,22 @@ Need to update the section on Babel 7 and support for stages/features
 
 </div>
 
+## [4.2.3](https://github.com/samcarrington/code-style/tree/v4.2.3) - 2023-01-17
+
+### Fixed
+
+- default state of mobile nav switched to hidden
+
+### Removed
+
+- sass and sass-loader as we can use postcss already
+- Home link out of nav bar
+
+### Changed
+
+- moved colour mode switch to footer
+- styles in nav bar adjusted slightly and logo componentised
+
 ## [4.2.2](https://github.com/samcarrington/code-style/tree/v4.2.2) - 2023-01-17
 
 ### Added

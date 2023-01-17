@@ -1,10 +1,10 @@
 <template>
   <header class='w-full flex flex-col fixed sm:relative pin-t pin-r pin-l dark:bg-gray-800 bg-white sm:bg-transparent'>
-    <nav id='site-menu' class='flex flex-col sm:flex-row w-full justify-between items-center px-4 sm:px-6' :class='{ "is-open": !show}'>
+    <nav id='site-menu' class='flex flex-col sm:flex-row w-full justify-between items-center px-4 sm:px-6' :class='{ "is-open": show}'>
       <div
         class='w-full sm:w-auto self-start sm:self-center flex flex-row sm:flex-none flex-no-wrap justify-between items-center'>
-        <div class='logo'>
-          CORP LOGO
+        <div class='logo flex-none'>
+          <SiteLogo />
         </div>
         <button id='menuBtn' class='hamburger block sm:hidden focus:outline-none' type='button' @click='toggleNav'>
           <span class='hamburger__top-bun bg-black dark:bg-white'></span>
@@ -12,8 +12,8 @@
         </button>
       </div>
       <div
-        class='menu w-full sm:block sm:w-auto self-end sm:self-center sm:flex flex-col sm:flex-row items-center h-full py-1 pb-4 sm:py-0 sm:pb-0 flex'
-        :class='{hidden: show}'>
+        class='menu w-full sm:block sm:w-auto self-end sm:self-center sm:flex flex-grow flex-col sm:flex-row items-center h-full py-1 pb-4 sm:py-0 sm:pb-0 flex justify-center'
+        :class='{hidden: !show}'>
         <ContentNavigation v-slot='{ navigation }'>
           <NuxtLink
             v-for='link of navigation'
@@ -26,14 +26,12 @@
           </NuxtLink>
         </ContentNavigation>
       </div>
-      <div class='space-x-3 text-gray-500 transition'>
-        <ColorModeSwitch class='hover:text-gray-700 dark:hover:text-gray-300' />
-      </div>
+
     </nav>
   </header>
 </template>
 
-<style lang='scss' scoped>
+<style lang='postcss' scoped>
 .hamburger {
   cursor: pointer;
   width: 48px;

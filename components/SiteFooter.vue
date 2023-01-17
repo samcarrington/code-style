@@ -16,6 +16,9 @@ footer.footer.max-w-2xl.px-1.py-5.m-auto.flex.justify-between(role="contentinfo"
         target="_blank")
         icon-github
         .sr-only View this project on Github
+    .ml-4.h-5.w-5
+      .text-gray-500.transition
+        ColorModeSwitch(class='hover:text-gray-700 dark:hover:text-gray-300', size='w-5 h-5')
 
 </template>
 
