@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup lang='ts'>
 import type { Ref } from 'vue'
 import type { IconifyIcon } from '@iconify/vue'
 import { Icon as Iconify, loadIcon } from '@iconify/vue'
@@ -22,7 +22,7 @@ watch(() => props.name, async () => {
 </script>
 
 <template>
-  <Iconify v-if="icon" :icon="icon" class="inline-block w-5 h-5" />
-  <Component :is="component" v-else-if="component" />
+  <Iconify v-if='icon' :icon='icon' class='inline-block w-5 h-5' />
+  <Component :is='component' v-else-if='component' />
   <span v-else>{{ name }}</span>
 </template>

@@ -1,4 +1,4 @@
-import { serverQueryContent} from '#content/server';
+import { serverQueryContent } from '#content/server';
 import RSS from 'rss';
 
 export default defineEventHandler(async (event) => {
@@ -7,10 +7,13 @@ export default defineEventHandler(async (event) => {
   const feed = new RSS({
     title: 'Gwawr Code Style',
     site_url: siteRoot,
-    feed_url: `${siteRoot}/rss.xml`
-  })
+    feed_url: `${siteRoot}/rss.xml`,
+  });
 
-  const docs = await serverQueryContent(event).sort({ date: -1}).where({ _partial: false}).find();
+  const docs = await serverQueryContent(event)
+    .sort({ date: -1 })
+    .where({ _partial: false })
+    .find();
   const pages = docs; //.filter((doc)) => doc?._path?.includes('/blog');
 
   for (const doc of pages) {
@@ -19,10 +22,10 @@ export default defineEventHandler(async (event) => {
       url: `${siteRoot}${doc._path}`,
       date: doc.date,
       description: doc.description,
-    })
+    });
   }
 
-  const feedString = feed.xml({indent: true});
+  const feedString = feed.xml({ indent: true });
   event.node.res.setHeader('content-type', 'text/xml');
   event.node.res.end(feedString);
-})
+});
