@@ -18,6 +18,17 @@ Need to update the section on Babel 7 and support for stages/features
 
 </div>
 
+## [4.2.4](https://github.com/samcarrington/code-style/tree/v4.2.4) - Unreleased
+
+### Fixed
+
+- Markdown nesting and list formatting in HTML guidelines
+- Hide mobile navigation on route change
+
+### Changed
+
+- colour mode component re-styled to be a visual toggle switch
+
 ## [4.2.3](https://github.com/samcarrington/code-style/tree/v4.2.3) - 2023-01-17
 
 ### Fixed
