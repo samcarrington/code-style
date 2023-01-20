@@ -15,6 +15,7 @@
 <script>
 export default {
   setup() {
+    let { show, toggleNav }  = useNavbar();
     useHead({
       titleTemplate: '%s | Code Style | Gwawr',
       script: [{
@@ -30,6 +31,13 @@ export default {
           tagPosition: 'bodyOpen'
       }]
     })
+  },
+
+  watch: {
+    $route(to, from) {
+      let { show }  = useNavbar();
+      show.value = false;
+    }
   }
 }
 </script>
