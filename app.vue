@@ -45,5 +45,9 @@ export default {
 <style lang='postcss'>
 body {
   @apply bg-gray-50 dark:bg-gray-900;
+
+  .prose pre {
+    box-shadow: rgb(0 0 0 / 35%) 0 5px 15px;
+  }
 }
 </style>
