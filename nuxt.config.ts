@@ -22,7 +22,7 @@ export default defineNuxtConfig({
     highlight: {
       // See the available themes on https://github.com/shikijs/shiki/blob/main/docs/themes.md#all-theme
       theme: 'dracula',
-      preload: ['py', 'css', 'scss', 'ts', 'json', 'js'],
+      preload: ['py', 'css', 'scss', 'ts', 'json', 'js', 'jsx'],
     },
   },
 });
