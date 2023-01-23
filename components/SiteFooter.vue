@@ -2,7 +2,7 @@
 footer.footer.max-w-2xl.px-1.py-5.m-auto.flex.justify-between(role="contentinfo", aria-label="footer", class="sm:px-1")
   div.text-sm.text-gray-500 &copy; Sam Carrington {{ year }}
   div.text-sm.text-gray-500.flex
-    .mx-2
+    .mx-2.mt-1
       span.text-gray-500.text-xs
         a.bg-green-500.px-2.py-1.rounded-sm.text-gray-800(
           :href="`https://github.com/samcarrington/code-style/releases/tag/v${config.public.appVersion}`"
@@ -10,15 +10,15 @@ footer.footer.max-w-2xl.px-1.py-5.m-auto.flex.justify-between(role="contentinfo"
           rel="nofollow noopener noreferrer"
           target="_blank") v{{ config.public.appVersion }}
 
-    .ml-4.h-5.w-5
+    .ml-4.mt-1.h-5.w-5
       a(href="https://github.com/samcarrington/code-style",
         rel="nofollow noopener noreferrer"
         target="_blank")
         icon-github
         .sr-only View this project on Github
-    .ml-4.h-5.w-5
+    .ml-4.h-5.w-18
       .text-gray-500.transition
-        ColorModeSwitch(class='hover:text-gray-700 dark:hover:text-gray-300', size='w-5 h-5')
+        ColorModeSwitch(class='bg-gray-900 hover:text-gray-700 dark:hover:text-gray-300', size='w-5 h-5')
 
 </template>
 

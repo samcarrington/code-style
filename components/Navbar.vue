@@ -1,12 +1,12 @@
 <template>
-  <header class='w-full flex flex-col fixed sm:relative pin-t pin-r pin-l dark:bg-gray-800 bg-white sm:bg-transparent'>
-    <nav id='site-menu' class='flex flex-col sm:flex-row w-full justify-between items-center px-4 sm:px-6' :class='{ "is-open": show}'>
+  <header class='site-header pin-t pin-r pin-l'>
+    <nav id='site-menu' class='site-menu' :class='{ "is-open": show}'>
       <div
         class='w-full sm:w-auto self-start sm:self-center flex flex-row sm:flex-none flex-no-wrap justify-between items-center'>
         <div class='logo flex-none'>
           <SiteLogo />
         </div>
-        <button id='menuBtn' class='hamburger block sm:hidden focus:outline-none' type='button' @click='toggleNav'>
+        <button id='menuBtn' class='hamburger block sm:hidden focus:outline-none' type='button' @click='toggleNav' aria-name='menu toggle'>
           <span class='hamburger__top-bun bg-black dark:bg-white'></span>
           <span class='hamburger__bottom-bun bg-black dark:bg-white'></span>
         </button>
@@ -32,6 +32,15 @@
 </template>
 
 <style lang='postcss' scoped>
+
+.site-header {
+  @apply w-full flex flex-col fixed sm:relative bg-white sm:bg-transparent;
+}
+
+.site-menu {
+  @apply bg-transparent dark:bg-gray-900 sm:bg-transparent flex flex-col sm:flex-row w-full justify-between items-center px-4 sm:px-6;
+}
+
 .hamburger {
   cursor: pointer;
   width: 48px;
