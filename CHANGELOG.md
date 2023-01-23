@@ -36,6 +36,10 @@ Need to update the section on Babel 7 and support for stages/features
 - Darkmode styling for alert box
 - Serif Google Webfont for titles
 
+### Removed
+
+- tidy up stage preset references in the JS/Babel section
+
 ## [4.2.3](https://github.com/samcarrington/code-style/tree/v4.2.3) - 2023-01-17
 
 ### Fixed
