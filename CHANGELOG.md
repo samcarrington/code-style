@@ -18,6 +18,14 @@ Need to update the section on Babel 7 and support for stages/features
 
 </div>
 
+
+## [4.2.5](https://github.com/samcarrington/code-style/tree/v4.2.5) - Unreleased
+
+### Changed
+
+- Updated RSS types dependency
+
+
 ## [4.2.4](https://github.com/samcarrington/code-style/tree/v4.2.4) - 2023-01-23
 
 ### Fixed
@@ -37,7 +45,7 @@ Need to update the section on Babel 7 and support for stages/features
 - Serif Google Webfont for titles
 
 ### Removed
-
+git s
 - tidy up stage preset references in the JS/Babel section
 
 ## [4.2.3](https://github.com/samcarrington/code-style/tree/v4.2.3) - 2023-01-17
