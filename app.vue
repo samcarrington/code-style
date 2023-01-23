@@ -29,7 +29,22 @@ export default {
             '\n' +
             '  gtag(\'config\', \'G-7C0V8P4P5D\');',
           tagPosition: 'bodyOpen'
-      }]
+      }],
+      link: [
+        {
+          rel: "preconnect",
+          href: "https://fonts.googleapis.com"
+        },
+        {
+          rel: "preconnect",
+          href: "http://fonts.gstatic.com",
+          crossorigin: true
+        },
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css2?family=Bitter&display=swap"
+        },
+      ]
     })
   },
 
@@ -46,8 +61,18 @@ export default {
 body {
   @apply bg-gray-50 dark:bg-gray-900;
 
-  .prose pre {
-    box-shadow: rgb(0 0 0 / 35%) 0 5px 15px;
+  .prose {
+    pre {
+      box-shadow: rgb(0 0 0 / 35%) 0 5px 15px;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Bitter', serif;
+    }
   }
 }
 </style>
