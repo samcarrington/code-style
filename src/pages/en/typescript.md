@@ -4,9 +4,10 @@ description: Can has Superset?
 position: 4
 category: JavaScript
 layout: ../../layouts/MainLayout.astro
+date: '2021-08-11'
 ---
 
-## TypeScript
+## Introduction
 
 TypeScript is a superset of JavaScript and is used to write
 code which is preprocessed into JavaScript at build time.
@@ -17,7 +18,14 @@ suitability for TypeScript as well.
 
 The following advice is borrowed heavily from [Basarat Al Syed][ts-book]
 
+A formatter or linter for Typescript should be configured on your project,
+with rules committed to your project repository for consistent developer
+experience. The `typescript-eslint` tool is recommended but [rome] also lints
+and formats Typescript.
+
 [ts-book]: https://basarat.gitbook.io/typescript/styleguide
+[typescript-eslint]: https://typescript-eslint.io/docs/
+[rome]: https://rome.tools/
 
 ### Interface
 
@@ -45,13 +53,13 @@ The following advice is borrowed heavily from [Basarat Al Syed][ts-book]
 #### Bad
 
 ```ts
-let foo = { x: 123, y: undefined }
+let foo = { x: 123, y: undefined };
 ```
 
 #### Good
 
 ```ts
-let foo: { x: number; y?: number } = { x: 123 }
+let foo: { x: number; y?: number } = { x: 123 };
 ```
 
 - Use undefined in general (do consider returning an object like `{valid:boolean, value?:Foo}` instead)
@@ -59,13 +67,13 @@ let foo: { x: number; y?: number } = { x: 123 }
 #### Bad
 
 ```ts
-return null
+return null;
 ```
 
 #### Good
 
 ```ts
-return undefined
+return undefined;
 ```
 
 - Use null where it's a part of the API or conventional
@@ -94,3 +102,18 @@ Annotate arrays as `foos: Foo[]` instead of `foos: Array<Foo>`
 - Use `type` when you _might_ need a union or intersection.
 - Use `interface` when you want `extends` or `implements`
 - Otherwise, use what you prefer
+
+### Further Reading
+
+The [Google TypeScript Style Guide][gtsg] is a good source of best-practice with explanatory
+text on why and when conventions should be followed. `typescript-eslint` packages up a good
+set of recommended style conventions for TypeScript, steps to integrate the package with
+your project are included in the [getting started][tselgs] guide. Some of the above rules
+are effectively enforced via the package, or by default integration of typescript linting
+in your IDE. [Linting Typescript in WebStorm][ts-ws] is covered by JetBrains, and [in VS Code][ts-vs]
+by Microsoft.
+
+[gtsg]: https://google.github.io/styleguide/tsguide.html
+[tselgs]: https://typescript-eslint.io/getting-started
+[ts-ws]: https://www.jetbrains.com/help/webstorm/linting-typescript.html
+[ts-vs]: https://code.visualstudio.com/docs/languages/typescript

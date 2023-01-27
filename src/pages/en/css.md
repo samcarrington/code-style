@@ -5,6 +5,7 @@ description: Structure and syntax for working on CSS and Sass style sheets
 position: 2
 category: CSS, front-end
 layout: ../../layouts/MainLayout.astro
+date: '2019-07-15'
 ---
 
 ## CSS
@@ -174,7 +175,7 @@ Ideally include a main.scss file at the top of the folder structure.
 Import an index files from each of the subsidiary folders, and import
 files in each directory by using `@import` rules in that index.scss
 
-```
+```text
 ./app
   ˪/styles
     ˫/base
