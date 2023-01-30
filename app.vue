@@ -6,7 +6,7 @@
       <Meta name='twitter:card' content='summary_large_image' />
     </Head>
     </Html>
-    <Navbar />
+    <SiteNav />
     <NuxtPage />
     <SiteFooter />
   </div>
@@ -15,7 +15,6 @@
 <script>
 export default {
   setup() {
-    let { show, toggleNav }  = useNavbar();
     useHead({
       titleTemplate: '%s | Code Style | Gwawr',
       script: [{
@@ -49,8 +48,8 @@ export default {
   },
 
   watch: {
-    $route(to, from) {
-      let { show }  = useNavbar();
+    $route() {
+      const { show }  = useNavbar();
       show.value = false;
     }
   }

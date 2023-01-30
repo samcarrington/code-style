@@ -25,6 +25,14 @@ Need to update the section on Babel 7 and support for stages/features
 
 - Updated RSS types dependency
 
+### Added
+
+- eslint into project
+- vue accessibility rules into eslint config
+
+### Fixed
+
+- Linting errors from eslint and a11y configs
 
 ## [4.2.4](https://github.com/samcarrington/code-style/tree/v4.2.4) - 2023-01-23
 

@@ -1,5 +1,5 @@
-import { serverQueryContent } from '#content/server';
 import RSS from 'rss';
+import { serverQueryContent } from '#content/server';
 
 export default defineEventHandler(async (event) => {
   const siteRoot = 'https://code-style.gwawr.uk';
@@ -14,7 +14,7 @@ export default defineEventHandler(async (event) => {
     .sort({ date: -1 })
     .where({ _partial: false })
     .find();
-  const pages = docs; //.filter((doc)) => doc?._path?.includes('/blog');
+  const pages = docs; // .filter((doc)) => doc?._path?.includes('/blog');
 
   for (const doc of pages) {
     feed.item({

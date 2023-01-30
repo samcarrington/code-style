@@ -23,6 +23,7 @@ footer.footer.max-w-2xl.px-1.py-5.m-auto.flex.justify-between(role="contentinfo"
 </template>
 
 <script setup>
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const config = useRuntimeConfig()
 </script>
 
