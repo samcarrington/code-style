@@ -1,35 +1,8 @@
----
-title: Changelog
-navTitle: Changes
-navigation: false
-description: Project Change History
-position: 9
-category: Metdata, changelog
-date: '2023-01-30'
----
-
 # CHANGELOG
 
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-<div style="display: none;">
-
-## Unreleased
-
-Need to update the section on Babel 7 and support for stages/features
-
-### Added
-
-### Changed
-
-### Removed
-
-### Fixed
-
-</div>
-
-
-## [4.2.5](https://github.com/samcarrington/code-style/tree/v4.2.5) - 2023-01-30
+## [4.2.5](https://github.com/samcarrington/code-style/tree/v4.2.5) - 2023-01-31
 
 ### Changed
 
@@ -42,6 +15,8 @@ Need to update the section on Babel 7 and support for stages/features
 - eslint into project
 - vue accessibility rules into eslint config
 - Jampack to test project build integration
+- Changelog API end point
+- Route, template and parsing for changelog front end page
 
 ### Fixed
 

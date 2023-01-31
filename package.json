@@ -1,7 +1,7 @@
 {
   "name": "code-style",
   "description": "Code Style guidelines for various languages",
-  "version": "4.2.4",
+  "version": "4.2.5",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
     "@nuxt/eslint-config": "^0.1.1",
     "@nuxtjs/eslint-config": "^12.0.0",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@types/markdown-it": "^12.2.3",
     "@types/rss": "^0.0.30",
     "eslint": "^8.33.0",
     "eslint-config-prettier": "^8.6.0",
@@ -41,6 +42,7 @@
     "@nuxt/content": "^2.4.2",
     "@nuxtjs/color-mode": "^3.2.0",
     "@nuxtjs/tailwindcss": "^6.3.0",
-    "@tailwindcss/typography": "^0.5.9"
+    "@tailwindcss/typography": "^0.5.9",
+    "markdown-it": "^13.0.1"
   }
 }

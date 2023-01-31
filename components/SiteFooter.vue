@@ -4,11 +4,10 @@ footer.footer.max-w-2xl.px-1.py-5.m-auto.flex.justify-between(role="contentinfo"
   div.text-sm.text-gray-500.flex
     .mx-2.mt-1
       span.text-gray-500.text-xs
-        a.bg-green-500.px-2.py-1.rounded-sm.text-gray-800(
-          :href="`https://github.com/samcarrington/code-style/releases/tag/v${config.public.appVersion}`"
+        nuxt-link.bg-green-500.px-2.py-1.rounded-sm.text-gray-800(
+          to="/changelog"
           class="hover:bg-gray-100 hover:text-gray-800 hover:rounded-sm"
-          rel="nofollow noopener noreferrer"
-          target="_blank") v{{ config.public.appVersion }}
+          ) v{{ config.public.appVersion }}
 
     .ml-4.mt-1.h-5.w-5
       a(href="https://github.com/samcarrington/code-style",
