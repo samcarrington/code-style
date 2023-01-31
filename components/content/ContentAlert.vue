@@ -11,7 +11,7 @@ defineProps({
   <div class="p-4 rounded-md bg-yellow-50 dark:bg-lime-700">
     <div class="flex">
       <div v-if="icon" class="flex-shrink-0 mr-3">
-        <Icon
+        <SiteIcon
           class="w-5 h-5 text-yellow-400 dark:txt-yellow-50"
           aria-hidden="true"
           :name="icon"

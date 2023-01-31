@@ -1,3 +1,13 @@
+---
+title: Changelog
+navTitle: Changes
+navigation: false
+description: Project Change History
+position: 9
+category: Metdata, changelog
+date: '2023-01-30'
+---
+
 # CHANGELOG
 
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -19,16 +29,19 @@ Need to update the section on Babel 7 and support for stages/features
 </div>
 
 
-## [4.2.5](https://github.com/samcarrington/code-style/tree/v4.2.5) - Unreleased
+## [4.2.5](https://github.com/samcarrington/code-style/tree/v4.2.5) - 2023-01-30
 
 ### Changed
 
 - Updated RSS types dependency
+- Link styling
+- Updated nuxt and eslint minor versions
 
 ### Added
 
 - eslint into project
 - vue accessibility rules into eslint config
+- Jampack to test project build integration
 
 ### Fixed
 

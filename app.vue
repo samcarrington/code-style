@@ -57,10 +57,14 @@ export default {
 </script>
 
 <style lang='postcss'>
+
 body {
   @apply bg-gray-50 dark:bg-gray-900;
 
   .prose {
+    :not(h1, h2, h3, h4, h5, h6) a {
+      @apply dark:text-sky-400 text-sky-700;
+    }
     pre {
       box-shadow: rgb(0 0 0 / 35%) 0 5px 15px;
     }
@@ -72,6 +76,7 @@ body {
     h6 {
       font-family: 'Bitter', serif;
     }
+
   }
 }
 </style>
