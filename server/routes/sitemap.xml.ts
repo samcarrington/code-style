@@ -1,8 +1,8 @@
-import { serverQueryContent } from '#content/server';
-import { SitemapStream, streamToPromise } from 'sitemap';
 import { dirname, resolve } from 'path';
 import { fileURLToPath } from 'url';
 import fs from 'fs';
+import { SitemapStream, streamToPromise } from 'sitemap';
+import { serverQueryContent } from '#content/server';
 
 const BASE_URL = 'https://code-style.gwawr.uk';
 

@@ -1,12 +1,10 @@
 <template>
-  <div class="max-w-2xl px-4 py-16 sm:py-8 m-auto bg-white sm:px-8 sm:shadow dark:bg-gray-800 sm:rounded">
-    <!-- Fetch and display the Markdown document from current path -->
+  <div
+    class="max-w-2xl px-4 py-16 sm:py-8 m-auto bg-white sm:px-8 sm:shadow dark:bg-gray-800 sm:rounded"
+  >
     <ContentDoc class="prose prose-gray dark:prose-invert max-w-none">
-      <!-- Slot if document is not found -->
       <template #not-found>
-        <h1 class="text-2xl text-white">
-          Page not found
-        </h1>
+        <h1 class="text-2xl text-white">Page not found</h1>
       </template>
     </ContentDoc>
   </div>
@@ -14,11 +12,14 @@
 
 <style lang="postcss">
 /* Customize headers to remove default underline */
-.prose h2 a,
-.prose h3 a {
-  @apply no-underline;
-  &:hover {
-    @apply border-b border-neutral-600 dark:border-neutral-300;
+.prose {
+  h2, h3, h4 {
+    a {
+      @apply no-underline;
+      &:hover {
+        @apply border-b border-neutral-600 dark:border-neutral-300;
+      }
+    }
   }
 }
 </style>

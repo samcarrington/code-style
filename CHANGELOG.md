@@ -2,21 +2,25 @@
 
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-<div style="display: none;">
-
-## Unreleased
-
-Need to update the section on Babel 7 and support for stages/features
-
-### Added
+## [4.2.5](https://github.com/samcarrington/code-style/tree/v4.2.5) - 2023-01-31
 
 ### Changed
 
-### Removed
+- Updated RSS types dependency
+- Link styling
+- Updated nuxt and eslint minor versions
+
+### Added
+
+- eslint into project
+- vue accessibility rules into eslint config
+- Jampack to test project build integration
+- Changelog API end point
+- Route, template and parsing for changelog front end page
 
 ### Fixed
 
-</div>
+- Linting errors from eslint and a11y configs
 
 ## [4.2.4](https://github.com/samcarrington/code-style/tree/v4.2.4) - 2023-01-23
 
@@ -37,7 +41,7 @@ Need to update the section on Babel 7 and support for stages/features
 - Serif Google Webfont for titles
 
 ### Removed
-
+git s
 - tidy up stage preset references in the JS/Babel section
 
 ## [4.2.3](https://github.com/samcarrington/code-style/tree/v4.2.3) - 2023-01-17

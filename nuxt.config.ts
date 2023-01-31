@@ -1,4 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
+import { resolve } from 'path';
+
 export default defineNuxtConfig({
   modules: ['@nuxt/content', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode'],
   colorMode: {
@@ -6,7 +9,7 @@ export default defineNuxtConfig({
   },
   nitro: {
     prerender: {
-      routes: ['/rss.xml', '/sitemap.xml'],
+      routes: ['/rss.xml', '/sitemap.xml', '/api/changelog.md'],
     },
   },
   runtimeConfig: {

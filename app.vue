@@ -6,7 +6,7 @@
       <Meta name='twitter:card' content='summary_large_image' />
     </Head>
     </Html>
-    <Navbar />
+    <SiteNav />
     <NuxtPage />
     <SiteFooter />
   </div>
@@ -15,7 +15,6 @@
 <script>
 export default {
   setup() {
-    let { show, toggleNav }  = useNavbar();
     useHead({
       titleTemplate: '%s | Code Style | Gwawr',
       script: [{
@@ -49,8 +48,8 @@ export default {
   },
 
   watch: {
-    $route(to, from) {
-      let { show }  = useNavbar();
+    $route() {
+      const { show }  = useNavbar();
       show.value = false;
     }
   }
@@ -58,10 +57,14 @@ export default {
 </script>
 
 <style lang='postcss'>
+
 body {
   @apply bg-gray-50 dark:bg-gray-900;
 
   .prose {
+    :not(h1, h2, h3, h4, h5, h6) a {
+      @apply dark:text-sky-400 text-sky-700;
+    }
     pre {
       box-shadow: rgb(0 0 0 / 35%) 0 5px 15px;
     }
@@ -73,6 +76,7 @@ body {
     h6 {
       font-family: 'Bitter', serif;
     }
+
   }
 }
 </style>

@@ -18,8 +18,8 @@ const onClick = () => (colorMode.value === 'light' ? (colorMode.preference = 'da
   <button aria-label='Color Mode' class='color-mode-selector flex relative' @click='onClick'>
     <ColorScheme placeholder='...'>
       <div class='selector absolute bg-white'></div>
-      <Icon name='heroicons-outline:moon'/>
-      <Icon name='heroicons-outline:sun' class='text-yellow-200 hover:text-yellow-600 ml-2'  />
+      <SiteIcon name='heroicons-outline:moon'/>
+      <SiteIcon name='heroicons-outline:sun' class='text-yellow-200 hover:text-yellow-600 ml-2'  />
     </ColorScheme>
   </button>
 </template>
