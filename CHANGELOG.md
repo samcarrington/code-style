@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [4.2.6](https://github.com/samcarrington/code-style/tree/v4.2.6) - Unreleased
+
+### Fixed
+
+### Changed
+
+- Updated minor versions for `@nuxt/content` and `@nuxtjs/tailwindcss`
+- Updated minor versions for `nuxt` and jampack
+- Updated patch version for `prettier`
+- Altered wording for intro 
+
+### Added
+
+- Favicon files into public folder
+
+### Removed
+
 ## [4.2.5](https://github.com/samcarrington/code-style/tree/v4.2.5) - 2023-01-31
 
 ### Changed
