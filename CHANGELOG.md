@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [4.2.6](https://github.com/samcarrington/code-style/tree/v4.2.6) - Unreleased
+## [4.2.6](https://github.com/samcarrington/code-style/tree/v4.2.6) - 2023-02-09
 
 ### Fixed
 
