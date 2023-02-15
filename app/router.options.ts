@@ -17,12 +17,13 @@ export default <RouterConfig>{
     // Scroll to heading on click
     if (to.hash) {
       setTimeout(() => {
-        const heading = document.querySelector(to.hash) as any;
-
-        return window.scrollTo({
-          top: heading.offsetTop,
-          behavior: 'smooth',
-        });
+        const heading = document.querySelector(to.hash) as HTMLElement;
+        if (heading) {
+          return window.scrollTo({
+            top: heading.offsetTop,
+            behavior: 'smooth',
+          });
+        }
       });
       return;
     }
