@@ -6,10 +6,16 @@ All notable changes to this project will be documented in this file. This projec
 
 ### Fixed
 
+- type error on router options use of HTML elements for scrolling
+
 ### Changed
 
 - Updated minor versions for `@nuxtjs/tailwindcss`
 - Updated minor versions for `eslint`
+
+### Added
+
+- initial options for i18n (module not quite ready for Nuxt 3 & Nuxt Content 2)
 
 ## [4.2.6](https://github.com/samcarrington/code-style/tree/v4.2.6) - 2023-02-09
 

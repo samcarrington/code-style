@@ -2,13 +2,17 @@
   <div
     class="max-w-2xl px-4 py-16 sm:py-8 m-auto bg-white sm:px-8 sm:shadow dark:bg-gray-800 sm:rounded"
   >
-    <ContentDoc class="prose prose-gray dark:prose-invert max-w-none">
+    <ContentDoc class="prose prose-gray dark:prose-invert max-w-none" >
       <template #not-found>
         <h1 class="text-2xl text-white">Page not found</h1>
       </template>
     </ContentDoc>
   </div>
 </template>
+
+<script setup>
+const localePath = useLocalePath();
+</script>
 
 <style lang="postcss">
 /* Customize headers to remove default underline */
