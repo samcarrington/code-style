@@ -6,16 +6,18 @@ All notable changes to this project will be documented in this file. This projec
 
 ### Fixed
 
-- type error on router options use of HTML elements for scrolling
+- Type error on router options use of HTML elements for scrolling
 
 ### Changed
 
 - Updated minor versions for `@nuxtjs/tailwindcss`
 - Updated minor versions for `eslint`
+- Updated patch version for `@divriots/jampack`
 
 ### Added
 
-- initial options for i18n (module not quite ready for Nuxt 3 & Nuxt Content 2)
+- Initial options for i18n (module not quite ready for Nuxt 3 & Nuxt Content 2)
+- Jampack cache folder into .gitignore 
 
 ## [4.2.6](https://github.com/samcarrington/code-style/tree/v4.2.6) - 2023-02-09
 
@@ -24,7 +26,7 @@ All notable changes to this project will be documented in this file. This projec
 ### Changed
 
 - Updated minor versions for `@nuxt/content` and `@nuxtjs/tailwindcss`
-- Updated minor versions for `nuxt` and `jampack`
+- Updated minor versions for `nuxt` and `@divriots/jampack`
 - Updated patch version for `prettier`
 - Altered wording for intro 
 

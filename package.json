@@ -21,7 +21,7 @@
     "lint": "eslint -c .eslintrc.cjs ."
   },
   "devDependencies": {
-    "@divriots/jampack": "^0.9.1",
+    "@divriots/jampack": "^0.9.3",
     "@nuxt/eslint-config": "^0.1.1",
     "@nuxtjs/eslint-config": "^12.0.0",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
