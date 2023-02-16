@@ -78,5 +78,14 @@ body {
     }
 
   }
+
+  .prose :where(code):not(:where([class~="not-prose"] *)) {
+
+    &::after,
+    &::before {
+      content: '';
+    }
+
+  }
 }
 </style>

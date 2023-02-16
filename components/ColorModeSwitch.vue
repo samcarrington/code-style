@@ -11,7 +11,7 @@ defineProps({
 })
 
 const colorMode = useColorMode()
-const onClick = () => (colorMode.value === 'light' ? (colorMode.preference = 'dark') : (colorMode.preference = 'light'))
+const onClick = () => (colorMode.preference = (colorMode.value === 'light' ? 'dark' : 'light'))
 </script>
 
 <template>
@@ -32,7 +32,7 @@ const onClick = () => (colorMode.value === 'light' ? (colorMode.preference = 'da
     border-radius: 15px;
     width: 55px;
     height: 26px;
-    box-shadow: 0 0 0 1px ffffff4d;
+    box-shadow: 0 0 0 1px #ffffff4d;
     padding-top: 2px;
     padding-left: 3px;
 

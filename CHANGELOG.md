@@ -1,12 +1,14 @@
 # CHANGELOG
 
-All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+All notable changes to this project will be documented in this file. This 
+project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [4.2.7](https://github.com/samcarrington/code-style/tree/v4.2.7) - Unreleased
 
 ### Fixed
 
 - Type error on router options use of HTML elements for scrolling
+- Sonarlint static analysis flagged issues
 
 ### Changed
 
@@ -19,9 +21,11 @@ All notable changes to this project will be documented in this file. This projec
 - Initial options for i18n (module not quite ready for Nuxt 3 & Nuxt Content 2)
 - Jampack cache folder into .gitignore 
 
-## [4.2.6](https://github.com/samcarrington/code-style/tree/v4.2.6) - 2023-02-09
+### Removed 
 
-### Fixed
+- backticks from before and after inline `pre` elements in prose.
+
+## [4.2.6](https://github.com/samcarrington/code-style/tree/v4.2.6) - 2023-02-09
 
 ### Changed
 
