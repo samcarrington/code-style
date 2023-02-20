@@ -15,6 +15,7 @@ project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Updated minor versions for `@nuxtjs/tailwindcss`
 - Updated minor versions for `eslint`
 - Updated patch version for `@divriots/jampack`
+- Prettier formatting on a few files
 
 ### Added
 
