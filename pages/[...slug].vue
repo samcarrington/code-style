@@ -10,10 +10,6 @@
   </div>
 </template>
 
-<script setup>
-// const localePath = useLocalePath();
-</script>
-
 <style lang="postcss">
 /* Customize headers to remove default underline */
 .prose {

@@ -12,9 +12,8 @@ project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Changed
 
-- Updated minor versions for `@nuxtjs/tailwindcss`
-- Updated minor versions for `eslint`
-- Updated patch version for `@divriots/jampack`
+- Updated minor versions for `@nuxtjs/tailwindcss` & `eslint`
+- Updated patch version for `@divriots/jampack` & `nuxt`
 - Prettier formatting on a few files
 
 ### Added
@@ -24,7 +23,7 @@ project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Removed 
 
-- backticks from before and after inline `pre` elements in prose.
+- Backticks from before and after inline `pre` elements in prose.
 
 ## [4.2.6](https://github.com/samcarrington/code-style/tree/v4.2.6) - 2023-02-09
 

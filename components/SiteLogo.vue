@@ -9,5 +9,3 @@ export default {
   name: 'SiteLogo',
 };
 </script>
-
-<style scoped></style>
