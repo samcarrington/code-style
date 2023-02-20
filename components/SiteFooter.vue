@@ -1,4 +1,4 @@
-<template lang='pug'>
+<template lang="pug">
 footer.footer.max-w-2xl.px-1.py-5.m-auto.flex.justify-between(role="contentinfo", aria-label="footer", class="sm:px-1")
   div.text-sm.text-gray-500 &copy; Sam Carrington {{ year }}
   div.text-sm.text-gray-500.flex
@@ -23,7 +23,7 @@ footer.footer.max-w-2xl.px-1.py-5.m-auto.flex.justify-between(role="contentinfo"
 
 <script setup>
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-const config = useRuntimeConfig()
+const config = useRuntimeConfig();
 </script>
 
 <script>
@@ -31,12 +31,10 @@ export default {
   name: 'SiteFooter',
   data() {
     return {
-      year: new Date().getFullYear()
-    }
-  }
-}
+      year: new Date().getFullYear(),
+    };
+  },
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

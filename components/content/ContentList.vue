@@ -1,20 +1,27 @@
-<script setup lang='ts'>
+<script setup lang="ts">
 // Utils from Nuxt Content
-const { flatUnwrap } = useUnwrap()
+const { flatUnwrap } = useUnwrap();
 
 defineProps({
   icon: {
     type: String,
-    default: 'heroicons-outline:badge-check'
-  }
-})
+    default: 'heroicons-outline:badge-check',
+  },
+});
 </script>
 
 <template>
-  <ul class='p-0'>
-    <li v-for="(item, index) of flatUnwrap($slots.default(), ['ul'])" :key='index' class='flex space-x-2 not-prose'>
-      <SiteIcon :name='icon' class='flex-shrink-0 w-6 h-6 mt-1 text-emerald-500' />
-      <span><ContentSlot :use='() => item' unwrap='li' /></span>
+  <ul class="p-0">
+    <li
+      v-for="(item, index) of flatUnwrap($slots.default(), ['ul'])"
+      :key="index"
+      class="flex space-x-2 not-prose"
+    >
+      <SiteIcon
+        :name="icon"
+        class="flex-shrink-0 w-6 h-6 mt-1 text-emerald-500"
+      />
+      <span><ContentSlot :use="() => item" unwrap="li" /></span>
     </li>
   </ul>
 </template>
