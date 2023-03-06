@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file. This 
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [4.2.7](https://github.com/samcarrington/code-style/tree/v4.2.7) - Unreleased
+## [4.3.0](https://github.com/samcarrington/code-style/tree/v4.3.0) - 2023-03-06
 
 ### Fixed
 
@@ -20,6 +20,7 @@ project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - Initial options for i18n (module not quite ready for Nuxt 3 & Nuxt Content 2)
 - Jampack cache folder into .gitignore 
+- Decap (netlify CMS) integration for content edits
 
 ### Removed 
 
