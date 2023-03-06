@@ -12,7 +12,7 @@ project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Changed
 
-- Updated minor versions for `@nuxtjs/tailwindcss` & `eslint`
+- Updated minor versions for `@nuxtjs/tailwindcss`, `eslint-config-prettier` & `eslint`
 - Updated patch version for `@divriots/jampack`, `nuxt` & `@nuxtjs/i18n`
 - Prettier formatting on a few files
 
