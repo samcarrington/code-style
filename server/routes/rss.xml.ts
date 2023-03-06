@@ -1,11 +1,11 @@
-import RSS from 'rss';
-import { serverQueryContent } from '#content/server';
+import RSS from "rss";
+import { serverQueryContent } from "#content/server";
 
 export default defineEventHandler(async (event) => {
-  const siteRoot = 'https://code-style.gwawr.uk';
+  const siteRoot = "https://code-style.gwawr.uk";
 
   const feed = new RSS({
-    title: 'Gwawr Code Style',
+    title: "Gwawr Code Style",
     site_url: siteRoot,
     feed_url: `${siteRoot}/rss.xml`,
   });
@@ -18,7 +18,7 @@ export default defineEventHandler(async (event) => {
 
   for (const doc of pages) {
     feed.item({
-      title: doc.title ?? '-',
+      title: doc.title ?? "-",
       url: `${siteRoot}${doc._path}`,
       date: doc.date,
       description: doc.description,
@@ -26,6 +26,6 @@ export default defineEventHandler(async (event) => {
   }
 
   const feedString = feed.xml({ indent: true });
-  event.node.res.setHeader('content-type', 'text/xml');
+  event.node.res.setHeader("content-type", "text/xml");
   event.node.res.end(feedString);
 });

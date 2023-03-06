@@ -1,9 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
-import { resolve } from 'path';
-
 export default defineNuxtConfig({
-  modules: ['@nuxt/content', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode'],
+  modules: [
+    '@nuxt/content',
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/color-mode',
+    '@nuxtjs/i18n',
+  ],
   colorMode: {
     classSuffix: '',
   },
@@ -17,6 +20,7 @@ export default defineNuxtConfig({
       appVersion: process.env.npm_package_version,
     },
   },
+  /* module options */
   content: {
     documentDriven: true,
     navigation: {
@@ -26,6 +30,15 @@ export default defineNuxtConfig({
       // See the available themes on https://github.com/shikijs/shiki/blob/main/docs/themes.md#all-theme
       theme: 'dracula',
       preload: ['py', 'css', 'scss', 'ts', 'json', 'js', 'jsx'],
+    },
+  },
+  /* module options */
+  i18n: {
+    locales: ['en', 'es'],
+    defaultLocale: 'en',
+    vueI18n: {
+      legacy: false,
+      locale: 'en',
     },
   },
 });

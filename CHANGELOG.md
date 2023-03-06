@@ -1,23 +1,43 @@
 # CHANGELOG
 
-All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+All notable changes to this project will be documented in this file. This 
+project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [4.2.6](https://github.com/samcarrington/code-style/tree/v4.2.6) - 2023-02-09
+## [4.3.0](https://github.com/samcarrington/code-style/tree/v4.3.0) - 2023-03-06
 
 ### Fixed
+
+- Type error on router options use of HTML elements for scrolling
+- Sonarlint static analysis flagged issues
+
+### Changed
+
+- Updated minor versions for `@nuxtjs/tailwindcss`, `eslint-config-prettier` & `eslint`
+- Updated patch version for `@divriots/jampack`, `nuxt` & `@nuxtjs/i18n`
+- Prettier formatting on a few files
+
+### Added
+
+- Initial options for i18n (module not quite ready for Nuxt 3 & Nuxt Content 2)
+- Jampack cache folder into .gitignore 
+- Decap (netlify CMS) integration for content edits
+
+### Removed 
+
+- Backticks from before and after inline `pre` elements in prose.
+
+## [4.2.6](https://github.com/samcarrington/code-style/tree/v4.2.6) - 2023-02-09
 
 ### Changed
 
 - Updated minor versions for `@nuxt/content` and `@nuxtjs/tailwindcss`
-- Updated minor versions for `nuxt` and jampack
+- Updated minor versions for `nuxt` and `@divriots/jampack`
 - Updated patch version for `prettier`
 - Altered wording for intro 
 
 ### Added
 
 - Favicon files into public folder
-
-### Removed
 
 ## [4.2.5](https://github.com/samcarrington/code-style/tree/v4.2.5) - 2023-01-31
 

@@ -13,7 +13,9 @@
 <style lang="postcss">
 /* Customize headers to remove default underline */
 .prose {
-  h2, h3, h4 {
+  h2,
+  h3,
+  h4 {
     a {
       @apply no-underline;
       &:hover {

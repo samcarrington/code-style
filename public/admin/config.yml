@@ -1,0 +1,23 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+media_folder: public/img
+public_folder: /img
+
+collections:
+  - name: 'content'
+    label: 'Page'
+    folder: 'content'
+    format: 'frontmatter'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'SEO Title', name: 'title', widget: 'string' }
+      - { label: 'Navigation Position', name: 'position', widget: 'integer' }
+      - { label: 'Navigation Label', name: 'navTitle', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
