@@ -3,7 +3,32 @@
 All notable changes to this project will be documented in this file. This 
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [4.2.7](https://github.com/samcarrington/code-style/tree/v4.2.7) - Unreleased
+
+## [4.3.1](https://github.com/samcarrington/code-style/tree/v4.3.1) - Unreleased
+
+### Fixed
+
+- Colour of text in 404 response for dark mode/light mode
+- coerce type in changelog markdown result 
+- spacing below ribbon nav
+
+### Changed
+
+- Small addition to the react section in JavaScript guidance
+- Patch version updates to `@divriots/jampack`
+- Minor version update to `@nuxt/content`, `nuxt`, `eslint` & `@nuxtjs/tailwindcss`
+
+### Added
+
+- Automated translation into Spanish of the homepage markdown to test the 
+  water of Google Translate providing i18n content
+
+### Removed
+
+- Decap CMS files
+
+
+## [4.3.0](https://github.com/samcarrington/code-style/tree/v4.3.0) - 2023-03-06
 
 ### Fixed
 
