@@ -1,7 +1,31 @@
 # CHANGELOG
 
-All notable changes to this project will be documented in this file. This 
+All notable changes to this project will be documented in this file. This
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [4.3.1](https://github.com/samcarrington/code-style/tree/v4.3.1) - 2023-03-31
+
+### Fixed
+
+- Colour of text in 404 response for dark mode/light mode
+- coerce type in changelog markdown result
+- spacing below ribbon nav
+
+### Changed
+
+- Small addition to the react section in JavaScript guidance
+- Patch version updates to `@divriots/jampack`
+- Minor version update to `@nuxt/content`, `nuxt`, `eslint`, `prettier` & `@nuxtjs/tailwindcss`
+
+### Added
+
+- Automated translation into Spanish of the homepage markdown to test the
+  water of Google Translate providing i18n content
+
+### Removed
+
+- Decap CMS files
+
 
 ## [4.3.0](https://github.com/samcarrington/code-style/tree/v4.3.0) - 2023-03-06
 
@@ -22,7 +46,7 @@ project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Jampack cache folder into .gitignore 
 - Decap (netlify CMS) integration for content edits
 
-### Removed 
+### Removed
 
 - Backticks from before and after inline `pre` elements in prose.
 
@@ -33,7 +57,7 @@ project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Updated minor versions for `@nuxt/content` and `@nuxtjs/tailwindcss`
 - Updated minor versions for `nuxt` and `@divriots/jampack`
 - Updated patch version for `prettier`
-- Altered wording for intro 
+- Altered wording for intro
 
 ### Added
 
@@ -78,7 +102,9 @@ project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Serif Google Webfont for titles
 
 ### Removed
+
 git s
+
 - tidy up stage preset references in the JS/Babel section
 
 ## [4.2.3](https://github.com/samcarrington/code-style/tree/v4.2.3) - 2023-01-17
@@ -157,7 +183,6 @@ git s
 ### Changed
 
 - Packages and Readme updated
-
 
 ## [4.0.2](https://github.com/samcarrington/code-style/tree/v4.0.2) - 2022-12-03
 
