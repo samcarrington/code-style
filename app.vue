@@ -20,7 +20,7 @@ export default {
       script: [{
         async: true,
         src: 'https://www.googletagmanager.com/gtag/js?id=G-7C0V8P4P5D'
-      }, {
+        }, {
           type: 'text/javascript',
           innerHTML: 'window.dataLayer = window.dataLayer || [];\n' +
             '  function gtag(){dataLayer.push(arguments);}\n' +
@@ -28,7 +28,11 @@ export default {
             '\n' +
             '  gtag(\'config\', \'G-7C0V8P4P5D\');',
           tagPosition: 'bodyOpen'
-      }],
+        },
+        {
+          src: 'https://identity.netlify.com/v1/netlify-identity-widget.js',
+        }
+      ],
       link: [
         {
           rel: "preconnect",

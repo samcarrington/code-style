@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file. This
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [4.3.1](https://github.com/samcarrington/code-style/tree/v4.3.1) - Unreleased
+## [4.3.1](https://github.com/samcarrington/code-style/tree/v4.3.1) - 2023-03-31
 
 ### Fixed
 
@@ -26,6 +26,7 @@ project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - Decap CMS files
 
+
 ## [4.3.0](https://github.com/samcarrington/code-style/tree/v4.3.0) - 2023-03-06
 
 ### Fixed
@@ -35,14 +36,15 @@ project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Changed
 
-- Updated minor versions for `@nuxtjs/tailwindcss` & `eslint`
+- Updated minor versions for `@nuxtjs/tailwindcss`, `eslint-config-prettier` & `eslint`
 - Updated patch version for `@divriots/jampack`, `nuxt` & `@nuxtjs/i18n`
 - Prettier formatting on a few files
 
 ### Added
 
 - Initial options for i18n (module not quite ready for Nuxt 3 & Nuxt Content 2)
-- Jampack cache folder into .gitignore
+- Jampack cache folder into .gitignore 
+- Decap (netlify CMS) integration for content edits
 
 ### Removed
 
