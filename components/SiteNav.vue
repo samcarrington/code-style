@@ -22,7 +22,7 @@
           <NuxtLink
             v-for="link of navigation"
             :key="link._path"
-            :to="localePath(link._path)"
+            :to="link._path"
             active-class="font-bold"
             class="w-full mr-4 sm:w-auto sm:pr-1 py-2 sm:py-1 sm:pt-2 text-gray-700 dark:text-gray-200"
           >

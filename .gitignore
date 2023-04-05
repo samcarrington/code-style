@@ -89,3 +89,9 @@ sw.*
 
 # Jampack cache
 .jampack
+
+# Local Netlify folder
+.netlify
+
+# refactor
+.legacy

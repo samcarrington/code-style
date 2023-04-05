@@ -20,15 +20,15 @@ export default {
       script: [{
         async: true,
         src: 'https://www.googletagmanager.com/gtag/js?id=G-7C0V8P4P5D'
-        }, {
-          type: 'text/javascript',
-          innerHTML: 'window.dataLayer = window.dataLayer || [];\n' +
+      }, {
+        type: 'text/javascript',
+        innerHTML: 'window.dataLayer = window.dataLayer || [];\n' +
             '  function gtag(){dataLayer.push(arguments);}\n' +
             '  gtag(\'js\', new Date());\n' +
             '\n' +
             '  gtag(\'config\', \'G-7C0V8P4P5D\');',
-          tagPosition: 'bodyOpen'
-        },
+        tagPosition: 'bodyOpen'
+      },
         {
           src: 'https://identity.netlify.com/v1/netlify-identity-widget.js',
         }
@@ -40,7 +40,7 @@ export default {
         },
         {
           rel: "preconnect",
-          href: "http://fonts.gstatic.com",
+          href: "https://fonts.gstatic.com",
           crossorigin: true
         },
         {
