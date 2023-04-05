@@ -1,12 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-
 export default defineNuxtConfig({
   modules: [
-    '@nuxt/content',
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/color-mode',
-    '@nuxtjs/i18n',
+    '@nuxt/content',
+    '@nuxtjs/color-mode'
   ],
+  typescript: {
+    shim: false
+  },
   colorMode: {
     classSuffix: '',
   },
@@ -31,14 +32,5 @@ export default defineNuxtConfig({
       theme: 'dracula',
       preload: ['py', 'css', 'scss', 'ts', 'json', 'js', 'jsx'],
     },
-  },
-  /* module options */
-  i18n: {
-    locales: ['en', 'es'],
-    defaultLocale: 'en',
-    vueI18n: {
-      legacy: false,
-      locale: 'en',
-    },
-  },
-});
+  }
+})

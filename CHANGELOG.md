@@ -16,15 +16,12 @@ project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Small addition to the react section in JavaScript guidance
 - Patch version updates to `@divriots/jampack`
 - Minor version update to `@nuxt/content`, `nuxt`, `eslint`, `prettier` & `@nuxtjs/tailwindcss`
-
-### Added
-
-- Automated translation into Spanish of the homepage markdown to test the
-  water of Google Translate providing i18n content
+- Rebuilt using a sidebase template to repair the build after upgrade
 
 ### Removed
 
 - Decap CMS files
+- i18n dependencies (for now)
 
 
 ## [4.3.0](https://github.com/samcarrington/code-style/tree/v4.3.0) - 2023-03-06
