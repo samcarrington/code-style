@@ -40,7 +40,7 @@ export default {
         },
         {
           rel: "preconnect",
-          href: "http://fonts.gstatic.com",
+          href: "https://fonts.gstatic.com",
           crossorigin: true
         },
         {
