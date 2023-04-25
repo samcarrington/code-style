@@ -17,7 +17,7 @@
 export default {
   setup() {
     useHead({
-      titleTemplate: '%s | Code Style | Gwawr',
+      titleTemplate: (title) => `${title} | Code Style | Gwawr`,
       script: [{
         async: true,
         src: 'https://www.googletagmanager.com/gtag/js?id=G-7C0V8P4P5D'
