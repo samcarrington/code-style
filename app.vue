@@ -21,20 +21,18 @@ export default {
       bodyAttrs: {
         'data-pride':''
       },
-      script: [{
-        async: true,
-        src: 'https://www.googletagmanager.com/gtag/js?id=G-7C0V8P4P5D'
-      }, {
-        type: 'text/javascript',
-        innerHTML: 'window.dataLayer = window.dataLayer || [];\n' +
-            '  function gtag(){dataLayer.push(arguments);}\n' +
-            '  gtag(\'js\', new Date());\n' +
-            '\n' +
-            '  gtag(\'config\', \'G-7C0V8P4P5D\');',
-        tagPosition: 'bodyOpen'
-      },
+      script: [
         {
-          src: 'https://identity.netlify.com/v1/netlify-identity-widget.js',
+          async: true,
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-7C0V8P4P5D'
+        }, {
+          type: 'text/javascript',
+          innerHTML: 'window.dataLayer = window.dataLayer || [];\n' +
+              '  function gtag(){dataLayer.push(arguments);}\n' +
+              '  gtag(\'js\', new Date());\n' +
+              '\n' +
+              '  gtag(\'config\', \'G-7C0V8P4P5D\');',
+          tagPosition: 'bodyOpen'
         }
       ],
       link: [
