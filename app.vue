@@ -17,21 +17,22 @@
 export default {
   setup() {
     useHead({
-      titleTemplate: '%s | Code Style | Gwawr',
-      script: [{
-        async: true,
-        src: 'https://www.googletagmanager.com/gtag/js?id=G-7C0V8P4P5D'
-      }, {
-        type: 'text/javascript',
-        innerHTML: 'window.dataLayer = window.dataLayer || [];\n' +
-            '  function gtag(){dataLayer.push(arguments);}\n' +
-            '  gtag(\'js\', new Date());\n' +
-            '\n' +
-            '  gtag(\'config\', \'G-7C0V8P4P5D\');',
-        tagPosition: 'bodyOpen'
+      titleTemplate: (title) => `${title} | Code Style | Gwawr`,
+      bodyAttrs: {
+        'data-pride':''
       },
+      script: [
         {
-          src: 'https://identity.netlify.com/v1/netlify-identity-widget.js',
+          async: true,
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-7C0V8P4P5D'
+        }, {
+          type: 'text/javascript',
+          innerHTML: 'window.dataLayer = window.dataLayer || [];\n' +
+              '  function gtag(){dataLayer.push(arguments);}\n' +
+              '  gtag(\'js\', new Date());\n' +
+              '\n' +
+              '  gtag(\'config\', \'G-7C0V8P4P5D\');',
+          tagPosition: 'bodyOpen'
         }
       ],
       link: [
@@ -91,6 +92,35 @@ body {
       content: '';
     }
 
+  }
+}
+
+[data-pride] {
+  --badge-height: 3px;
+  margin-top: var(--badge-height);
+
+  &::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--badge-height);
+    z-index: 9999;
+    background: linear-gradient(
+      to right,
+      #e50203 9.09%,
+      #ff8d01 9.09% 18.18%,
+      #ffee00 18.18% 27.27%,
+      #008121 27.27% 36.36%,
+      #034cfe 36.36% 45.45%,
+      #750287 45.45% 54.54%,
+      #ffffff 54.54% 63.63%,
+      #5ccefa 63.63% 72.72%,
+      #f6a8b7 72.72% 81.81%,
+      #784f19 81.81% 90.9%,
+      #000000 90.9% 100%
+    ) fixed;
   }
 }
 </style>

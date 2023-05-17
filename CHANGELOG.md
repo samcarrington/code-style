@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file. This
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [4.3.2](https://github.com/samcarrington/code-style/tree/v4.3.2) - 2023-05-17
+
+### Changed
+
+- Minor and patch version updates for various dependencies
+- Update to Nuxt 3.5.0
+
+### Added 
+
+- Pride colours in the page head
+
 ## [4.3.1](https://github.com/samcarrington/code-style/tree/v4.3.1) - 2023-03-31
 
 ### Fixed
