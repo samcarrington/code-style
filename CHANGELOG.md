@@ -11,6 +11,10 @@ project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Minor and patch version updates for various dependencies
 - update to Nuxt 3.5.1
 
+### Fixed
+
+- Switched from dracula to a theme (github-dark) using more accessible colours
+
 ### Added
 
 - Returned the `@divriots/jampack` step into the generate task
