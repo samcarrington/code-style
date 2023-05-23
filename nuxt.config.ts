@@ -1,19 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: [
-    '@nuxtjs/tailwindcss',
-    '@nuxt/content',
-    '@nuxtjs/color-mode'
-  ],
+  modules: ["@nuxtjs/tailwindcss", "@nuxt/content", "@nuxtjs/color-mode"],
   typescript: {
-    shim: false
+    shim: false,
+  },
+  app: {
+    pageTransition: { name: "page", mode: "out-in" },
   },
   colorMode: {
-    classSuffix: '',
+    classSuffix: "",
   },
   nitro: {
     prerender: {
-      routes: ['/rss.xml', '/sitemap.xml', '/api/changelog.md'],
+      routes: ["/rss.xml", "/sitemap.xml", "/api/changelog.md"],
     },
   },
   runtimeConfig: {
@@ -25,12 +24,12 @@ export default defineNuxtConfig({
   content: {
     documentDriven: true,
     navigation: {
-      fields: ['navTitle'],
+      fields: ["navTitle"],
     },
     highlight: {
       // See the available themes on https://github.com/shikijs/shiki/blob/main/docs/themes.md#all-theme
-      theme: 'dracula',
-      preload: ['py', 'css', 'scss', 'ts', 'json', 'js', 'jsx'],
+      theme: "dracula",
+      preload: ["py", "css", "scss", "ts", "json", "js", "jsx"],
     },
-  }
-})
+  },
+});
