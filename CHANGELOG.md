@@ -19,6 +19,7 @@ project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - Returned the `@divriots/jampack` step into the generate task
 - Nuxt page transition (blur)
+- Recommendation for use of Flake8 in the Python guidance
 
 ### Removed
 
