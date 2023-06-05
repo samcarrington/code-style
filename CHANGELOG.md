@@ -9,7 +9,7 @@ project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Changed
 
 - Minor and patch version updates for various dependencies
-- update to Nuxt 3.5.1
+- update to Nuxt 3.5.2
 
 ### Fixed
 
