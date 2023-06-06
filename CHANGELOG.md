@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file. This
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+
+## [4.3.3](https://github.com/samcarrington/code-style/tree/v4.3.3) - Unreleased
+
+### Changed
+
+- Minor and patch version updates for various dependencies
+- update to Nuxt 3.5.2
+
+### Fixed
+
+- Switched from dracula to a theme (github-dark) using more accessible colours
+
+### Added
+
+- Returned the `@divriots/jampack` step into the generate task
+- Nuxt page transition (blur)
+- Recommendation for use of Flake8 in the Python guidance
+
+### Removed
+
+- Google site verification metadata no longer required
+
+
 ## [4.3.2](https://github.com/samcarrington/code-style/tree/v4.3.2) - 2023-05-17
 
 ### Changed

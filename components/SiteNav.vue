@@ -11,6 +11,7 @@
           id="menuBtn"
           class="hamburger block sm:hidden focus:outline-none"
           type="button"
+          aria-label="Navigation Menu"
           @click="toggleNav"
         >
           <span class="hamburger__top-bun"></span>
