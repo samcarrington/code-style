@@ -7,6 +7,10 @@ defineProps({
     type: String,
     default: 'heroicons-outline:badge-check',
   },
+  color: {
+    type: String,
+    default: 'text-emerald-500',
+  }
 });
 </script>
 
@@ -19,9 +23,16 @@ defineProps({
     >
       <SiteIcon
         :name="icon"
-        class="flex-shrink-0 w-6 h-6 mt-1 text-emerald-500"
+        class="flex-shrink-0 w-6 h-6 mt-1"
+        :class="color"
       />
       <span><ContentSlot :use="() => item" unwrap="li" /></span>
     </li>
   </ul>
 </template>
+
+<style lang="postcss" scoped>
+.red {
+  @apply text-red-500;
+}
+</style>

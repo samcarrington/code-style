@@ -3,8 +3,16 @@
 All notable changes to this project will be documented in this file. This
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [4.3.4](https://github.com/samcarrington/code-style/tree/v4.3.4) - Unreleased
 
-## [4.3.3](https://github.com/samcarrington/code-style/tree/v4.3.3) - Unreleased
+### Changed
+
+- Minor and patch version updates for various dependencies
+- update to Nuxt 3.5.3
+- Modify ContentList component to accept a colour prop
+
+
+## [4.3.3](https://github.com/samcarrington/code-style/tree/v4.3.3) - 2023-06-06
 
 ### Changed
 
