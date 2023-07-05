@@ -1,7 +1,7 @@
 {
   "name": "code-style",
   "description": "Code Style guidelines for various languages",
-  "version": "4.3.3",
+  "version": "4.3.4",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -23,28 +23,28 @@
     "start": "NODE_ENV=production node .output/server/index.mjs"
   },
   "devDependencies": {
-    "@divriots/jampack": "^0.12.2",
+    "@divriots/jampack": "^0.13.0",
     "@iconify/vue": "^4.1.1",
-    "@nuxt/content": "^2.6.0",
+    "@nuxt/content": "^2.7.0",
     "@nuxt/eslint-config": "^0.1.1",
-    "@nuxtjs/color-mode": "^3.2.0",
+    "@nuxtjs/color-mode": "^3.3.0",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
-    "@nuxtjs/tailwindcss": "^6.7.0",
+    "@nuxtjs/tailwindcss": "^6.8.0",
     "@tailwindcss/typography": "^0.5.9",
     "@types/markdown-it": "^12.2.3",
-    "@types/node": "^18.16.16",
+    "@types/node": "^18.16.19",
     "@types/rss": "^0.0.30",
-    "eslint": "^8.42.0",
+    "eslint": "^8.44.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-vuejs-accessibility": "^2.1.0",
     "markdown-it": "^13.0.1",
-    "nuxt": "^3.5.2",
-    "postcss-custom-properties": "^13.2.0",
+    "nuxt": "^3.6.1",
+    "postcss-custom-properties": "^13.2.1",
     "prettier": "^2.8.8",
     "pug": "^3.0.2",
     "sitemap": "^7.1.1",
     "typescript": "^4.9.5",
-    "vue-tsc": "^1.7.8"
+    "vue-tsc": "^1.8.4"
   },
   "dependencies": {
     "rss": "^1.2.2"

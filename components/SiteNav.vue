@@ -51,6 +51,9 @@ const { show, toggleNav } = useNavbar();
 .menu {
   @apply w-full sm:block sm:w-auto self-end sm:self-center sm:flex flex-grow flex-col sm:flex-row items-center h-full py-1 pb-4 sm:py-0 sm:pb-0 justify-center;
 }
+.dark .hamburger:hover [class*='-bun'] {
+  @apply bg-red-400;
+}
 
 .hamburger {
   cursor: pointer;
@@ -59,7 +62,7 @@ const { show, toggleNav } = useNavbar();
   transition: all 0.25s;
 
   &:hover [class*='-bun'] {
-    background: #333;
+    @apply bg-rose-800 dark:bg-rose-300;
   }
 
   &__top-bun,
