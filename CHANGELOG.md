@@ -8,7 +8,7 @@ project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Changed
 
 - Minor and patch version updates for various dependencies
-- update to Nuxt 3.5.3
+- update to Nuxt 3.6.1
 - Modify ContentList component to accept a colour prop
 
 
