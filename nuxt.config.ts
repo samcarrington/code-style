@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ["@nuxtjs/tailwindcss", "@nuxt/content", "@nuxtjs/color-mode"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxt/content", "@nuxtjs/color-mode", "@nuxthq/studio"],
   typescript: {
     shim: false,
   },
