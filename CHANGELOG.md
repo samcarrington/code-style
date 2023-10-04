@@ -3,7 +3,13 @@
 All notable changes to this project will be documented in this file. This
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [4.3.4](https://github.com/samcarrington/code-style/tree/v4.3.4) - Unreleased
+## [4.4.0](https://github.com/samcarrington/code-style/tree/v4.4.0) - 2023-10-04
+
+### Added
+
+- Nuxt Studio integration
+
+## [4.3.4](https://github.com/samcarrington/code-style/tree/v4.3.4) - 2023-07-05
 
 ### Changed
 
