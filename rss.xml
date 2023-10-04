@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Gwawr Code Style]]></title>
+        <description><![CDATA[Gwawr Code Style]]></description>
+        <link>https://code-style.gwawr.uk</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Wed, 04 Oct 2023 21:54:45 GMT</lastBuildDate>
+        <atom:link href="https://code-style.gwawr.uk/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[CHANGELOG]]></title>
+            <description><![CDATA[All notable changes to this project will be documented in this file. This
+project adheres to Semantic Versioning.]]></description>
+            <link>https://code-style.gwawr.uk/changelog</link>
+            <guid isPermaLink="true">https://code-style.gwawr.uk/changelog</guid>
+        </item>
+        <item>
+            <title><![CDATA[Home]]></title>
+            <description><![CDATA[Basic Coding Style Guide]]></description>
+            <link>https://code-style.gwawr.uk/</link>
+            <guid isPermaLink="true">https://code-style.gwawr.uk/</guid>
+            <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Estilo de código]]></title>
+            <description><![CDATA[Guía de estilo de código básico]]></description>
+            <link>https://code-style.gwawr.uk/es</link>
+            <guid isPermaLink="true">https://code-style.gwawr.uk/es</guid>
+            <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[PHP]]></title>
+            <description><![CDATA[Guidance for working with PHP]]></description>
+            <link>https://code-style.gwawr.uk/php</link>
+            <guid isPermaLink="true">https://code-style.gwawr.uk/php</guid>
+            <pubDate>Tue, 17 Aug 2021 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[TypeScript]]></title>
+            <description><![CDATA[Can has Superset?]]></description>
+            <link>https://code-style.gwawr.uk/typescript</link>
+            <guid isPermaLink="true">https://code-style.gwawr.uk/typescript</guid>
+            <pubDate>Wed, 11 Aug 2021 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Python]]></title>
+            <description><![CDATA[Rules for Python coding]]></description>
+            <link>https://code-style.gwawr.uk/python</link>
+            <guid isPermaLink="true">https://code-style.gwawr.uk/python</guid>
+            <pubDate>Thu, 29 Jul 2021 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[JavaScript]]></title>
+            <description><![CDATA[Standard practice when working with JavaScript]]></description>
+            <link>https://code-style.gwawr.uk/javascript</link>
+            <guid isPermaLink="true">https://code-style.gwawr.uk/javascript</guid>
+            <pubDate>Mon, 21 Jun 2021 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[CSS - Cascading Style Sheets]]></title>
+            <description><![CDATA[Structure and syntax for working on CSS and Sass style sheets]]></description>
+            <link>https://code-style.gwawr.uk/css</link>
+            <guid isPermaLink="true">https://code-style.gwawr.uk/css</guid>
+            <pubDate>Mon, 15 Jul 2019 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[.NET]]></title>
+            <description><![CDATA[Expected standards for working with Microsoft .NET]]></description>
+            <link>https://code-style.gwawr.uk/dotnet</link>
+            <guid isPermaLink="true">https://code-style.gwawr.uk/dotnet</guid>
+            <pubDate>Tue, 18 Jun 2019 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[PUG]]></title>
+            <description><![CDATA[Initial guidance for working with the PUG (formerly Jade) templating language]]></description>
+            <link>https://code-style.gwawr.uk/pug</link>
+            <guid isPermaLink="true">https://code-style.gwawr.uk/pug</guid>
+            <pubDate>Tue, 18 Jun 2019 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[HTML]]></title>
+            <description><![CDATA[Initial guidance for working with Hypertext Markup Language]]></description>
+            <link>https://code-style.gwawr.uk/html</link>
+            <guid isPermaLink="true">https://code-style.gwawr.uk/html</guid>
+            <pubDate>Wed, 03 May 2017 00:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

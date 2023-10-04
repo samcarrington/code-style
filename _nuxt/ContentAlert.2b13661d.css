@@ -1,0 +1,1 @@
+:is(.dark body .prose .alert-box :not(h1,h2,h3,h4,h5,h6) a){--tw-text-opacity:1;color:#ecfccb;color:rgb(236 252 203/var(--tw-text-opacity))}
