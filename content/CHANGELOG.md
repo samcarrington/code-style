@@ -6,6 +6,12 @@ navigation: false
 All notable changes to this project will be documented in this file. This
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [4.4.1](https://github.com/samcarrington/code-style/tree/v4.4.1) - 2023-10-18
+
+### Changed
+
+- Nuxt Content MDC list component list iteration, removed icon bullets due to bug
+
 ## [4.4.0](https://github.com/samcarrington/code-style/tree/v4.4.0) - 2023-10-04
 
 ### Added
