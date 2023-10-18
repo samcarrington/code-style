@@ -1140,7 +1140,7 @@
     eslint-plugin-vue "^9.17.0"
     typescript "^5.2.2"
 
-"@nuxt/kit@3.7.4", "@nuxt/kit@^3.3.1", "@nuxt/kit@^3.4.2", "@nuxt/kit@^3.7.1", "@nuxt/kit@^3.7.4", "@nuxt/kit@latest":
+"@nuxt/kit@3.7.4", "@nuxt/kit@^3.3.1", "@nuxt/kit@^3.4.2", "@nuxt/kit@^3.7.4", "@nuxt/kit@latest":
   version "3.7.4"
   resolved "https://registry.yarnpkg.com/@nuxt/kit/-/kit-3.7.4.tgz#31c0bd57397cc56a1098af5d6504353cc2e855a2"
   integrity sha512-/S5abZL62BITCvC/TY3KWA6N721U1Osln3cQdBb56XHIeafZCBVqTi92Xb0o7ovl72mMRhrKwRu7elzvz9oT/g==
@@ -1302,17 +1302,17 @@
     vite-plugin-checker "^0.6.2"
     vue-bundle-renderer "^2.0.0"
 
-"@nuxthq/studio@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@nuxthq/studio/-/studio-1.0.0.tgz#c5fdcc020c5daacdf9c740b8a5e2602a823c93eb"
-  integrity sha512-W4dUsj4ypJc2jG6cE8ECmnAx99SKX0qqzoAYqj1KJ9QmknLON/DIHdyhUtIoPMHlzcBgErTeUzy4prxsO5cHBg==
+"@nuxthq/studio@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@nuxthq/studio/-/studio-1.0.2.tgz#67924b0963b519c84df889c2a17c1b0129d26755"
+  integrity sha512-QoF6oYigr6IcHgNeQqAUBmCrSqnuPffoF9Tbg8cToF3oYU7WHkKgYCe+diICFdWuiH/SHTEfSm9kaone/Bp2gw==
   dependencies:
-    "@nuxt/kit" "^3.7.1"
+    "@nuxt/kit" "^3.7.4"
     defu "^6.1.2"
-    nuxt-component-meta "^0.5.3"
+    nuxt-component-meta "^0.5.4"
     nuxt-config-schema "^0.4.6"
     socket.io-client "^4.7.2"
-    ufo "^1.3.0"
+    ufo "^1.3.1"
 
 "@nuxtjs/color-mode@^3.3.0":
   version "3.3.0"
@@ -1816,10 +1816,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.45.tgz#2c0fafd78705e7a18b7906b5201a522719dc5190"
   integrity sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==
 
-"@types/node@^20.8.5":
-  version "20.8.5"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.8.5.tgz#13352ae1f80032171616910e8aba2e3e52e57d96"
-  integrity sha512-SPlobFgbidfIeOYlzXiEjSYeIJiOCthv+9tSQVpvk4PAdIIc+2SmjNVzWXk9t0Y7dl73Zdf+OgXKHX9XtkqUpw==
+"@types/node@^20.8.6":
+  version "20.8.6"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.8.6.tgz#0dbd4ebcc82ad0128df05d0e6f57e05359ee47fa"
+  integrity sha512-eWO4K2Ji70QzKUqRy6oyJWUeB7+g2cRagT3T/nxYibYcT4y2BDL8lqolRXjTHmkZCdJfIPaY73KbJAZmcryxTQ==
   dependencies:
     undici-types "~5.25.1"
 
@@ -7404,7 +7404,7 @@ nuxi@^3.9.0:
   optionalDependencies:
     fsevents "~2.3.3"
 
-nuxt-component-meta@^0.5.3:
+nuxt-component-meta@^0.5.4:
   version "0.5.4"
   resolved "https://registry.yarnpkg.com/nuxt-component-meta/-/nuxt-component-meta-0.5.4.tgz#b92fe1e3258e40038b0816d4b6a9bd77e48d6191"
   integrity sha512-0ou1O5Dky/avUAm6XrO4r4aZiRgP3wCwBlOe49FcyVZo0uAULFw8b3j48BvKWzBdOywf8hJEL4V5o7FWnd1E+A==

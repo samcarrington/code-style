@@ -17,7 +17,7 @@ defineProps({
 <template>
   <ul class="p-0">
     <li
-      v-for="(listItem, index) in flatUnwrap($slots.default!(), ['ul','p'])"
+      v-for="(listItem, index) in flatUnwrap($slots.default(), ['ul','p'])"
       :key="index"
       class="flex space-x-2 not-prose"
     >
