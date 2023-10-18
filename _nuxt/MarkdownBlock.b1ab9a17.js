@@ -1,0 +1,1 @@
+import r from"./Markdown.0404bf57.js";import{m as n,f as t,g as c,j as s}from"./entry.96b66011.js";import"./ContentSlot.de91f9df.js";import"./node.676c5e99.js";const a={};function l(e,m){const o=r;return t(),c("pre",null,[s(o,{use:e.$slots.default,unwrap:"p"},null,8,["use"])])}const d=n(a,[["render",l]]);export{d as default};

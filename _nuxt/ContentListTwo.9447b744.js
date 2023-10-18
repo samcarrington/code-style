@@ -1,0 +1,1 @@
+import{r as t}from"./slot.ea8f6dba.js";import{a as o}from"./entry.96b66011.js";import"./node.676c5e99.js";const i=o({__name:"ContentListTwo",props:{icon:{type:String,default:"heroicons-outline:badge-check"},color:{type:String,default:"text-emerald-500"}},setup(r){return(e,n)=>t(e.$slots,"default")}});export{i as default};
