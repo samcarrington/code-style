@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. This
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [4.4.3](https://github.com/samcarrington/code-style/tree/v4.4.3) - Unreleased
+
+### Changed
+
+- Update Nuxt to v3.8.1
+- Plus other minor dependency version updates
+
 ## [4.4.2](https://github.com/samcarrington/code-style/tree/v4.4.2) - 2023-10-18
 
 ### Fixed
